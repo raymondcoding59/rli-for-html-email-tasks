@@ -1,0 +1,1 @@
+[source](https://reallygoodemails.com/emails/howdy-we-saved-your-spot)

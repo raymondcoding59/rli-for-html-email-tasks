@@ -1,0 +1,52 @@
+Here is the design for an HTML email. Convert it into a pixel-for-pixel replica in HTML code using the styling and formatting specifications for each element in each section. 
+
+General:
+- Background colour of the email background: #EEEEEE
+- Background colour of the email container : #000000
+- Max width of the email container: 640px 
+
+Images and Icons:
+- Use placehold.co image placeholders for all images and icons (with .png image type).
+
+Number of sections: 1
+
+Section 1:
+General:
+- Background colour: #000000
+
+Text:
+-color: #fcdf61;
+-direction: ltr;
+-font-family: Arial, Arial, Sans-serif;
+-font-size: 16px;
+-font-weight: 300;
+-letter-spacing: 0;
+-line-height: 1.5;
+-text-align: left;
+
+
+
+Button
+-background-color: #b5190d;
+-mso-shading: transparent;
+-border-bottom: 0px solid transparent;
+-border-left: 0px solid transparent;
+-border-radius: 50px;
+-border-right: 0px solid transparent;
+-border-top: 0px solid transparent;
+-color: #fcdf61;
+-display: inline-block;
+-font-family: 'Arial', Arial, Sans-serif;
+-font-size: 16px;
+-font-weight: 700;
+-mso-border-alt: none;
+-padding-bottom: 13px;
+-padding-top: 13px;
+-padding-left: 13px;
+-padding-right: 13px;
+-text-align: center;
+-width: 50%;
+-word-break: keep-all;
+-letter-spacing: normal;
+-word-break: break-word;
+-line-height: 24px;
