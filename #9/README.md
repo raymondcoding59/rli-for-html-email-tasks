@@ -1,0 +1,1 @@
+[source](https://reallygoodemails.com/emails/turn-2-min-of-typing-into-2-sec-of-speaking)
