@@ -1,125 +1,188 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light dark">
-  <meta name="supported-color-schemes" content="light dark">
-  <title>Marsh Hen Mill</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
 
-  <!-- Web Fonts (safe to ignore if unsupported) -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400&display=swap" rel="stylesheet">
+<title>Where the Mill Meets the Michelin Star</title>
 
-  <style>
-    /* CLIENT RESETS */
-    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
-    body { margin: 0; padding: 0; width: 100% !important; }
+<style>
+/* ---------- FONT IMPORTS ---------- */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/anton/v25/1Ptgg87LROyAm3Kz-C8.woff2') format('woff2');
+}
 
-    /* MOBILE */
-    @media screen and (max-width: 600px) {
-      .container {
-        width: 100% !important;
-      }
-      .content {
-        padding: 24px !important;
-      }
-      h1 {
-        font-size: 30px !important;
-        line-height: 1.15 !important;
-      }
-    }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTcviYw.woff2') format('woff2');
+}
 
-    /* DARK MODE */
-    @media (prefers-color-scheme: dark) {
-      body, .email-bg {
-        background-color: #1C1E26 !important;
-      }
-      .container {
-        background-color: #11151F !important;
-      }
-      h1, p {
-        color: #FFFFFF !important;
-      }
-    }
-  </style>
+/* ---------- RESET ---------- */
+body, table, td, a {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+table, td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  display: block;
+}
+table {
+  border-collapse: collapse !important;
+}
+
+/* ---------- BASE ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  background-color: #F3F1ED;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+/* ---------- CONTAINER ---------- */
+.email-container {
+  width: 600px;
+  max-width: 600px;
+  background-color: #FFFFFF;
+}
+
+/* ---------- HEADLINE ---------- */
+.headline {
+  font-family: Anton, Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #11151F;
+  margin: 0;
+  text-align: left;
+}
+
+/* ---------- BODY COPY ---------- */
+.body-copy {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #11151F;
+  text-align: left;
+}
+
+.body-copy a {
+  color: #9DBAB8;
+  text-decoration: underline;
+}
+
+/* ---------- MOBILE ---------- */
+@media screen and (max-width: 600px) {
+  .email-container {
+    width: 100% !important;
+  }
+  .mobile-padding {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .headline {
+    font-size: 30px !important;
+  }
+}
+
+/* ---------- DARK MODE ---------- */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1C1C1C !important;
+  }
+  .email-container {
+    background-color: #11151F !important;
+  }
+  .headline,
+  .body-copy {
+    color: #FFFFFF !important;
+  }
+  .body-copy a {
+    color: #9DBAB8 !important;
+  }
+}
+
+/* Outlook.com + iOS Mail dark mode */
+[data-ogsc] body {
+  background-color: #1C1C1C !important;
+}
+[data-ogsc] .email-container {
+  background-color: #11151F !important;
+}
+[data-ogsc] .headline,
+[data-ogsc] .body-copy {
+  color: #FFFFFF !important;
+}
+</style>
 </head>
 
-<body style="background-color:#F3F1ED;">
+<body>
 
-  <!-- EMAIL BACKGROUND -->
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="email-bg" style="background-color:#F3F1ED;">
-    <tr>
-      <td align="center" style="padding: 24px 12px;">
+<!-- FULL WIDTH BACKGROUND -->
+<table role="presentation" width="100%" bgcolor="#F3F1ED">
+  <tr>
+    <td align="center" style="padding: 30px 0;">
 
-        <!-- EMAIL CONTAINER -->
-        <table role="presentation" width="600" cellpadding="0" cellspacing="0" class="container" style="width:600px; background-color:#FFFFFF;">
+      <!-- EMAIL CONTAINER -->
+      <table role="presentation" class="email-container" width="600">
 
-          <!-- HERO IMAGE -->
-          <tr>
-            <td>
+        <!-- HERO IMAGE -->
+        <tr>
+          <td>
+            <a href="#" target="_blank">
               <img 
-                src="https://placehold.co/600x438/png" 
-                width="600" 
-                height="438" 
-                alt="Where the Mill Meets the Michelin Star" 
-                style="width:100%; max-width:600px; height:auto;"
-              >
-            </td>
-          </tr>
+                src="https://d3k81ch9hvuctc.cloudfront.net/company/ThFTqL/images/c57a84d6-1b74-416e-91aa-eb5f226f51b4.png"
+                width="600"
+                height="438"
+                alt="Where the Mill Meets the Michelin Star"
+                style="width:100%; max-width:600px; height:auto;">
+            </a>
+          </td>
+        </tr>
 
-          <!-- CONTENT -->
-          <tr>
-            <td class="content" style="padding: 40px 40px 48px 40px;">
+        <!-- CONTENT -->
+        <tr>
+          <td class="mobile-padding" style="padding: 32px 40px 40px 40px;">
 
-              <!-- HEADLINE -->
-              <h1 style="
-                margin:0 0 24px 0;
-                font-family:'Anton', Helvetica, Arial, sans-serif;
-                font-size:36px;
-                font-weight:400;
-                line-height:1.1;
-                color:#11151F;
-                text-align:left;
-              ">
-                Celebrating Michelin Guide Restaurants Using Marsh Hen Mill
-              </h1>
+            <!-- HEADLINE -->
+            <h1 class="headline" style="margin-bottom: 16px;">
+              Celebrating Michelin Guide Restaurants Using Marsh Hen Mill
+            </h1>
 
-              <!-- BODY COPY -->
-              <p style="
-                margin:0 0 16px 0;
-                font-family:'Inter', Helvetica, Arial, sans-serif;
-                font-size:16px;
-                font-weight:400;
-                line-height:1.5;
-                color:#11151F;
-                text-align:left;
-              ">
-                We’re thrilled to share some exciting news from the culinary world. Recently, the Michelin Guide released its first-ever Guide to the American South. Naturally, we cannot help but celebrate a few of the restaurants mentioned in the guide that use our grains in their kitchens.
-              </p>
+            <!-- BODY COPY -->
+            <p class="body-copy" style="margin: 0 0 16px 0;">
+              We're thrilled to share some exciting news from the culinary world. Recently, the Michelin Guide released its first-ever 
+              <a href="#" target="_blank">Guide to the American South</a>. Naturally, we cannot help but celebrate a few of the restaurants mentioned in the guide that use our grains in their kitchens.
+            </p>
 
-              <p style="
-                margin:0;
-                font-family:'Inter', Helvetica, Arial, sans-serif;
-                font-size:16px;
-                font-weight:400;
-                line-height:1.5;
-                color:#11151F;
-                text-align:left;
-              ">
-                These chefs inspire us daily, taking the grains we grow here on Edisto Island and transforming them into dishes that earn global acclaim. It’s an honor to play even a small part in their craft.
-              </p>
+            <p class="body-copy" style="margin: 0;">
+              These chefs inspire us daily, taking the grains we grow here on Edisto Island and transforming them into dishes that earn global acclaim. It’s an honor to play even a small part in their craft.
+            </p>
 
-            </td>
-          </tr>
+          </td>
+        </tr>
 
-        </table>
-        <!-- END CONTAINER -->
+      </table>
+      <!-- END EMAIL CONTAINER -->
 
-      </td>
-    </tr>
-  </table>
+    </td>
+  </tr>
+</table>
 
 </body>
 </html>
