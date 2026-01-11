@@ -1,0 +1,46 @@
+Convert this email design into a pixel-perfect HTML email that is compatible with all email clients, mobile-responsive, and dark-mode compatible. 
+
+
+Use these specifications for the following elements. Use placehold.co image placeholders for all images and icons (with .png image type), and specifications for non-mentioned elements can be inferred from the design:
+
+Email Background
+background-color: #F3F1ED;
+width: 100%;
+
+email container:
+width: 600px;
+background-color: #FFFFFF;
+
+
+Hero Image
+Dimensions: 600x438
+
+
+
+Headline
+color: #11151F;
+font-family: "Anton", Helvetica, Arial, sans-serif;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.1;
+letter-spacing: 0;
+margin: 0;
+margin-bottom: 0;
+text-align: left;
+
+
+
+Body Copy
+font-family: 'Inter', Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0px;
+line-height: 1.5;
+text-align: left;
+color: #11151F;
+
+
+Button
+null
