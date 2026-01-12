@@ -1,0 +1,114 @@
+Convert this email design into a pixel-perfect HTML email that is compatible with all email clients, mobile-responsive, and dark-mode compatible. 
+
+
+Use the following instructions and specifications.
+
+
+INSTRUCTIONS
+- specifications for non-mentioned elements can be inferred from the design.
+- Use the @font-face rule to import any web fonts.
+- Use placehold.co image placeholders for all images and icons whose source urls are not specified(with .png image type).
+
+
+
+
+
+SPECIFICATIONS
+Email Background
+background-color: #ffffff;
+width: 100%;
+
+email container:
+width: 560px;
+background-color: #FFFFFF;
+
+
+logo
+Dimensions: 125x24
+element type: image
+source: https://www.kayak.com/eimg/coreImages/Crossbrand-footer-kyk-logo.png
+destination link:"#"
+
+
+Hero image
+null
+
+Headline
+font-family: 'Helvetica Neue', Helvetica, Arial, 'DejaVuSansBook', sans-serif;
+font-size: 44px;
+font-weight: bold;
+line-height: 40px;
+orange dot
+font-size: 44px;
+color: #FF690F;
+
+
+Horizontal divider line
+border-top: 1px solid #9ba8b0;
+
+
+Sub heading
+font-family: 'Helvetica Neue', Helvetica, Arial, 'DejaVuSansBook', sans-serif;
+font-size: 24px;
+line-height: 32px;
+color: #192024;
+font-weight: bold;
+font-style: normal;
+
+
+List
+numbers
+element type: image
+dimensions: 162x145
+sources:
+1:https://www.kayak.com/eimg/coreImages/reengage1.png
+2:https://www.kayak.com/eimg/coreImages/reengage2.png
+3:https://www.kayak.com/eimg/coreImages/reengage3.png
+
+sub headings
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+color: #192024;
+font-family: 'Helvetica Neue', Helvetica, Arial, 'DejaVuSansBook', sans-serif;
+
+copy
+font-size: 14px;
+line-height: 20px;
+color: #192024;
+font-family: 'Helvetica Neue', Helvetica, Arial, 'DejaVuSansBook', sans-serif;
+
+
+Horizontal divider line
+background-color: #e7edf1;
+font-size: 1px;
+line-height: 1px;
+height: 1px;
+max-height: 1px;
+min-height: 1px;
+
+
+Sub heading
+color: #000000;
+font-family: 'Helvetica Neue', Helvetica, Arial, 'DejaVuSansBook', sans-serif;
+font-size: 20px;
+font-weight: bold;
+padding: 10px 20px 0px 20px;
+text-align: left;
+
+
+Button
+    white-space: nowrap;
+    background-color: #FF690F;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'DejaVuSansBook', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24x;
+    vertical-align: middle;
+    padding: 10px 22px;
+    margin: auto;
+    border-radius: 4px;
+    text-decoration: none;
+    url:"#"
