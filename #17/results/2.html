@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn Analytics Email</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* Web font fallback handled via system stack */
+
+    /* Mobile responsiveness */
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 100% !important;
+      }
+      .stat-grid {
+        display: block !important;
+      }
+      .stat-card {
+        display: block !important;
+        width: 100% !important;
+      }
+    }
+
+    /* Dark mode support */
+    @media (prefers-color-scheme: dark) {
+      body, .email-bg {
+        background-color: #1c1c1c !important;
+      }
+      .container {
+        background-color: #121212 !important;
+      }
+      .text, .headline {
+        color: #ffffff !important;
+      }
+      .muted {
+        color: #cccccc !important;
+      }
+      .stat-card {
+        background-color: #1e1e1e !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin:0;padding:0;background-color:#F3F2F0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="email-bg" style="background-color:#F3F2F0;">
+    <tr>
+      <td align="center" style="padding:8px;">
+
+        <!-- Email Container -->
+        <table role="presentation" width="512" cellpadding="0" cellspacing="0" class="container" style="width:512px;background-color:#FFFFFF;">
+
+          <!-- Header -->
+          <tr>
+            <td style="padding:24px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="left">
+                    <a href="#" target="_blank">
+                      <img src="https://static.licdn.com/aero-v1/sc/h/9ehe6n39fa07dc5edzv0rla4e"
+                           width="84" height="21" alt="LinkedIn"
+                           style="display:block;border:0;">
+                    </a>
+                  </td>
+                  <td align="right">
+                    <a href="#" target="_blank">
+                      <img src="https://placehold.co/32x32/png/cccccc/000000?text=👤"
+                           width="32" height="32" alt="Profile"
+                           style="display:block;border-radius:50%;border:0;">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Headline -->
+          <tr>
+            <td style="padding:36px 24px 0 24px;">
+              <p class="headline" style="margin:0;font-size:24px;font-weight:600;line-height:1.25;color:#282828;">
+                Smiles Davis, your posts made an impact and your audience showed up.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Intro Text -->
+          <tr>
+            <td style="padding:12px 24px 0 24px;">
+              <p class="text" style="margin:0;font-size:14px;font-weight:400;color:#000000e6;">
+                Here’s a glimpse at how your content performed the week of <strong>01/05 – 01/11</strong>.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Stats -->
+          <tr>
+            <td style="padding:24px 24px 0 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+
+                <!-- Full width card -->
+                <tr>
+                  <td class="stat-card" style="background-color:#f7f7f7;border-radius:4px;border-top:3px solid #01754f;padding:16px 12px;">
+                    <p style="margin:0;font-size:20px;font-weight:600;">60,175</p>
+                    <p style="margin:0;font-size:14px;font-weight:400;">Impressions</p>
+                  </td>
+                </tr>
+
+                <!-- Spacing -->
+                <tr><td style="padding-top:12px;"></td></tr>
+
+                <!-- Two column stats -->
+                <tr class="stat-grid">
+                  <td class="stat-card" width="50%" style="background-color:#f7f7f7;border-radius:4px;border-top:3px solid #01754f;padding:16px 12px;">
+                    <p style="margin:0;font-size:20px;font-weight:600;">68</p>
+                    <p style="margin:0;font-size:14px;font-weight:400;">Comments</p>
+                  </td>
+
+                  <td style="padding-left:12px;"></td>
+
+                  <td class="stat-card" width="50%" style="background-color:#f7f7f7;border-radius:4px;border-top:3px solid #01754f;padding:16px 12px;">
+                    <p style="margin:0;font-size:20px;font-weight:600;">103</p>
+                    <p style="margin:0;font-size:14px;font-weight:400;">Reactions</p>
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+
+          <!-- Performance Text -->
+          <tr>
+            <td style="padding:12px 24px 0 24px;">
+              <p class="text muted" style="margin:0;font-size:14px;font-weight:400;color:#000000e6;">
+                That’s <strong>18.2x impressions</strong>, <strong>1.6x reactions</strong> and
+                <strong>2.1x comments</strong> more than last week.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Button -->
+          <tr>
+            <td style="padding:24px;">
+              <a href="#"
+                 style="background-color:#0a66c2;border:1px solid #0a66c2;color:#ffffff;
+                        display:inline-block;padding:12px 24px;border-radius:24px;
+                        font-size:16px;font-weight:600;line-height:1.25;
+                        text-decoration:none;text-align:center;">
+                View all analytics
+              </a>
+            </td>
+          </tr>
+
+        </table>
+        <!-- End Container -->
+
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

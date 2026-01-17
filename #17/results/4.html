@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Analytics Email</title>
+
+  <style>
+    /* ---------- CLIENT RESETS ---------- */
+    body, table, td, p {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      border: 0;
+      display: block;
+      line-height: 0;
+      outline: none;
+      text-decoration: none;
+    }
+    table {
+      border-collapse: collapse;
+    }
+
+    /* ---------- MOBILE ---------- */
+    @media screen and (max-width: 600px) {
+      .container {
+        width: 100% !important;
+      }
+      .stat-columns {
+        display: block !important;
+        width: 100% !important;
+      }
+      .stat-column {
+        width: 100% !important;
+        display: block !important;
+      }
+    }
+
+    /* ---------- DARK MODE ---------- */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1c1c1c !important;
+      }
+      .email-bg {
+        background-color: #1c1c1c !important;
+      }
+      .container {
+        background-color: #2b2b2b !important;
+      }
+      .text,
+      .headline {
+        color: #ffffff !important;
+      }
+      .muted {
+        color: #ffffffcc !important;
+      }
+      .stat-card {
+        background-color: #3a3a3a !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="background-color:#F3F2F0; width:100%;">
+  <table role="presentation" width="100%" bgcolor="#F3F2F0" class="email-bg">
+    <tr>
+      <td align="center">
+
+        <!-- CONTAINER -->
+        <table role="presentation" width="512" class="container" bgcolor="#FFFFFF" style="width:512px;">
+
+          <!-- HEADER -->
+          <tr>
+            <td style="padding:24px;">
+              <table role="presentation" width="100%">
+                <tr>
+                  <td align="left">
+                    <a href="#" target="_blank">
+                      <img
+                        src="https://static.licdn.com/aero-v1/sc/h/9ehe6n39fa07dc5edzv0rla4e"
+                        width="84"
+                        height="21"
+                        alt="LinkedIn"
+                      >
+                    </a>
+                  </td>
+                  <td align="right">
+                    <a href="#" target="_blank">
+                      <img
+                        src="https://placehold.co/32x32/png/cccccc/000000?text=PP"
+                        width="32"
+                        height="32"
+                        alt="Profile"
+                        style="border-radius:50%;"
+                      >
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- HEADLINE -->
+          <tr>
+            <td style="padding:36px 24px 0 24px;">
+              <p class="headline" style="
+                margin:0;
+                font-size:24px;
+                font-weight:600;
+                line-height:1.25;
+                color:#282828;
+                font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              ">
+                Smiles Davis, your posts made an impact and your audience showed up.
+              </p>
+            </td>
+          </tr>
+
+          <!-- INTRO TEXT -->
+          <tr>
+            <td style="padding:12px 24px 0 24px;">
+              <p class="text muted" style="
+                margin:0;
+                font-size:14px;
+                font-weight:400;
+                color:#000000e6;
+                font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              ">
+                Here’s a glimpse at how your content performed the week of <strong>01/05 – 01/11</strong>.
+              </p>
+            </td>
+          </tr>
+
+          <!-- STATS -->
+          <tr>
+            <td style="padding:24px 24px 0 24px;">
+              <table role="presentation" width="100%">
+                <tr class="stat-columns">
+
+                  <!-- CARD 1 -->
+                  <td class="stat-column" width="100%" style="padding-bottom:12px;">
+                    <table role="presentation" width="100%" class="stat-card" style="
+                      background-color:#f7f7f7;
+                      border-radius:4px;
+                      border-top:3px solid #01754f;
+                    ">
+                      <tr>
+                        <td style="padding:16px 12px;">
+                          <p style="margin:0;font-size:20px;font-weight:600;">60,175</p>
+                          <p style="margin:0;font-size:14px;font-weight:400;">Impressions</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr class="stat-columns">
+                  <!-- CARD 2 -->
+                  <td class="stat-column" width="50%" style="padding-right:6px;">
+                    <table role="presentation" width="100%" class="stat-card" style="
+                      background-color:#f7f7f7;
+                      border-radius:4px;
+                      border-top:3px solid #01754f;
+                    ">
+                      <tr>
+                        <td style="padding:16px 12px;">
+                          <p style="margin:0;font-size:20px;font-weight:600;">68</p>
+                          <p style="margin:0;font-size:14px;font-weight:400;">Comments</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+
+                  <!-- CARD 3 -->
+                  <td class="stat-column" width="50%" style="padding-left:6px;">
+                    <table role="presentation" width="100%" class="stat-card" style="
+                      background-color:#f7f7f7;
+                      border-radius:4px;
+                      border-top:3px solid #01754f;
+                    ">
+                      <tr>
+                        <td style="padding:16px 12px;">
+                          <p style="margin:0;font-size:20px;font-weight:600;">103</p>
+                          <p style="margin:0;font-size:14px;font-weight:400;">Reactions</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- PERFORMANCE TEXT -->
+          <tr>
+            <td style="padding:12px 24px 0 24px;">
+              <p class="text muted" style="
+                margin:0;
+                font-size:14px;
+                font-weight:400;
+                color:#000000e6;
+                font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              ">
+                That’s <strong>18.2x impressions</strong>, <strong>1.6x reactions</strong> and <strong>2.1x comments</strong> more than last week.
+              </p>
+            </td>
+          </tr>
+
+          <!-- BUTTON -->
+          <tr>
+            <td style="padding:24px;">
+              <a href="#"
+                 style="
+                   color:#ffffff;
+                   text-decoration:none;
+                   display:inline-block;
+                   background-color:#0a66c2;
+                   border:1px solid #0a66c2;
+                   border-radius:24px;
+                   padding:12px 24px;
+                   font-size:16px;
+                   font-weight:600;
+                   line-height:1.25;
+                   font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                 ">
+                View all analytics
+              </a>
+            </td>
+          </tr>
+
+        </table>
+        <!-- END CONTAINER -->
+
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
