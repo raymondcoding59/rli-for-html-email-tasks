@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+
+  <style>
+    /* CLIENT RESETS */
+    body, table, td, p, a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    table {
+      border-collapse: collapse !important;
+    }
+    img {
+      border: 0;
+      outline: none;
+      text-decoration: none;
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* RESPONSIVE */
+    @media screen and (max-width: 600px) {
+      .container {
+        width: 100% !important;
+      }
+      .px-desktop {
+        padding-left: 48px !important;
+        padding-right: 48px !important;
+      }
+      .headline {
+        font-size: 36px !important;
+        line-height: 42px !important;
+      }
+    }
+
+    /* DARK MODE */
+    @media (prefers-color-scheme: dark) {
+      body, .email-bg {
+        background-color: #0C0C0B !important;
+      }
+      .email-container {
+        background-color: #1A1A1A !important;
+      }
+      .dark-text {
+        color: #FFFFFF !important;
+      }
+      .divider {
+        background-color: #FFFFFF !important;
+      }
+      .button {
+        background-color: #FFFFFF !important;
+        color: #0C0C0B !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#F5F5F5;" class="email-bg">
+
+  <!-- FULL WIDTH WRAPPER -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#F5F5F5;">
+    <tr>
+      <td align="center" style="padding:32px 0;">
+
+        <!-- EMAIL CONTAINER -->
+        <table width="600" cellpadding="0" cellspacing="0" role="presentation" class="container email-container" style="width:600px; background-color:#FFFFFF;">
+
+          <!-- LOGO BANNER -->
+          <tr>
+            <td align="center">
+              <a href="#" target="_blank">
+                <img 
+                  src="https://mktgimages.opentable.com/2026/Paid/20260107_AthelticLogo.png" 
+                  width="600" 
+                  alt="OpenTable x Athletic Brewing Co."
+                  style="width:100%; max-width:600px;">
+              </a>
+            </td>
+          </tr>
+
+          <!-- SPACING 4PX -->
+          <tr>
+            <td style="padding-top:4px;"></td>
+          </tr>
+
+          <!-- EYEBROW -->
+          <tr>
+            <td class="px-desktop" style="padding:0 80px;">
+              <p class="dark-text" style="
+                margin:0;
+                font-family:sans-serif;
+                font-size:16px;
+                line-height:16px;
+                font-weight:600;
+                color:#0C0C0B;
+                text-transform:uppercase;">
+                PROMOTED
+              </p>
+            </td>
+          </tr>
+
+          <!-- SPACING 24PX -->
+          <tr>
+            <td style="padding-top:24px;"></td>
+          </tr>
+
+          <!-- DIVIDER -->
+          <tr>
+            <td class="px-desktop" style="padding:0 80px;">
+              <div class="divider" style="height:2px; background-color:#0C0C0B; width:100%;"></div>
+            </td>
+          </tr>
+
+          <!-- SPACING 40PX -->
+          <tr>
+            <td style="padding-top:40px;"></td>
+          </tr>
+
+          <!-- HEADLINE -->
+          <tr>
+            <td class="px-desktop" style="padding:0 80px;">
+              <p class="headline dark-text" style="
+                margin:0;
+                font-family:serif;
+                font-size:48px;
+                line-height:54px;
+                font-weight:400;
+                color:#0C0C0B;">
+                <a href="#" target="_blank" style="color:inherit; text-decoration:none;">
+                  Stay on track without<br>staying in
+                </a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- SPACING 16PX -->
+          <tr>
+            <td style="padding-top:16px;"></td>
+          </tr>
+
+          <!-- BODY COPY -->
+          <tr>
+            <td class="px-desktop" style="padding:0 80px;">
+              <p class="dark-text" style="
+                margin:0;
+                font-family:sans-serif;
+                font-size:20px;
+                line-height:28px;
+                font-weight:300;
+                color:#0C0C0B;">
+                <a href="#" target="_blank" style="color:inherit; text-decoration:none;">
+                  Keep the momentum going this month with a reservation that keeps you on track with your goals: When you toast to the new year with Athletic Brewing Co.’s award-winning non-alcoholic brews at a qualifying restaurant, you can score $5 back.* After all, there’s nothing dry about this month when it’s done right.
+                </a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- SPACING 24PX -->
+          <tr>
+            <td style="padding-top:24px;"></td>
+          </tr>
+
+          <!-- BUTTON -->
+          <tr>
+            <td class="px-desktop" style="padding:0 80px;" align="center">
+              <a href="#"
+                class="button"
+                style="
+                  font-family:sans-serif;
+                  font-size:16px;
+                  line-height:48px;
+                  font-weight:600;
+                  color:#FFFFFF;
+                  background-color:#0C0C0B;
+                  text-align:center;
+                  text-decoration:none;
+                  width:100%;
+                  display:inline-block;
+                  -webkit-text-size-adjust:none;
+                  mso-hide:all;">
+                Learn more
+              </a>
+            </td>
+          </tr>
+
+          <!-- SPACING 24PX -->
+          <tr>
+            <td style="padding-top:24px; padding-bottom:24px;"></td>
+          </tr>
+
+        </table>
+        <!-- END CONTAINER -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
