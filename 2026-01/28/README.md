@@ -1,0 +1,1 @@
+[source](https://reallygoodemails.com/emails/intelligence-isnt-one-size-fits-all)
