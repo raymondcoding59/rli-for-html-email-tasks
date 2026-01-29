@@ -47,7 +47,6 @@ Spacing: _xx_
 
 **Headline**
 SECTION RIGHT AND LEFT PADDING: _xx_
-PARAGRAPHS SPACING: Null
 IS HYPERLINKED: FALSE
 destination url: NULL
 .
