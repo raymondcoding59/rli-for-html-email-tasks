@@ -86,27 +86,6 @@ cv.imwrite(BASE_DIR / "layouts/08_resized_design.png", resized_design)
 cropped_design = original_design[200:400, 200:400]
 cv.imwrite(BASE_DIR / "layouts/09_cropped_design.png", cropped_design)
 
-
-#translate the design 100 pixels to the right and 50 pixels down
-M = np.float32([[1, 0, 100], [0, 1, 50]])
-translated_design = cv.warpAffine(original_design, M, (original_design.shape[1], original_design.shape[0]))
-cv.imwrite(BASE_DIR / "layouts/10_translated_design.png", translated_design)      
-
-
-
-# rotate the design by 45 degrees around its center
-center = (original_design.shape[1]//2, original_design.shape[0]//2)
-M = cv.getRotationMatrix2D(center, 45, 1.0)
-rotated_design = cv.warpAffine(original_design, M, (original_design.shape[1], original_design.shape[0]))
-cv.imwrite(BASE_DIR / "layouts/11_rotated_design.png", rotated_design)
-
-
-
-
-# flip the design horizontally and vertically
-flipped_design = cv.flip(original_design, -1)
-cv.imwrite(BASE_DIR / "layouts/12_flipped_design.png", flipped_design)
-
 # End timer and show done message
 end_time = time.time()
 print("done in", round(end_time - start_time, 2), "seconds")
