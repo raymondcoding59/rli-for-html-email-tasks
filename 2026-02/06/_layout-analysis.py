@@ -4,7 +4,6 @@ from pathlib import Path
 import time
 import json
 
-
 # Define the base directory
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -13,9 +12,54 @@ start_time = time.time()
 print("running...")
 
 
-# Load and display the original email design 
+# Load and display the original design image
 original_design = cv.imread(str(BASE_DIR / "design.png"))
 # cv.imshow('Original Design', original_design)
+
+
+
+
+#draw shapes on the design
+shapes_on_design = original_design.copy()
+# rectangle
+cv.rectangle(shapes_on_design, ((shapes_on_design.shape[1]//2)-50, (shapes_on_design.shape[0]//2)-50), (shapes_on_design.shape[1]//2+50, shapes_on_design.shape[0]//2+50), (255, 0, 0), cv.FILLED)  
+# circle
+cv.circle(shapes_on_design, (shapes_on_design.shape[1]//2, shapes_on_design.shape[0]//2), shapes_on_design.shape[1]//2, (0, 255, 255), 1)  
+# line
+cv.line(shapes_on_design, (0, 0), (shapes_on_design.shape[1], shapes_on_design.shape[0]), (255, 255, 255), 1)  
+
+cv.imwrite(str(BASE_DIR / "layouts/02_shapes_on_design.png"), shapes_on_design)
+
+
+
+# highlight horizontal spaces in red and save the design
+highlighted_design = original_design.copy()
+for row in range(highlighted_design.shape[0]):
+    if all(highlighted_design[row, col][0] == highlighted_design[row, 0][0] and
+           highlighted_design[row, col][1] == highlighted_design[row, 0][1] and
+           highlighted_design[row, col][2] == highlighted_design[row, 0][2]
+           for col in range(highlighted_design.shape[1])):
+        for col in range(highlighted_design.shape[1]):
+            highlighted_design[row, col] = [0, 0, 255]  # BGR format for red color
+cv.imwrite(str(BASE_DIR / "layouts/04_highlighted_spaces.png"), highlighted_design)
+
+
+# convert the design to grayscale
+grayscale_design = cv.cvtColor(original_design, cv.COLOR_BGR2GRAY)
+cv.imwrite(str(BASE_DIR / "layouts/05_grayscale_design.png"), grayscale_design)
+
+
+
+# blur the design using Gaussian blur
+blurred_design = cv.GaussianBlur(original_design, (15, 15), 0)
+cv.imwrite(str(BASE_DIR / "layouts/06_blurred_design.png"), blurred_design)
+
+
+
+# detect edges in the design using Canny edge detection
+edges_in_design = cv.Canny(original_design, 100, 200)
+cv.imwrite(str(BASE_DIR / "layouts/07_edges_in_design.png"), edges_in_design)
+
 
 
 # determine the hex background colour of the email
@@ -57,10 +101,13 @@ results = {
     "content_width": content_width,
     "top_padding_height": top_padding_height
 }
-with open(BASE_DIR / "specifications.json", "w") as f:
+with open(str(BASE_DIR / "specifications.json"), "w") as f:
     json.dump(results, f, indent=4)
     
-    
+
+
+
+
 # End timer and show done message
 end_time = time.time()
 print("done in", round(end_time - start_time, 2), "seconds")
