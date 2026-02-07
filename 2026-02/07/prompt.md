@@ -1,0 +1,1 @@
+How many sections are in this email design?
