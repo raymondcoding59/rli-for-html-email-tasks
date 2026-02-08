@@ -16,8 +16,25 @@ print("running...")
 original_design = cv.imread(str(BASE_DIR / "design.png"))
 # cv.imshow('Original Design', original_design)
 
+# save origianl design as a text file
+with open(str(BASE_DIR / "design.txt"), "w") as f:
+    for row in original_design:
+        for pixel in row:
+            f.write(f"{pixel[0]},{pixel[1]},{pixel[2]} ")
+        f.write("\n")
+        
+# render the design from the text file
+rendered_design = []
+with open(str(BASE_DIR / "design.txt"), "r") as f:
+    for line in f:
+        row = []
+        for pixel_str in line.strip().split():
+            b, g, r = map(int, pixel_str.split(","))
+            row.append([b, g, r])
+        rendered_design.append(row)
+rendered_design = np.array(rendered_design, dtype=np.uint8)
 
-
+cv.imshow('Rendered Design', rendered_design)
 
 # highlight horizontal spaces in red and save the design
 highlighted_design = original_design.copy()
