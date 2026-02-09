@@ -1,0 +1,108 @@
+{
+  "email_background": {
+    "background_color": "#f2f2f2",
+    "width": "100%"
+  },
+  "email_container": {
+    "width": "600px",
+    "background_color": "#ffffff"
+  },
+  "spacing_1": {
+    "spacing": "24px"
+  },
+  "logo": {
+    "dimensions": "48x48px",
+    "element_type": "image",
+    "make_responsive": "true",
+    "alignment": "center",
+    "destination_url": "https://www.lumosity.com",
+    "source": "lumosity-logo.png"
+  },
+  "spacing_2": {
+    "spacing": "24px"
+  },
+  "hero_image": {
+    "section_padding": "0px 24px",
+    "section_background_color": "#ffffff",
+    "dimensions": "552x240px",
+    "element_type": "image",
+    "make_responsive": "true",
+    "alignment": "center",
+    "destination_url": "https://www.lumosity.com",
+    "source": "lumosity-octopus-hero.png"
+  },
+  "spacing_3": {
+    "spacing": "24px"
+  },
+  "headline": {
+    "section_padding": "0px 32px",
+    "paragraph_spacing": "16px",
+    "is_hyperlinked": "false",
+    "destination_url": "",
+    "margin": "0",
+    "color": "#2f3a40",
+    "direction": "ltr",
+    "font_family": "Arial, Helvetica, sans-serif",
+    "font_size": "28px",
+    "font_weight": "700",
+    "letter_spacing": "0px",
+    "line_height": "36px",
+    "text_align": "center",
+    "margin_top": "0",
+    "margin_bottom": "0",
+    "mso_line_height_alt": "36px",
+    "word_break": "normal"
+  },
+  "spacing_4": {
+    "spacing": "16px"
+  },
+  "body_copy": {
+    "section_padding": "0px 32px",
+    "number_of_paragraphs": "4",
+    "paragraph_spacing": "16px",
+    "is_hyperlinked": "false",
+    "destination_url": "",
+    "color": "#4a545b",
+    "direction": "ltr",
+    "font_family": "Arial, Helvetica, sans-serif",
+    "font_size": "16px",
+    "font_weight": "400",
+    "letter_spacing": "0px",
+    "line_height": "24px",
+    "text_align": "left",
+    "mso_line_height_alt": "24px"
+  },
+  "spacing_5": {
+    "spacing": "24px"
+  },
+  "cta_section": {
+    "section_padding": "0px 32px 32px 32px",
+    "number_of_buttons": "1"
+  },
+  "button_1": {
+    "button_alignment": "center",
+    "button_type": "rounded",
+    "destination_url": "https://www.lumosity.com/premium",
+    "background_color": "#ff6a2c",
+    "mso_shading": "#ff6a2c",
+    "border_radius": "28px",
+    "color": "#ffffff",
+    "display": "inline-block",
+    "font_family": "Arial, Helvetica, sans-serif",
+    "font_size": "16px",
+    "font_weight": "700",
+    "mso_border_alt": "none",
+    "padding_bottom": "16px",
+    "padding_top": "16px",
+    "padding_left": "32px",
+    "padding_right": "32px",
+    "text_align": "center",
+    "width": "auto",
+    "letter_spacing": "0.3px",
+    "word_break": "keep-all",
+    "line_height": "20px"
+  },
+  "spacing_6": {
+    "spacing": "8px"
+  }
+}
