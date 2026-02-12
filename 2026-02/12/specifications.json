@@ -1,0 +1,108 @@
+{
+  "email_background": {
+    "background_color": "#3F0B02",
+    "width": "100%"
+  },
+  "email_container": {
+    "width": "600px",
+    "background_color": "#3F0B02"
+  },
+  "spacing_1": {
+    "spacing": "24px"
+  },
+  "logo": {
+    "dimensions": "140px x auto",
+    "element_type": "image",
+    "make_responsive": "true",
+    "alignment": "left",
+    "destination_url": "https://example.com",
+    "source": "https://placehold.co/280x120.png"
+  },
+  "spacing_2": {
+    "spacing": "20px"
+  },
+  "hero_image": {
+    "section_padding": "0px 24px 0px 24px",
+    "section_background_color": "#3F0B02",
+    "dimensions": "552px x auto",
+    "element_type": "image",
+    "make_responsive": "true",
+    "alignment": "center",
+    "destination_url": "https://example.com",
+    "source": "https://placehold.co/1104x900.png"
+  },
+  "spacing_3": {
+    "spacing": "28px"
+  },
+  "headline": {
+    "section_padding": "0px 32px 0px 32px",
+    "paragraph_spacing": "10px",
+    "is_hyperlinked": "false",
+    "destination_url": "",
+    "margin": "0px",
+    "color": "#E6C28B",
+    "direction": "ltr",
+    "font_family": "Georgia, Times New Roman, serif",
+    "font_size": "28px",
+    "font_weight": "600",
+    "letter_spacing": "1.5px",
+    "line_height": "36px",
+    "text_align": "center",
+    "margin_top": "0px",
+    "margin_bottom": "0px",
+    "mso_line_height_alt": "36px",
+    "word_break": "normal"
+  },
+  "spacing_4": {
+    "spacing": "18px"
+  },
+  "body_copy": {
+    "section_padding": "0px 48px 0px 48px",
+    "number_of_paragraphs": "3",
+    "paragraph_spacing": "18px",
+    "is_hyperlinked": "false",
+    "destination_url": "",
+    "color": "#F4EDE7",
+    "direction": "ltr",
+    "font_family": "Helvetica, Arial, sans-serif",
+    "font_size": "15px",
+    "font_weight": "400",
+    "letter_spacing": "0px",
+    "line_height": "24px",
+    "text_align": "center",
+    "mso_line_height_alt": "24px"
+  },
+  "spacing_5": {
+    "spacing": "28px"
+  },
+  "cta_section": {
+    "section_padding": "0px 32px 32px 32px",
+    "number_of_buttons": "1"
+  },
+  "button_1": {
+    "button_alignment": "center",
+    "button_type": "bulletproof",
+    "destination_url": "https://example.com",
+    "background_color": "#E8C792",
+    "mso_shading": "#E8C792",
+    "border_radius": "28px",
+    "color": "#3F0B02",
+    "display": "inline-block",
+    "font_family": "Helvetica, Arial, sans-serif",
+    "font_size": "15px",
+    "font_weight": "700",
+    "mso_border_alt": "none",
+    "padding_bottom": "14px",
+    "padding_top": "14px",
+    "padding_left": "28px",
+    "padding_right": "28px",
+    "text_align": "center",
+    "width": "auto",
+    "letter_spacing": "1px",
+    "word_break": "keep-all",
+    "line_height": "18px"
+  },
+  "spacing_6": {
+    "spacing": "24px"
+  }
+}
