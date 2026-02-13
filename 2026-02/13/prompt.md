@@ -1,7 +1,15 @@
 **1**
 ---
-Give me a list of every element in this email design. The elements should be ordered by how they would be arranged in a table-based HTML code, i.e. row-by-row. Your output should be in markdown format.
+Give me a list of every element in this email design. The elements should be ordered by how they would be arranged in a table-based HTML code, i.e. row-by-row, top-to-bottom. Your output should be in a markdown file format.
 
+Take special consideration for the following elements:\
+
+***images***
+- Images may sometimes contain text, especially hero and banner images. In such cases, the text inside the image should not be considered as a separate text element, rather it should be considered as part of the image element itself.
+
+***text/copy***
+- Short texts or whole copy sections might contain parts with different stylings, such as bold, italic, colored, or hyperlinked text. In such cases, the differently styled parts should be noted as well and all their visible differences in styling should be noted in the specifications of the text/copy element.\
+If a text/copy element contains what you strongly believe to be a link, then it should be noted as such, along with its visible styling differences from the rest of the text/copy.
 
 
 **2**
