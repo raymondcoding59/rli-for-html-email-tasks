@@ -1,1 +1,0 @@
-[source](https://reallygoodemails.com/emails/get-your-domain-for-5)

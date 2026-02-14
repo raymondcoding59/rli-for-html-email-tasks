@@ -1,0 +1,254 @@
+{
+  "email_background": {
+    "background_color": "#d9d9d9",
+    "width": "100%"
+  },
+
+  "email_container": {
+    "width": "600px",
+    "background_color": "#ffffff"
+  },
+
+  "rows": [
+
+    {
+      "row_id": "row_1_header_banner",
+      "columns": 1,
+      "elements": {
+        "logo": {
+          "dimensions": "600x120",
+          "element_type": "image",
+          "make_responsive": "true",
+          "alignment": "center",
+          "destination_url": "https://example.com",
+          "source": "https://placehold.co/600x120/2f80ed/ffffff.png?text=Morning+Brew+Header"
+        }
+      }
+    },
+
+    {
+      "row_id": "row_2_spacing",
+      "columns": 1,
+      "elements": {
+        "spacing_1": {
+          "spacing": "30px"
+        }
+      }
+    },
+
+    {
+      "row_id": "row_3_intro_copy",
+      "columns": 1,
+      "elements": {
+        "body_copy": {
+          "section_padding": "0px 40px 0px 40px",
+          "number_of_paragraphs": "2",
+          "paragraph_spacing": "16px",
+          "is_hyperlinked": "false",
+          "destination_url": "",
+          "color": "#222222",
+          "direction": "ltr",
+          "font_family": "Arial, Helvetica, sans-serif",
+          "font_size": "16px",
+          "font_weight": "400",
+          "letter_spacing": "0px",
+          "line_height": "24px",
+          "text_align": "left",
+          "mso_line_height_alt": "24px"
+        }
+      }
+    },
+
+    {
+      "row_id": "row_4_spacing",
+      "columns": 1,
+      "elements": {
+        "spacing_2": {
+          "spacing": "30px"
+        }
+      }
+    },
+
+    {
+      "row_id": "row_5_feature_section_container",
+      "columns": 1,
+      "background_color": "#e6eef5",
+      "elements": {
+        "headline": {
+          "section_padding": "40px 40px 20px 40px",
+          "paragraph_spacing": "0px",
+          "is_hyperlinked": "false",
+          "destination_url": "",
+          "margin": "0",
+          "color": "#111111",
+          "direction": "ltr",
+          "font_family": "Arial, Helvetica, sans-serif",
+          "font_size": "22px",
+          "font_weight": "700",
+          "letter_spacing": "0px",
+          "line_height": "28px",
+          "text_align": "center",
+          "margin_top": "0px",
+          "margin_bottom": "0px",
+          "mso_line_height_alt": "28px",
+          "word_break": "normal"
+        }
+      }
+    },
+
+    {
+      "row_id": "row_6_feature_row_1",
+      "columns": 2,
+      "background_color": "#e6eef5",
+      "column_padding": "20px 40px",
+      "elements": {
+        "left_column": {
+          "icon": {
+            "dimensions": "64x64",
+            "element_type": "image",
+            "make_responsive": "false",
+            "alignment": "left",
+            "destination_url": "",
+            "source": "https://placehold.co/64x64/4a90e2/ffffff.png?text=Piggy"
+          },
+          "title": {
+            "font_family": "Arial, Helvetica, sans-serif",
+            "font_size": "16px",
+            "font_weight": "700",
+            "color": "#111111",
+            "line_height": "22px",
+            "text_align": "left"
+          },
+          "description": {
+            "font_family": "Arial, Helvetica, sans-serif",
+            "font_size": "14px",
+            "font_weight": "400",
+            "color": "#333333",
+            "line_height": "20px",
+            "text_align": "left"
+          }
+        },
+        "right_column": {
+          "icon": {
+            "dimensions": "64x64",
+            "element_type": "image",
+            "make_responsive": "false",
+            "alignment": "left",
+            "destination_url": "",
+            "source": "https://placehold.co/64x64/4a90e2/ffffff.png?text=Money"
+          },
+          "title": {
+            "font_family": "Arial, Helvetica, sans-serif",
+            "font_size": "16px",
+            "font_weight": "700",
+            "color": "#111111",
+            "line_height": "22px",
+            "text_align": "left"
+          },
+          "description": {
+            "font_family": "Arial, Helvetica, sans-serif",
+            "font_size": "14px",
+            "font_weight": "400",
+            "color": "#333333",
+            "line_height": "20px",
+            "text_align": "left"
+          }
+        }
+      }
+    },
+
+    {
+      "row_id": "row_7_feature_row_2",
+      "columns": 2,
+      "background_color": "#e6eef5",
+      "column_padding": "20px 40px",
+      "elements": {
+        "left_column": {
+          "icon": {
+            "dimensions": "64x64",
+            "element_type": "image",
+            "make_responsive": "false",
+            "alignment": "left",
+            "destination_url": "",
+            "source": "https://placehold.co/64x64/4a90e2/ffffff.png?text=Briefcase"
+          }
+        },
+        "right_column": {
+          "icon": {
+            "dimensions": "64x64",
+            "element_type": "image",
+            "make_responsive": "false",
+            "alignment": "left",
+            "destination_url": "",
+            "source": "https://placehold.co/64x64/4a90e2/ffffff.png?text=Doc"
+          }
+        }
+      }
+    },
+
+    {
+      "row_id": "row_8_feature_row_3",
+      "columns": 2,
+      "background_color": "#e6eef5",
+      "column_padding": "20px 40px",
+      "elements": {
+        "left_column": {
+          "icon": {
+            "dimensions": "64x64",
+            "element_type": "image",
+            "make_responsive": "false",
+            "alignment": "left",
+            "destination_url": "",
+            "source": "https://placehold.co/64x64/4a90e2/ffffff.png?text=TV"
+          }
+        },
+        "right_column": {
+          "icon": {
+            "dimensions": "64x64",
+            "element_type": "image",
+            "make_responsive": "false",
+            "alignment": "left",
+            "destination_url": "",
+            "source": "https://placehold.co/64x64/4a90e2/ffffff.png?text=Puzzle"
+          }
+        }
+      }
+    },
+
+    {
+      "row_id": "row_9_cta_section",
+      "columns": 1,
+      "background_color": "#e6eef5",
+      "elements": {
+        "cta_section": {
+          "section_padding": "30px 40px 40px 40px",
+          "number_of_buttons": "1"
+        },
+        "button_1": {
+          "button_alignment": "center",
+          "button_type": "bulletproof",
+          "destination_url": "https://example.com",
+          "background_color": "#222222",
+          "mso_shading": "#222222",
+          "border_radius": "4px",
+          "color": "#ffffff",
+          "display": "inline-block",
+          "font_family": "Arial, Helvetica, sans-serif",
+          "font_size": "16px",
+          "font_weight": "700",
+          "mso_border_alt": "none",
+          "padding_bottom": "14px",
+          "padding_top": "14px",
+          "padding_left": "28px",
+          "padding_right": "28px",
+          "text_align": "center",
+          "width": "auto",
+          "letter_spacing": "0px",
+          "word_break": "normal",
+          "line_height": "20px"
+        }
+      }
+    }
+
+  ]
+}
