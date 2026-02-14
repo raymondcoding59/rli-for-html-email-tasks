@@ -1,0 +1,183 @@
+{
+  "email_background": {
+    "background_color": "#e6e6e6",
+    "width": "100%"
+  },
+  "email_container": {
+    "width": "600px",
+    "background_color": "#000000"
+  },
+
+  "rows": [
+
+    {
+      "row_id": "row_1_hero",
+      "columns": 1,
+      "structure": "single_column",
+      "elements": {
+        "hero_image": {
+          "section_padding": "0px 0px 0px 0px",
+          "section_background_color": "#000000",
+          "dimensions": "600px x 760px",
+          "element_type": "image",
+          "make_responsive": "true",
+          "alignment": "center",
+          "destination_url": "https://example.com",
+          "source": "https://placehold.co/600x760.png",
+          "alt_text": "Black and white portrait style hero image with embedded white logo at top center",
+          "border": "0",
+          "display": "block"
+        }
+      }
+    },
+
+    {
+      "row_id": "row_2_spacing",
+      "columns": 1,
+      "structure": "single_column",
+      "elements": {
+        "spacing_1": {
+          "spacing": "30px",
+          "background_color": "#000000"
+        }
+      }
+    },
+
+    {
+      "row_id": "row_3_body_copy_1",
+      "columns": 1,
+      "structure": "single_column",
+      "elements": {
+        "body_copy_1": {
+          "section_padding": "0px 60px 0px 60px",
+          "number_of_paragraphs": "1",
+          "paragraph_spacing": "0px",
+          "is_hyperlinked": "false",
+          "destination_url": "",
+          "color": "#ffffff",
+          "direction": "ltr",
+          "font_family": "Helvetica, Arial, sans-serif",
+          "font_size": "16px",
+          "font_weight": "400",
+          "letter_spacing": "0px",
+          "line_height": "24px",
+          "text_align": "center",
+          "mso_line_height_alt": "24px",
+          "word_break": "normal",
+          "content": "Imagine you are Emma Stone. You discover EmmaStone.com is unavailable. You think, I am Emma Stone, I deserve EmmaStone.com."
+        }
+      }
+    },
+
+    {
+      "row_id": "row_4_spacing",
+      "columns": 1,
+      "structure": "single_column",
+      "elements": {
+        "spacing_2": {
+          "spacing": "20px",
+          "background_color": "#000000"
+        }
+      }
+    },
+
+    {
+      "row_id": "row_5_body_copy_2",
+      "columns": 1,
+      "structure": "single_column",
+      "elements": {
+        "body_copy_2": {
+          "section_padding": "0px 60px 0px 60px",
+          "number_of_paragraphs": "1",
+          "paragraph_spacing": "0px",
+          "is_hyperlinked": "false",
+          "destination_url": "",
+          "color": "#ffffff",
+          "direction": "ltr",
+          "font_family": "Helvetica, Arial, sans-serif",
+          "font_size": "16px",
+          "font_weight": "400",
+          "letter_spacing": "0px",
+          "line_height": "24px",
+          "text_align": "center",
+          "mso_line_height_alt": "24px",
+          "word_break": "normal",
+          "content": "But you're not actually Emma Stone. You watch our Big Game Commercial, and decide to get your domain before you lose it."
+        }
+      }
+    },
+
+    {
+      "row_id": "row_6_spacing",
+      "columns": 1,
+      "structure": "single_column",
+      "elements": {
+        "spacing_3": {
+          "spacing": "35px",
+          "background_color": "#000000"
+        }
+      }
+    },
+
+    {
+      "row_id": "row_7_cta_section",
+      "columns": 1,
+      "structure": "single_column",
+      "elements": {
+        "cta_section": {
+          "section_padding": "0px 0px 0px 0px",
+          "number_of_buttons": "1"
+        },
+        "button_1": {
+          "button_alignment": "center",
+          "button_type": "bulletproof",
+          "destination_url": "https://example.com",
+          "background_color": "#d9d9d9",
+          "mso_shading": "#d9d9d9",
+          "border_radius": "2px",
+          "color": "#000000",
+          "display": "inline-block",
+          "font_family": "Helvetica, Arial, sans-serif",
+          "font_size": "14px",
+          "font_weight": "700",
+          "mso_border_alt": "0px solid #d9d9d9",
+          "padding_bottom": "14px",
+          "padding_top": "14px",
+          "padding_left": "40px",
+          "padding_right": "40px",
+          "text_align": "center",
+          "width": "auto",
+          "letter_spacing": "1px",
+          "word_break": "normal",
+          "line_height": "14px",
+          "text_transform": "uppercase",
+          "content": "GET A DOMAIN"
+        }
+      }
+    },
+
+    {
+      "row_id": "row_8_spacing_bottom",
+      "columns": 1,
+      "structure": "single_column",
+      "elements": {
+        "spacing_4": {
+          "spacing": "40px",
+          "background_color": "#000000"
+        }
+      }
+    }
+
+  ],
+
+  "global_email_client_considerations": {
+    "table_layout": "All rows structured using nested tables for maximum email client compatibility.",
+    "container_alignment": "Centered using align=\"center\" and margin: 0 auto;",
+    "image_rendering": "Use display:block; border:0; line-height:0; to prevent gaps in Outlook.",
+    "responsive_behavior": "Max-width 600px container, hero image width:100%; height:auto;",
+    "button_compatibility": "Bulletproof VML fallback recommended for Outlook.",
+    "preheader_text": "None visible in design.",
+    "border_collapse": "collapse",
+    "body_margin_reset": "margin:0; padding:0;"
+  }
+}
