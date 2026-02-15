@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B&O Email</title>
+
+<style>
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@400;500;600&display=swap');
+
+/* Reset */
+body, table, td, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+    display: block;
+    line-height: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    width: 100% !important;
+    background-color: #EDEDED;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Container */
+.email-container {
+    width: 600px;
+    background-color: #F5F5F5;
+}
+
+@media only screen and (max-width: 620px) {
+    .email-container {
+        width: 100% !important;
+    }
+    .responsive-img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .mobile-padding-40 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .mobile-padding-60 {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111111 !important;
+    }
+    .email-container {
+        background-color: #1A1A1A !important;
+    }
+    .dark-text {
+        color: #FFFFFF !important;
+    }
+    .dark-body-text {
+        color: #DDDDDD !important;
+    }
+    .outlined-btn {
+        border-color: #FFFFFF !important;
+        color: #FFFFFF !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<table role="presentation" width="100%" bgcolor="#EDEDED">
+<tr>
+<td align="center">
+
+<table role="presentation" width="600" class="email-container">
+
+<!-- Row 1 – Header -->
+<tr>
+<td align="center" style="padding:40px 40px 0px 40px;">
+
+<p style="
+font-family: Helvetica, Arial, sans-serif;
+font-size: 28px;
+font-weight: 600;
+letter-spacing: 3px;
+color: #111111;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+">
+BANG &amp; OLUFSEN
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="center" style="padding:5px 40px 30px 40px;">
+
+<p class="dark-text" style="
+font-family: Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 1px;
+line-height: 16px;
+color: #333333;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+">
+Est. 1925
+</p>
+
+</td>
+</tr>
+
+<!-- Row 2 – Hero Image -->
+<tr>
+<td align="center" style="padding:0px; background-color:#F5F5F5;">
+
+<a href="https://example.com" target="_blank">
+<img src="https://placehold.co/600x450.png"
+     width="600"
+     height="450"
+     alt="Beo Grace Earbuds"
+     class="responsive-img"
+     style="width:600px; height:450px;">
+</a>
+
+</td>
+</tr>
+
+<tr>
+<td style="padding-top:40px;"></td>
+</tr>
+
+<!-- Row 3 – Product Label -->
+<tr>
+<td align="center" class="mobile-padding-40" style="padding:0px 40px;">
+
+<p class="dark-text" style="
+font-family: Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 2px;
+line-height: 16px;
+color: #333333;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+">
+BEO GRACE
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td style="padding-top:20px;"></td>
+</tr>
+
+<!-- Row 4 – Headline -->
+<tr>
+<td align="center" class="mobile-padding-60" style="padding:0px 60px;">
+
+<p class="dark-text" style="
+font-family: Helvetica, Arial, sans-serif;
+font-size: 28px;
+font-weight: 500;
+line-height: 36px;
+color: #111111;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+">
+A future icon. Crafted for the century ahead.
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td style="padding-top:25px;"></td>
+</tr>
+
+<!-- Row 5 & 6 – Body Copy -->
+<tr>
+<td align="center" class="mobile-padding-60" style="padding:0px 60px;">
+
+<p class="dark-body-text" style="
+font-family: Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: #444444;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+">
+True wireless earbuds with advanced noise cancellation and a hand polished, lightweight design.
+</p>
+
+<p class="dark-body-text" style="
+font-family: Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: #444444;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 0px;
+">
+Beo Grace tailors sound and silence in real time to give you a personalised listening experience. Where focus flows, and distraction fades into the horizon.
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td style="padding-top:35px;"></td>
+</tr>
+
+<!-- Row 7 & 8 – CTA Section -->
+<tr>
+<td align="center" style="padding:0px 0px 50px 0px;">
+
+<!-- Primary Button -->
+<a href="https://example.com"
+   target="_blank"
+   style="
+   background-color:#1C22B8;
+   color:#FFFFFF;
+   font-family: Helvetica, Arial, sans-serif;
+   font-size:16px;
+   font-weight:600;
+   line-height:20px;
+   text-decoration:none;
+   padding:14px 36px;
+   border-radius:30px;
+   display:inline-block;
+   ">
+Discover now
+</a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center" style="padding:15px 0px 50px 0px;">
+
+<!-- Secondary Button -->
+<a href="https://example.com"
+   target="_blank"
+   class="outlined-btn"
+   style="
+   background-color:#F5F5F5;
+   color:#111111;
+   font-family: Helvetica, Arial, sans-serif;
+   font-size:16px;
+   font-weight:500;
+   line-height:20px;
+   text-decoration:none;
+   padding:14px 36px;
+   border-radius:30px;
+   border:2px solid #111111;
+   display:inline-block;
+   ">
+Experience in store
+</a>
+
+</td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

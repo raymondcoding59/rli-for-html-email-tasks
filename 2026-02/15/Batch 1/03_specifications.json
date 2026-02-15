@@ -1,0 +1,199 @@
+{
+  "email_background": {
+    "background_color": "#EDEDED",
+    "width": "100%"
+  },
+  "email_container": {
+    "width": "600px",
+    "background_color": "#F5F5F5"
+  },
+
+  "row_1_header_brand_bar": {
+    "spacing_1": {
+      "spacing": "40px"
+    },
+    "logo": {
+      "dimensions": "400x40",
+      "element_type": "text",
+      "make_responsive": "true",
+      "alignment": "center",
+      "destination_url": "https://example.com",
+      "source": "BANG & OLUFSEN"
+    },
+    "establishment_line": {
+      "section_padding": "5px 0px 0px 0px",
+      "paragraph_spacing": "0px",
+      "is_hyperlinked": "false",
+      "destination_url": "",
+      "margin": "0",
+      "color": "#333333",
+      "direction": "ltr",
+      "font_family": "Helvetica, Arial, sans-serif",
+      "font_size": "12px",
+      "font_weight": "400",
+      "letter_spacing": "1px",
+      "line_height": "16px",
+      "text_align": "center",
+      "margin_top": "0px",
+      "margin_bottom": "0px",
+      "mso_line_height_alt": "16px",
+      "word_break": "normal",
+      "content": "Est. 1925"
+    },
+    "spacing_2": {
+      "spacing": "30px"
+    }
+  },
+
+  "row_2_hero_image": {
+    "hero_image": {
+      "section_padding": "0px",
+      "section_background_color": "#F5F5F5",
+      "dimensions": "600x450",
+      "element_type": "image",
+      "make_responsive": "true",
+      "alignment": "center",
+      "destination_url": "https://example.com",
+      "source": "https://placehold.co/600x450.png"
+    },
+    "spacing_3": {
+      "spacing": "40px"
+    }
+  },
+
+  "row_3_product_label": {
+    "headline": {
+      "section_padding": "0px 40px",
+      "paragraph_spacing": "0px",
+      "is_hyperlinked": "false",
+      "destination_url": "",
+      "margin": "0",
+      "color": "#333333",
+      "direction": "ltr",
+      "font_family": "Helvetica, Arial, sans-serif",
+      "font_size": "12px",
+      "font_weight": "600",
+      "letter_spacing": "2px",
+      "line_height": "16px",
+      "text_align": "center",
+      "margin_top": "0px",
+      "margin_bottom": "0px",
+      "mso_line_height_alt": "16px",
+      "word_break": "normal",
+      "content": "BEO GRACE"
+    },
+    "spacing_4": {
+      "spacing": "20px"
+    }
+  },
+
+  "row_4_main_headline": {
+    "headline": {
+      "section_padding": "0px 60px",
+      "paragraph_spacing": "0px",
+      "is_hyperlinked": "false",
+      "destination_url": "",
+      "margin": "0",
+      "color": "#111111",
+      "direction": "ltr",
+      "font_family": "Helvetica, Arial, sans-serif",
+      "font_size": "28px",
+      "font_weight": "500",
+      "letter_spacing": "0px",
+      "line_height": "36px",
+      "text_align": "center",
+      "margin_top": "0px",
+      "margin_bottom": "0px",
+      "mso_line_height_alt": "36px",
+      "word_break": "normal",
+      "content": "A future icon. Crafted for the century ahead."
+    },
+    "spacing_5": {
+      "spacing": "25px"
+    }
+  },
+
+  "row_5_and_6_body_copy": {
+    "body_copy": {
+      "section_padding": "0px 60px",
+      "number_of_paragraphs": "2",
+      "paragraph_spacing": "20px",
+      "is_hyperlinked": "false",
+      "destination_url": "",
+      "color": "#444444",
+      "direction": "ltr",
+      "font_family": "Helvetica, Arial, sans-serif",
+      "font_size": "16px",
+      "font_weight": "400",
+      "letter_spacing": "0px",
+      "line_height": "24px",
+      "text_align": "center",
+      "mso_line_height_alt": "24px",
+      "content": [
+        "True wireless earbuds with advanced noise cancellation and a hand polished, lightweight design.",
+        "Beo Grace tailors sound and silence in real time to give you a personalised listening experience. Where focus flows, and distraction fades into the horizon."
+      ]
+    },
+    "spacing_6": {
+      "spacing": "35px"
+    }
+  },
+
+  "row_7_and_8_cta_section": {
+    "cta_section": {
+      "section_padding": "0px 0px 50px 0px",
+      "number_of_buttons": "2"
+    },
+    "button_1": {
+      "button_alignment": "center",
+      "button_type": "filled",
+      "destination_url": "https://example.com",
+      "background_color": "#1C22B8",
+      "mso_shading": "#1C22B8",
+      "border_radius": "30px",
+      "color": "#FFFFFF",
+      "display": "inline-block",
+      "font_family": "Helvetica, Arial, sans-serif",
+      "font_size": "16px",
+      "font_weight": "600",
+      "mso_border_alt": "none",
+      "padding_bottom": "14px",
+      "padding_top": "14px",
+      "padding_left": "36px",
+      "padding_right": "36px",
+      "text_align": "center",
+      "width": "auto",
+      "letter_spacing": "0px",
+      "word_break": "normal",
+      "line_height": "20px",
+      "content": "Discover now"
+    },
+    "spacing_between_buttons": {
+      "spacing": "15px"
+    },
+    "button_2": {
+      "button_alignment": "center",
+      "button_type": "outlined",
+      "destination_url": "https://example.com",
+      "background_color": "#F5F5F5",
+      "mso_shading": "#F5F5F5",
+      "border_radius": "30px",
+      "color": "#111111",
+      "display": "inline-block",
+      "font_family": "Helvetica, Arial, sans-serif",
+      "font_size": "16px",
+      "font_weight": "500",
+      "mso_border_alt": "2px solid #111111",
+      "padding_bottom": "14px",
+      "padding_top": "14px",
+      "padding_left": "36px",
+      "padding_right": "36px",
+      "text_align": "center",
+      "width": "auto",
+      "letter_spacing": "0px",
+      "word_break": "normal",
+      "line_height": "20px",
+      "content": "Experience in store"
+    }
+  }
+}
