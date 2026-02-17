@@ -1,0 +1,1 @@
+[source](https://reallygoodemails.com/emails/happy-lovable-day)
