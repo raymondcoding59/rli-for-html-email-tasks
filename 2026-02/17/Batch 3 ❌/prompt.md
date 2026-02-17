@@ -23,5 +23,7 @@ Also, if the implementation of a row is not clear due to the complexity of the d
   - Lists and bullet points, including their intro and outro(if applicable)
   - A group of elements in a particular section that share the same background color, background image or bounded by a container/border.
   
-  These should be considered as rows of one parent row, and would technically be implemented as a single table row with multiple nested tables for the inner rows and elements. The parent row should be noted as such, and the inner rows should be listed as sub-rows under the parent row, with their corresponding elements listed under each sub-row. NOTE: nesting of rows should be used sparingly, applied judiciously to only a group of elements that are clearly part of the same section (quintessential example: a list with intro and outro text)
+  These should be considered as rows of one parent row, and would technically be implemented as a single table row with multiple nested tables for the inner rows and elements. The parent row should be noted as such, and the inner rows should be listed as sub-rows under the parent row, with their corresponding elements listed under each sub-row. 
+  
+  IMPORTANT: Except for when a section(group of consecutive row/elements, which together, form a distinct part of the email) is bounded by a container, border or background, nesting of rows should be used sparingly, applied judiciously to only a group of elements that are clearly part of the same section (quintessential example: a list with intro and outro text)
 
