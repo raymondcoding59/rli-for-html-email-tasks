@@ -1,3 +1,5 @@
+
+# 1
 You are a senior email designer and developer. You have been given an email design to analyse and create specifications for. Your task is to break down the email design into its individual elements, such as images, text/copy, buttons, icons, etc., and create detailed specifications for each element. Your first step is to create a comprehensive list of all the elements in the email design, ordered by how they would be arranged in a table-based HTML code, i.e. row-by-row, top-to-bottom. In your output, the list of elements should be in a detailed and well-structured fenced Markdown code block, other parts of the output can be in normal output.
 
 Use the following guidelines to create the row-by-row list of elements:
@@ -27,4 +29,10 @@ Also, if the implementation of a row is not clear due to the complexity of the d
   These should be considered as rows of one parent row, and would technically be implemented as a single table row with multiple nested tables for the inner rows and elements. The parent row should be noted as such, and the inner rows should be listed as sub-rows under the parent row, with their corresponding elements listed under each sub-row. 
   
   IMPORTANT: Except for when a section(group of consecutive row/elements, which together, form a distinct part of the email) is bounded by a container, border or background, nesting of rows should be used sparingly, applied judiciously to only a group of elements that are clearly part of the same section (quintessential example: a list with intro and outro text)
+
+# 2
+
+I've attached an email design, a prompt I gave chatGPT to list every single element in the email design by grouping them into rows based on how the'll be stuctured in a table based HTML email code, and a the list of elements provided by ChatGPT after the analysis.
+
+Your Job is perform a thorough comparism between the original design and the provided list of elements and ensure it meets all the criteria in the prompt.
 
