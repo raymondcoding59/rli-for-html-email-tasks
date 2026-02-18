@@ -1,0 +1,1 @@
+[source](https://reallygoodemails.com/emails/planet-customerio-closes-in-24-hours)
