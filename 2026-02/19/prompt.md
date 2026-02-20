@@ -35,9 +35,17 @@ Also, if the implementation of a row is not clear due to the complexity of the d
 **logos** 
   - If a logo includes a wordmark, it should still just be considered as one solid image
 
+  **Multiple column rows**
+  - Be careful not to split elements in a row with multiple columns into multiple rows. For example, if a row has two columns, and each column has an image and text, the entire row should be considered as one row, and the elements in each column should be listed under that same row, with a note indicating that they are in separate columns.
+
 # 2
 
-I've attached an email design, a prompt I gave chatGPT to list every single element in the email design by grouping them into rows based on how the'll be stuctured in a table based HTML email code, and a the list of elements provided by ChatGPT after the analysis.
+I've attached an email design and an AI-generated list of every single element in the email design, grouped into rows based on how they'll be structured in a table-based HTML email code. 
 
-Your Job is perform a thorough comparism between the original design and the provided list of elements and ensure it meets all the criteria in the prompt.
+Your job is to perform a thorough comparison between the original design and the provided list of elements and ensure it meets the following criteria: 
+- Every single element in the design is included in the list, without any missing elements.
+- That the elements are indeed listed row by row, in the exact order that they appear in the design, from top to bottom and left to right.
+- That the row groupings are indeed listed accurately, with parent rows and sub-rows correctly identified and grouped together based on the structure of the design.
 
+
+After performing the comparison, you will create a finalised and corrected list of elements, ensuring that it is exhaustive, accurate and follows the correct order and grouping as per the original design. Also provide the percentage of accuracy of the original list compared to the original design.
