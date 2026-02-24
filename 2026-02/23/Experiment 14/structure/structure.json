@@ -1,0 +1,352 @@
+{
+  "type": "table",
+  "role": "body_wrapper",
+  "children": [
+    {
+      "type": "table_row",
+      "id": "row_1_header",
+      "columns": [
+        {
+          "type": "table_column",
+          "width": "50%",
+          "elements": [
+            {
+              "type": "image",
+              "id": "apollo_logo_header",
+              "alt": "Apollo Logo"
+            }
+          ]
+        },
+        {
+          "type": "table_column",
+          "width": "50%",
+          "align": "right",
+          "elements": [
+            {
+              "type": "text_link",
+              "id": "login_link",
+              "text": "Log in"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table_row",
+      "id": "row_2_hero_section",
+      "container": {
+        "background": "light_gray",
+        "border_radius": "8px"
+      },
+      "children": [
+        {
+          "type": "table_row",
+          "id": "row_2_1_video_thumbnail",
+          "columns": [
+            {
+              "type": "table_column",
+              "width": "100%",
+              "elements": [
+                {
+                  "type": "image",
+                  "id": "video_thumbnail",
+                  "description": "Composite image with centered play button overlay"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table_row",
+          "id": "row_2_2_heading",
+          "columns": [
+            {
+              "type": "table_column",
+              "width": "100%",
+              "elements": [
+                {
+                  "type": "heading",
+                  "level": 1,
+                  "id": "hero_heading",
+                  "text": "5 steps to find high-potential accounts"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table_row",
+          "id": "row_2_3_paragraph",
+          "columns": [
+            {
+              "type": "table_column",
+              "width": "100%",
+              "elements": [
+                {
+                  "type": "paragraph",
+                  "id": "hero_description",
+                  "text": "In 3-minutes, learn how to automatically find lookalike companies based on your best customers, and add them to a dedicated list for outreach that runs automatically every week."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table_row",
+          "id": "row_2_4_buttons",
+          "columns": [
+            {
+              "type": "table_column",
+              "width": "50%",
+              "elements": [
+                {
+                  "type": "button",
+                  "id": "watch_now_button",
+                  "text": "Watch now"
+                }
+              ]
+            },
+            {
+              "type": "table_column",
+              "width": "50%",
+              "elements": [
+                {
+                  "type": "button",
+                  "id": "upgrade_button",
+                  "text": "Upgrade to unlock",
+                  "style": "secondary"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table_row",
+      "id": "row_3_webinar_section",
+      "container": {
+        "border": "1px solid",
+        "background": "white"
+      },
+      "columns": [
+        {
+          "type": "table_column",
+          "width": "60%",
+          "elements": [
+            {
+              "type": "heading",
+              "level": 2,
+              "id": "webinar_heading",
+              "text": "On-demand: The Best Cold Email Setup for 2026"
+            },
+            {
+              "type": "paragraph",
+              "id": "webinar_description"
+            },
+            {
+              "type": "text_link",
+              "id": "webinar_watch_link",
+              "text": "Watch now →"
+            }
+          ]
+        },
+        {
+          "type": "table_column",
+          "width": "40%",
+          "elements": [
+            {
+              "type": "image",
+              "id": "deliverability_dashboard_image",
+              "alt": "Deliverability dashboard preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table_row",
+      "id": "row_4_customer_story_section",
+      "container": {
+        "border": "1px solid",
+        "background": "white"
+      },
+      "columns": [
+        {
+          "type": "table_column",
+          "width": "40%",
+          "elements": [
+            {
+              "type": "image",
+              "id": "tessell_card_image",
+              "alt": "Tessell promotional card"
+            }
+          ]
+        },
+        {
+          "type": "table_column",
+          "width": "60%",
+          "elements": [
+            {
+              "type": "heading",
+              "level": 2,
+              "id": "tessell_heading",
+              "text": "How Tessell cut costs by 69% & simplified their tech stack"
+            },
+            {
+              "type": "paragraph",
+              "id": "tessell_description"
+            },
+            {
+              "type": "text_link",
+              "id": "tessell_read_link",
+              "text": "Read their story →"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table_row",
+      "id": "row_5_pricing_section",
+      "container": {
+        "background": "light_green",
+        "border_radius": "8px"
+      },
+      "children": [
+        {
+          "type": "table_row",
+          "id": "row_5_1_heading",
+          "columns": [
+            {
+              "type": "table_column",
+              "width": "100%",
+              "elements": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "id": "pricing_heading",
+                  "text": "Save up to 20% on a paid Apollo plan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table_row",
+          "id": "row_5_2_paragraph",
+          "columns": [
+            {
+              "type": "table_column",
+              "width": "100%",
+              "elements": [
+                {
+                  "type": "paragraph",
+                  "id": "pricing_description"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table_row",
+          "id": "row_5_3_button",
+          "columns": [
+            {
+              "type": "table_column",
+              "width": "100%",
+              "elements": [
+                {
+                  "type": "button",
+                  "id": "view_plans_button",
+                  "text": "View plans"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table_row",
+      "id": "row_6_footer",
+      "children": [
+        {
+          "type": "table_row",
+          "id": "row_6_1_disclaimer",
+          "columns": [
+            {
+              "type": "table_column",
+              "width": "100%",
+              "elements": [
+                {
+                  "type": "paragraph",
+                  "id": "annual_plan_disclaimer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table_row",
+          "id": "row_6_2_links",
+          "columns": [
+            {
+              "type": "table_column",
+              "width": "100%",
+              "elements": [
+                {
+                  "type": "text_link",
+                  "id": "manage_preferences_link",
+                  "text": "Manage preferences"
+                },
+                {
+                  "type": "text_link",
+                  "id": "unsubscribe_link",
+                  "text": "Unsubscribe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table_row",
+          "id": "row_6_3_company_info",
+          "columns": [
+            {
+              "type": "table_column",
+              "width": "100%",
+              "elements": [
+                {
+                  "type": "paragraph",
+                  "id": "copyright_line"
+                },
+                {
+                  "type": "paragraph",
+                  "id": "address_line"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table_row",
+          "id": "row_6_4_logo",
+          "columns": [
+            {
+              "type": "table_column",
+              "width": "100%",
+              "elements": [
+                {
+                  "type": "image",
+                  "id": "apollo_logo_footer",
+                  "alt": "Apollo Logo"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

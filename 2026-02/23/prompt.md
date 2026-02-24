@@ -52,3 +52,9 @@ Your job is to perform a thorough comparison between the original design and the
 
 
 After performing the comparison, you will create a finalised and corrected list of elements in a well-structured and fenced Markdown code block, ensuring that it is exhaustive, accurate and follows the correct order and grouping as per the original design. Also provide the percentage of accuracy of the original list compared to the original design.
+
+
+
+# 3
+
+Attached is a list of elements in an email design, and the email design for reference. Generate a JSON file that represents the relationship between the elements in the email design, based on how they'll be structured in a table-based HTML email code.
