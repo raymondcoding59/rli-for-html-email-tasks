@@ -1,0 +1,249 @@
+{
+  "email": {
+    "type": "table",
+    "role": "outer-wrapper",
+    "children": [
+      {
+        "type": "tr",
+        "id": "row_1_hero",
+        "children": [
+          {
+            "type": "td",
+            "structure": "single_column",
+            "content": {
+              "type": "image",
+              "label": "hero_image",
+              "description": "Group of runners outdoors"
+            }
+          }
+        ]
+      },
+      {
+        "type": "tr",
+        "id": "row_2_season_label",
+        "children": [
+          {
+            "type": "td",
+            "structure": "single_column_centered",
+            "content": {
+              "type": "text",
+              "style": "small_label",
+              "value": "SPRING '26"
+            }
+          }
+        ]
+      },
+      {
+        "type": "tr",
+        "id": "row_3_headline",
+        "children": [
+          {
+            "type": "td",
+            "structure": "single_column_centered",
+            "content": {
+              "type": "text",
+              "style": "headline",
+              "value": "Season of Yearning"
+            }
+          }
+        ]
+      },
+      {
+        "type": "tr",
+        "id": "row_4_body_copy",
+        "children": [
+          {
+            "type": "td",
+            "structure": "single_column_centered",
+            "content": {
+              "type": "text_block",
+              "style": "body_copy",
+              "value": "In early spring, we live in the someday. In the soon. In the anticipation. Waiting for warmth. Pushing for speed. Dreaming of ease. This season asks questions. How will you answer?"
+            }
+          }
+        ]
+      },
+      {
+        "type": "tr",
+        "id": "row_5_dual_cta",
+        "children": [
+          {
+            "type": "td",
+            "structure": "two_column",
+            "columns": [
+              {
+                "type": "button",
+                "label": "SHOP COLLECTION"
+              },
+              {
+                "type": "button",
+                "label": "VIEW STYLE GUIDE"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "tr",
+        "id": "row_6_products",
+        "children": [
+          {
+            "type": "td",
+            "structure": "three_column",
+            "columns": [
+              { "type": "image", "label": "long_sleeve_performance_top" },
+              { "type": "image", "label": "short_sleeve_tshirt" },
+              { "type": "image", "label": "long_sleeve_zip_top" }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "tr",
+        "id": "row_7_products",
+        "children": [
+          {
+            "type": "td",
+            "structure": "three_column",
+            "columns": [
+              { "type": "image", "label": "short_sleeve_tshirt" },
+              { "type": "image", "label": "running_shorts" },
+              { "type": "image", "label": "short_sleeve_tshirt" }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "tr",
+        "id": "row_8_products",
+        "children": [
+          {
+            "type": "td",
+            "structure": "three_column",
+            "columns": [
+              { "type": "image", "label": "hoodie" },
+              { "type": "image", "label": "short_sleeve_tshirt" },
+              { "type": "image", "label": "long_sleeve_crewneck" }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "tr",
+        "id": "row_9_products",
+        "children": [
+          {
+            "type": "td",
+            "structure": "three_column",
+            "columns": [
+              { "type": "image", "label": "running_shorts" },
+              { "type": "image", "label": "hoodie" },
+              { "type": "image", "label": "long_sleeve_top" }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "tr",
+        "id": "row_10_bottom_cta",
+        "children": [
+          {
+            "type": "td",
+            "structure": "single_column_centered",
+            "content": {
+              "type": "button",
+              "label": "SHOP COLLECTION"
+            }
+          }
+        ]
+      },
+      {
+        "type": "tr",
+        "id": "row_11_value_props",
+        "children": [
+          {
+            "type": "td",
+            "structure": "section_wrapper",
+            "children": [
+              {
+                "type": "divider",
+                "position": "top"
+              },
+              {
+                "type": "table",
+                "structure": "three_column",
+                "columns": [
+                  {
+                    "type": "value_prop",
+                    "heading": "GET EARLY ACCESS",
+                    "text": "WHEN YOU SIGN UP FOR SMS"
+                  },
+                  {
+                    "type": "value_prop",
+                    "heading": "FREE SHIPPING",
+                    "text": "ON ORDERS OVER $200 USD*"
+                  },
+                  {
+                    "type": "value_prop",
+                    "heading": "JOIN HARE A.C.",
+                    "text": "OUR GLOBAL RUNNING COMMUNITY"
+                  }
+                ]
+              },
+              {
+                "type": "divider",
+                "position": "bottom"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "tr",
+        "id": "row_12_footer",
+        "children": [
+          {
+            "type": "td",
+            "structure": "two_column",
+            "columns": [
+              {
+                "type": "brand_block",
+                "elements": [
+                  {
+                    "type": "text",
+                    "style": "wordmark",
+                    "value": "Champion for the Running Class"
+                  },
+                  {
+                    "type": "icon",
+                    "label": "hare_logo"
+                  }
+                ]
+              },
+              {
+                "type": "footer_links",
+                "elements": [
+                  {
+                    "type": "inline_links",
+                    "label": "primary_navigation",
+                    "links": ["Contact Us", "Returns"]
+                  },
+                  {
+                    "type": "inline_links",
+                    "label": "social_navigation",
+                    "links": ["Instagram", "Youtube", "Strava", "Facebook"]
+                  },
+                  {
+                    "type": "text",
+                    "style": "unsubscribe",
+                    "value": "No longer want to receive these emails? You can unsubscribe here."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
