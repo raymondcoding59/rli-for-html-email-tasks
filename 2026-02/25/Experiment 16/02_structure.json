@@ -1,0 +1,268 @@
+{
+  "email": {
+    "body": {
+      "type": "table",
+      "role": "wrapper",
+      "width": "100%",
+      "children": [
+        {
+          "type": "table",
+          "role": "container",
+          "width": "600px",
+          "align": "center",
+          "children": [
+
+            {
+              "row": 1,
+              "type": "tr",
+              "structure": "single-column",
+              "children": [
+                {
+                  "type": "td",
+                  "content": {
+                    "type": "text",
+                    "style": "promo-banner",
+                    "value": "Enjoy $5 off your order with the Lush App*"
+                  }
+                }
+              ]
+            },
+
+            {
+              "row": 2,
+              "type": "tr",
+              "structure": "single-column",
+              "children": [
+                {
+                  "type": "td",
+                  "align": "center",
+                  "content": {
+                    "type": "image",
+                    "role": "logo",
+                    "name": "LUSH wordmark"
+                  }
+                }
+              ]
+            },
+
+            {
+              "row": 3,
+              "type": "tr",
+              "structure": "three-column",
+              "children": [
+                { "type": "td", "content": { "type": "text-link", "label": "NEW" } },
+                { "type": "td", "content": { "type": "text-link", "label": "GOURMAND" } },
+                { "type": "td", "content": { "type": "text-link", "label": "COLLABS" } }
+              ]
+            },
+
+            {
+              "row": 4,
+              "type": "tr",
+              "structure": "single-column",
+              "children": [
+                {
+                  "type": "td",
+                  "content": {
+                    "type": "image",
+                    "role": "hero-collage"
+                  }
+                }
+              ]
+            },
+
+            {
+              "row": 5,
+              "type": "tr",
+              "structure": "single-column",
+              "background": "purple",
+              "children": [
+                {
+                  "type": "td",
+                  "children": [
+                    {
+                      "type": "table",
+                      "role": "nested-hero",
+                      "children": [
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "heading", "value": "Hop to it!" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "paragraph", "role": "body-copy-1" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "paragraph", "role": "bold-supporting-copy" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "button", "label": "BROWSE NEW EASTER" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "image", "role": "decorative-grass-artwork" } }] }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "row": 6,
+              "type": "tr",
+              "structure": "single-column",
+              "background": "beige",
+              "children": [
+                {
+                  "type": "td",
+                  "children": [
+                    {
+                      "type": "table",
+                      "role": "lush-club-block",
+                      "children": [
+                        {
+                          "type": "tr",
+                          "children": [
+                            {
+                              "type": "td",
+                              "content": {
+                                "type": "image",
+                                "role": "lush-club-logo"
+                              }
+                            },
+                            {
+                              "type": "td",
+                              "content": {
+                                "type": "group",
+                                "children": [
+                                  { "type": "paragraph", "role": "supporting-copy" },
+                                  { "type": "text-link", "label": "JOIN ON THE LUSH APP NOW" }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tr",
+                          "children": [
+                            {
+                              "type": "td",
+                              "colspan": 2,
+                              "content": {
+                                "type": "fine-print",
+                                "role": "promotion-disclaimer"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "row": 7,
+              "type": "tr",
+              "structure": "two-column",
+              "children": [
+                {
+                  "type": "td",
+                  "children": [
+                    { "type": "image", "role": "delivery-pass-icon" },
+                    { "type": "heading", "value": "DELIVERY PASS" },
+                    { "type": "paragraph", "role": "delivery-support-copy" }
+                  ]
+                },
+                {
+                  "type": "td",
+                  "children": [
+                    { "type": "image", "role": "bring-it-back-icon" },
+                    { "type": "heading", "value": "BRING IT BACK" },
+                    { "type": "paragraph", "role": "bring-it-back-support-copy" }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "row": 8,
+              "type": "tr",
+              "structure": "single-column",
+              "children": [
+                { "type": "td", "content": { "type": "divider" } }
+              ]
+            },
+
+            {
+              "row": 9,
+              "type": "tr",
+              "structure": "single-column",
+              "background": "dark-blue",
+              "children": [
+                {
+                  "type": "td",
+                  "children": [
+                    {
+                      "type": "table",
+                      "role": "petition-section",
+                      "children": [
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "image", "role": "primate-image" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "heading", "role": "petition-headline" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "paragraph", "role": "petition-body-copy" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "button", "label": "SIGN THE PETITION" } }] }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "row": 10,
+              "type": "tr",
+              "structure": "six-column",
+              "children": [
+                { "type": "td", "content": { "type": "icon-label", "label": "Naked Products" } },
+                { "type": "td", "content": { "type": "icon-label", "label": "100% Vegetarian" } },
+                { "type": "td", "content": { "type": "icon-label", "label": "Fighting Animal Testing" } },
+                { "type": "td", "content": { "type": "icon-label", "label": "Ethical Buying" } },
+                { "type": "td", "content": { "type": "icon-label", "label": "Fresh Cosmetics" } },
+                { "type": "td", "content": { "type": "icon-label", "label": "Handmade in Sydney" } }
+              ]
+            },
+
+            {
+              "row": 11,
+              "type": "tr",
+              "structure": "single-column",
+              "background": "black",
+              "children": [
+                {
+                  "type": "td",
+                  "children": [
+                    {
+                      "type": "table",
+                      "role": "footer",
+                      "children": [
+                        {
+                          "type": "tr",
+                          "structure": "four-column",
+                          "children": [
+                            { "type": "td", "content": { "type": "social-icon", "platform": "YouTube" } },
+                            { "type": "td", "content": { "type": "social-icon", "platform": "Podcast" } },
+                            { "type": "td", "content": { "type": "social-icon", "platform": "Pinterest" } },
+                            { "type": "td", "content": { "type": "social-icon", "platform": "Discord" } }
+                          ]
+                        },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "button", "label": "JOIN THE BIG TECH REBELLION" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "button", "label": "DOWNLOAD THE LUSH APP" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "footer-links" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "company-info" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "legal-disclaimer" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "unauthorised-inbox-notice" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "acknowledgement-of-country" } }] },
+                        { "type": "tr", "children": [{ "type": "td", "content": { "type": "copyright" } }] }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+
+          ]
+        }
+      ]
+    }
+  }
+}
