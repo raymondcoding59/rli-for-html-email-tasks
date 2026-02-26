@@ -1,0 +1,253 @@
+{
+  "email_wrapper": {
+    "type": "table",
+    "width": "100%",
+    "children": [
+      {
+        "type": "tr",
+        "id": "main_container_row",
+        "children": [
+          {
+            "type": "td",
+            "id": "main_container",
+            "type_detail": "table",
+            "width": "600px",
+            "align": "center",
+            "children": [
+
+              {
+                "row_id": "row_1_header",
+                "background": "#ffffff",
+                "structure": {
+                  "type": "table",
+                  "layout": "two_column",
+                  "columns": [
+                    {
+                      "id": "header_left",
+                      "content": {
+                        "type": "image",
+                        "name": "grammarly_logo"
+                      }
+                    },
+                    {
+                      "id": "header_right",
+                      "content": {
+                        "type": "text_link",
+                        "text": "Upgrade Now →"
+                      },
+                      "align": "right"
+                    }
+                  ]
+                }
+              },
+
+              {
+                "row_id": "row_2_hero_parent",
+                "background": "#D7FF00",
+                "structure": {
+                  "type": "table",
+                  "children": [
+
+                    {
+                      "sub_row_id": "row_2_1_headlines",
+                      "structure": {
+                        "type": "table",
+                        "children": [
+                          {
+                            "type": "text",
+                            "role": "headline",
+                            "text": "$12/month"
+                          },
+                          {
+                            "type": "text",
+                            "role": "subheadline",
+                            "text": "for a year of Grammarly Pro"
+                          }
+                        ]
+                      }
+                    },
+
+                    {
+                      "sub_row_id": "row_2_2_pricing_cards",
+                      "structure": {
+                        "type": "table",
+                        "layout": "two_column",
+                        "columns": [
+
+                          {
+                            "id": "free_plan_card",
+                            "type": "container",
+                            "children": [
+                              {
+                                "type": "label",
+                                "text": "Free"
+                              },
+                              {
+                                "type": "feature_list",
+                                "items": [
+                                  "Grammar, spelling, and punctuation",
+                                  "2,000 monthly prompts for AI writing",
+                                  "Full-paragraph rewrites",
+                                  "Tone transformations",
+                                  "Strategic suggestions",
+                                  "App actions"
+                                ]
+                              }
+                            ]
+                          },
+
+                          {
+                            "id": "pro_plan_card",
+                            "type": "container",
+                            "children": [
+                              {
+                                "type": "label_with_icon",
+                                "icon": "star",
+                                "text": "Pro"
+                              },
+                              {
+                                "type": "feature_list",
+                                "items": [
+                                  "Grammar, spelling, and punctuation",
+                                  "2,000 monthly prompts for AI writing",
+                                  "Full-paragraph rewrites",
+                                  "Tone transformations",
+                                  "Strategic suggestions",
+                                  "App actions",
+                                  "+ More"
+                                ]
+                              }
+                            ]
+                          }
+
+                        ]
+                      }
+                    }
+
+                  ]
+                }
+              },
+
+              {
+                "row_id": "row_3_ai_assistance",
+                "background": "#D7FF00",
+                "structure": {
+                  "type": "table",
+                  "children": [
+                    {
+                      "type": "text",
+                      "role": "section_headline",
+                      "text": "AI assistance that goes the distance"
+                    },
+                    {
+                      "type": "paragraph",
+                      "role": "body_copy"
+                    },
+                    {
+                      "type": "button",
+                      "text": "Upgrade now"
+                    }
+                  ]
+                }
+              },
+
+              {
+                "row_id": "row_4_statistic_highlight",
+                "background": "#111111",
+                "structure": {
+                  "type": "table",
+                  "type_detail": "container",
+                  "children": [
+                    {
+                      "type": "image",
+                      "name": "grammarly_g_icon",
+                      "position": "top_left"
+                    },
+                    {
+                      "type": "text",
+                      "role": "large_stat",
+                      "text": "93%"
+                    },
+                    {
+                      "type": "text",
+                      "role": "supporting_text",
+                      "text": "of professionals say Grammarly’s AI helps them get more work done."
+                    }
+                  ]
+                }
+              },
+
+              {
+                "row_id": "row_5_social",
+                "background": "#ffffff",
+                "structure": {
+                  "type": "table",
+                  "layout": "horizontal_icons",
+                  "items": [
+                    { "type": "icon", "name": "facebook" },
+                    { "type": "icon", "name": "instagram" },
+                    { "type": "icon", "name": "linkedin" },
+                    { "type": "icon", "name": "x_twitter" }
+                  ]
+                }
+              },
+
+              {
+                "row_id": "row_6_divider",
+                "background": "#ffffff",
+                "structure": {
+                  "type": "horizontal_rule"
+                }
+              },
+
+              {
+                "row_id": "row_7_footer_links",
+                "background": "#ffffff",
+                "structure": {
+                  "type": "table",
+                  "layout": "inline_links",
+                  "items": [
+                    { "type": "text_link", "text": "View Web Version" },
+                    { "type": "separator", "value": "•" },
+                    { "type": "text_link", "text": "Email Preferences" },
+                    { "type": "separator", "value": "•" },
+                    { "type": "text_link", "text": "Unsubscribe" }
+                  ]
+                }
+              },
+
+              {
+                "row_id": "row_8_billing_disclaimer",
+                "background": "#ffffff",
+                "structure": {
+                  "type": "paragraph",
+                  "text": "*Billed as one payment of $144.00 USD. Price shown in USD, regional prices may vary."
+                }
+              },
+
+              {
+                "row_id": "row_9_subscription_explanation",
+                "background": "#ffffff",
+                "structure": {
+                  "type": "paragraph",
+                  "text": "You received this offer for Grammarly Pro because you are currently opted in to receive them via your preference settings. You may adjust your preferences at any time by clicking the link above"
+                }
+              },
+
+              {
+                "row_id": "row_10_copyright",
+                "background": "#ffffff",
+                "structure": {
+                  "type": "text",
+                  "role": "small_print",
+                  "text": "© 2026 Grammarly, Inc., 2261 Market Street, STE 85232, San Francisco, CA 94114"
+                }
+              }
+
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

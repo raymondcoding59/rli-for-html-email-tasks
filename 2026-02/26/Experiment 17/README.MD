@@ -1,0 +1,1 @@
+[source](https://reallygoodemails.com/emails/started-then-stopped-sometimes-writing-is-like-that)
