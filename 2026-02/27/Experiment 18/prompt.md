@@ -1,0 +1,1 @@
+I've attached a sample email design and its HTML code. Using what you've learned from the samples,  generate the html email code for the design.png I also attached.
