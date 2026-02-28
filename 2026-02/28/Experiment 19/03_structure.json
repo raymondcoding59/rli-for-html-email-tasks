@@ -1,0 +1,377 @@
+{
+  "email": {
+    "type": "table_email",
+    "width": "100%",
+    "wrapper": {
+      "tag": "table",
+      "role": "presentation",
+      "children": [
+        {
+          "section": "hero",
+          "table": {
+            "width": "600",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "100%",
+                    "elements": [
+                      {
+                        "type": "image",
+                        "name": "hero_image",
+                        "contains_overlay": true,
+                        "overlay_elements": [
+                          "brand_logo",
+                          "eyebrow_text",
+                          "headline"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+
+        {
+          "section": "intro",
+          "table": {
+            "width": "600",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      { "type": "text", "name": "intro_paragraph_1" },
+                      { "type": "text", "name": "intro_paragraph_2" },
+                      { "type": "button", "name": "primary_cta" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+
+        {
+          "section": "matcha_recipe",
+          "background_container": true,
+          "table": {
+            "width": "600",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      {
+                        "type": "headline",
+                        "name": "recipe_section_title"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      { "type": "text", "name": "recipe_intro_line" },
+                      {
+                        "type": "bullet_list",
+                        "name": "ingredients_list"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      {
+                        "type": "text",
+                        "name": "instruction_paragraph"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "layout": "two_column",
+                "columns": [
+                  {
+                    "width": "50%",
+                    "elements": [
+                      {
+                        "type": "image",
+                        "name": "product_image"
+                      }
+                    ]
+                  },
+                  {
+                    "width": "50%",
+                    "elements": [
+                      { "type": "label", "name": "product_category" },
+                      { "type": "headline", "name": "product_name" },
+                      {
+                        "type": "text",
+                        "name": "product_description"
+                      },
+                      {
+                        "type": "link",
+                        "name": "product_cta"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      {
+                        "type": "button",
+                        "name": "secondary_cta"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+
+        {
+          "section": "tea_alternatives",
+          "background_container": true,
+          "table": {
+            "width": "600",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      {
+                        "type": "headline",
+                        "name": "alt_section_title"
+                      },
+                      {
+                        "type": "text",
+                        "name": "alt_supporting_text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "layout": "grid_2x2",
+                "columns": [
+                  {
+                    "elements": [
+                      { "type": "image", "name": "tea_1_image" },
+                      { "type": "caption", "name": "tea_1_label" }
+                    ]
+                  },
+                  {
+                    "elements": [
+                      { "type": "image", "name": "tea_2_image" },
+                      { "type": "caption", "name": "tea_2_label" }
+                    ]
+                  },
+                  {
+                    "elements": [
+                      { "type": "image", "name": "tea_3_image" },
+                      { "type": "caption", "name": "tea_3_label" }
+                    ]
+                  },
+                  {
+                    "elements": [
+                      { "type": "image", "name": "tea_4_image" },
+                      { "type": "caption", "name": "tea_4_label" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      {
+                        "type": "button",
+                        "name": "shop_all_teas_cta"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+
+        {
+          "section": "divider",
+          "table": {
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      { "type": "divider_line" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+
+        {
+          "section": "shop_by_category",
+          "table": {
+            "width": "600",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      {
+                        "type": "headline",
+                        "name": "category_section_title"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "layout": "two_column",
+                "columns": [
+                  {
+                    "elements": [
+                      {
+                        "type": "image_tile",
+                        "name": "coffee_category"
+                      }
+                    ]
+                  },
+                  {
+                    "elements": [
+                      {
+                        "type": "image_tile",
+                        "name": "goods_category"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "layout": "two_column",
+                "columns": [
+                  {
+                    "elements": [
+                      {
+                        "type": "image_tile",
+                        "name": "tea_category"
+                      }
+                    ]
+                  },
+                  {
+                    "elements": [
+                      {
+                        "type": "image_tile",
+                        "name": "subscriptions_category"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+
+        {
+          "section": "footer",
+          "background_container": true,
+          "table": {
+            "width": "600",
+            "rows": [
+              {
+                "columns": [
+                  { "elements": [{ "type": "logo" }] }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      { "type": "headline", "name": "thank_you_text" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      { "type": "text", "name": "supporting_footer_text" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      {
+                        "type": "social_icons",
+                        "platforms": [
+                          "facebook",
+                          "youtube",
+                          "instagram"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      {
+                        "type": "utility_links",
+                        "items": [
+                          "unsubscribe",
+                          "manage_preferences",
+                          "view_in_browser"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      { "type": "copyright" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "elements": [
+                      { "type": "address" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
