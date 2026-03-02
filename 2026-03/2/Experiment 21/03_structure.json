@@ -1,0 +1,213 @@
+{
+  "email": {
+    "type": "root",
+    "element": "body",
+    "children": [
+      {
+        "id": "row_1_hero",
+        "type": "full_width_section",
+        "table_role": "wrapper",
+        "children": [
+          {
+            "type": "container",
+            "columns": 1,
+            "children": [
+              {
+                "type": "image",
+                "content": "hero_matcha_image_with_logo"
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "row_2_intro_panel",
+        "type": "panel_section",
+        "background": "panel",
+        "children": [
+          {
+            "type": "container",
+            "columns": 1,
+            "children": [
+              { "type": "text", "role": "eyebrow", "content": "WHAT IS MATCHA?" },
+              { "type": "heading", "level": "h1", "content": "How to Make a Matcha Latte at Home" },
+              { "type": "text_block", "content": "intro_paragraphs" },
+              { "type": "button", "style": "primary", "content": "HAVE YOUR MATCHA MOMENT" }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "row_3_recipe_section",
+        "type": "panel_section",
+        "children": [
+          {
+            "type": "container",
+            "columns": 1,
+            "children": [
+              { "type": "heading", "level": "h2", "content": "A Matcha Recipe You’ll Keep Coming Back To" },
+              { "type": "text", "style": "italic_intro" },
+              { "type": "list", "list_type": "bullet", "content": "ingredients" },
+              { "type": "text_block", "content": "instructions" },
+
+              {
+                "type": "two_column_row",
+                "responsive": "stack",
+                "columns": [
+                  {
+                    "width": "50%",
+                    "children": [
+                      { "type": "image", "content": "matcha_product_image" }
+                    ]
+                  },
+                  {
+                    "width": "50%",
+                    "children": [
+                      { "type": "text", "role": "label" },
+                      { "type": "heading", "level": "h3", "content": "Matcha" },
+                      { "type": "text_block", "content": "product_description" },
+                      { "type": "link", "content": "GRAB YOURS" }
+                    ]
+                  }
+                ]
+              },
+
+              { "type": "button", "content": "DIY A MATCHA LATTE" }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "row_4_tea_alternatives",
+        "type": "panel_section",
+        "children": [
+          {
+            "type": "container",
+            "columns": 1,
+            "children": [
+              { "type": "heading", "level": "h2", "content": "Not Your Cup of Tea?" },
+              { "type": "text", "role": "supporting_copy" },
+
+              {
+                "type": "product_grid",
+                "rows": [
+                  {
+                    "columns": [
+                      {
+                        "children": [
+                          { "type": "image", "content": "cascara_product" },
+                          { "type": "link", "content": "Cascara, Heirlooms de Zercaro" }
+                        ]
+                      },
+                      {
+                        "children": [
+                          { "type": "image", "content": "breakfast_tea" },
+                          { "type": "link", "content": "Breakfast Tea" }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "columns": [
+                      {
+                        "children": [
+                          { "type": "image", "content": "organic_peppermint" },
+                          { "type": "link", "content": "Organic Peppermint" }
+                        ]
+                      },
+                      {
+                        "children": [
+                          { "type": "image", "content": "milk_oolong" },
+                          { "type": "link", "content": "Milk Oolong" }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+
+              { "type": "button", "content": "SHOP ALL TEAS" }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "row_5_divider",
+        "type": "full_width_section",
+        "children": [
+          {
+            "type": "divider"
+          }
+        ]
+      },
+
+      {
+        "id": "row_6_category_heading",
+        "type": "section",
+        "children": [
+          {
+            "type": "heading",
+            "level": "h2",
+            "content": "Shop By Category"
+          }
+        ]
+      },
+
+      {
+        "id": "row_7_category_grid",
+        "type": "grid_section",
+        "children": [
+          {
+            "type": "grid",
+            "rows": [
+              {
+                "columns": [
+                  { "type": "category_tile", "content": "Coffee" },
+                  { "type": "category_tile", "content": "Goods" }
+                ]
+              },
+              {
+                "columns": [
+                  { "type": "category_tile", "content": "Tea" },
+                  { "type": "category_tile", "content": "Subscriptions" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "row_8_footer",
+        "type": "footer_section",
+        "background": "footer_dark",
+        "children": [
+          { "type": "image", "role": "logo" },
+          { "type": "text", "role": "thank_you" },
+          { "type": "text_block", "role": "brand_message" },
+
+          {
+            "type": "social_row",
+            "icons": ["facebook", "youtube", "instagram"]
+          },
+
+          {
+            "type": "utility_links",
+            "links": [
+              "Unsubscribe",
+              "Manage Preferences",
+              "View in Your Browser"
+            ]
+          },
+
+          { "type": "text", "role": "copyright" },
+          { "type": "text", "role": "physical_address" }
+        ]
+      }
+    ]
+  }
+}
