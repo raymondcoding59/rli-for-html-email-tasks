@@ -1,4 +1,4 @@
-<!-- The worklow details a simple web app that allow an professional HTML email developer to train an AI model on how they write email code and then generate the HTML code for a new email design -->
+<!-- The workflow details a simple web app that allows an professional HTML email developer to train an AI model on how they write email code and then generate the HTML code for a new email design -->
 
 # Stage 1 - Learn the email design system of the HTML
 
@@ -6,13 +6,16 @@
 
 1. Extract the following information from the email's HTML code:
    - the colours, background colours, font sizes, line heights, letter spacings, and font families and their import formats (e.g. Google Fonts, Adobe Fonts, etc.)
-   - the design system used (e.g. MJML, Foundation for Emails, etc.)
+   - the framework/library/templating language used (e.g. MJML, Marketo, HubSpot, plain HTML, etc.)
    - the components used (e.g. buttons, images, text blocks, etc.)
    - the layout structure (e.g. rows, columns, etc.)
 
-2. Generate a draft design system that includes all the extracted information, which will then be fine tuned by the email developer to ensure that it accurately reflects their design system, brand specifications, and coding style.
+2. Generate a draft design system that includes all the extracted information and present it to the email developer.
 
-3. Save the final design system as a vector embedding in a vector database.
+3. The email developer will then fine-tune the draft design system to ensure that it accurately reflects their design system, brand specifications, and coding style and syntax.
+
+4. Save the final design system as a vector embedding in a vector database in such a way that it can easily be queried when analysing a future email design or generating the code for the new email.
+
 
 # Stage 2 - Embed the HTML email
 
