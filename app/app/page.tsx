@@ -1,39 +1,39 @@
-"use client"
+"use client";
+import { useState } from "react";
 
-import { useState } from "react"
-import Sidebar from "@/components/Sidebar"
-import GeneratorPanel from "@/components/GeneratorPanel"
-import EditorPreview from "@/components/EditorPreview"
+export default function Home() {
+  const [html, setHtml] = useState("");
+  const [desc, setDesc] = useState("");
 
-export default function Page() {
+  const handleUpload = async (e: any) => {
+    const file = e.target.files[0];
+    const formData = new FormData();
+    formData.append("file", file);
 
-  const [generatedHTML, setGeneratedHTML] = useState<string | null>(null)
+    const res = await fetch("http://localhost:8000/generate", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await res.json();
+    setHtml(data.html);
+    setDesc(data.description);
+  };
 
   return (
-    <div className="flex h-screen w-screen bg-zinc-950">
+    <div style={{ padding: 20 }}>
+      <h1>UI → HTML (RAG)</h1>
 
-      <Sidebar />
+      <input type="file" onChange={handleUpload} />
 
-      <main className="flex-1 flex flex-col overflow-hidden">
+      <h3>Description</h3>
+      <pre>{desc}</pre>
 
-        {!generatedHTML && (
-          <div className="flex-1 flex items-center justify-center">
-            <GeneratorPanel
-              onGenerated={(html) => setGeneratedHTML(html)}
-            />
-          </div>
-        )}
-
-        {generatedHTML && (
-          <EditorPreview
-            html={generatedHTML}
-            setHTML={setGeneratedHTML}
-            reset={() => setGeneratedHTML(null)}
-          />
-        )}
-
-      </main>
-
+      <h3>Generated HTML</h3>
+      <div
+        style={{ border: "1px solid #ccc", padding: 10 }}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </div>
-  )
+  );
 }
