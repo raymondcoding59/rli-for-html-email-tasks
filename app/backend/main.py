@@ -34,7 +34,7 @@ snippets = [
     },
     {
         "id": "hero",
-        "description": "hero section with heading and call to action button",
+        "description": "hero section with embedded logo and overlapping heading card all as one solid image",
         "file": "hero.html"
     },
     {
@@ -203,7 +203,7 @@ Before returning the result ensure:
 
 
 OUTPUT FORMAT
-Return ONLY the final HTML.
+Return ONLY the final plain HTML without any additional formatting or fencing.
 Do not explain anything.
 Do not summarize.
 Do not add comments.
