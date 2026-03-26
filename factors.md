@@ -10,5 +10,15 @@
 - Container structure
 - tracking pixels
 - Section structure(divs, tables, etc)
+- background images
+- VML
+- Responsive approach
+- multiple columns approach
+- elements structure
+    - images
+    - icons
+    - text
+    - buttons
+    - links
 
 
