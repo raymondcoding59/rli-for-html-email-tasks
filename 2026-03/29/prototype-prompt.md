@@ -1,0 +1,6 @@
+- Monorepo -> Frontend + Backend
+- Modular Architecture
+- Production-Ready(but run locally for now)
+- Scalable, Maintainable, Testable and reusable codebase
+- Plan-first and near-deterministic generation of code
+- Do not create demo project.
