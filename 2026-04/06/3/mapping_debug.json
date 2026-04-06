@@ -1,0 +1,46 @@
+[
+  {
+    "layout_item": "hero image",
+    "chunk_used": "2026-04/06/3/chunks/chunk_42.html"
+  },
+  {
+    "layout_item": "heading: Sencha, Sakamoto Koshun",
+    "chunk_used": "2026-04/06/3/chunks/chunk_72.html"
+  },
+  {
+    "layout_item": "paragraph: From the Sakamoto family garden in Shizuoka, Japan... (description of tea)",
+    "chunk_used": "2026-04/06/3/chunks/chunk_18.html"
+  },
+  {
+    "layout_item": "button: Order Sencha, Sakamoto Koshun",
+    "chunk_used": "2026-04/06/3/chunks/chunk_47.html"
+  },
+  {
+    "layout_item": "image",
+    "chunk_used": "2026-04/06/3/chunks/chunk_20.html"
+  },
+  {
+    "layout_item": "heading: Tea Recipe",
+    "chunk_used": "2026-04/06/3/chunks/chunk_72.html"
+  },
+  {
+    "layout_item": "paragraph: Hot: Measure 4g of tea for every 400ml of water. Cold: Measure 5g of tea for every 200ml of water. Heat water to 181 degrees. Steep for 5 minutes.",
+    "chunk_used": "2026-04/06/3/chunks/chunk_20.html"
+  },
+  {
+    "layout_item": "button: See More Brew Guides",
+    "chunk_used": "2026-04/06/3/chunks/chunk_18.html"
+  },
+  {
+    "layout_item": "heading: Shop By Category",
+    "chunk_used": "2026-04/06/3/chunks/chunk_47.html"
+  },
+  {
+    "layout_item": "section: Coffee, Goods, Tea, Subscriptions (category images)",
+    "chunk_used": "2026-04/06/3/chunks/chunk_20.html"
+  },
+  {
+    "layout_item": "footer",
+    "chunk_used": "2026-04/06/3/chunks/chunk_95.html"
+  }
+]
