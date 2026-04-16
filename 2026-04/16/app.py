@@ -7,8 +7,8 @@ from openai import OpenAI
 
 client = OpenAI(api_key=os.getenv("YOUR_API_KEY"))
 
-input_path_base = "2026-04/_xx_"
-output_path_base = "2026-04/_xx_/1"
+input_path_base = "2026-04/16"
+output_path_base = "2026-04/16/1"
 
 os.makedirs(output_path_base, exist_ok=True)
 
@@ -18,7 +18,6 @@ os.makedirs(output_path_base, exist_ok=True)
 token_log = []
 total_tokens = 0
 
-process_log = []
 
 def log_tokens(step, response):
     global total_tokens
@@ -36,16 +35,6 @@ def log_tokens(step, response):
     token_log.append(entry)
 
 
-def log_process(item, reference, output):
-    entry = {
-        "process_count":{len(process_log)+1},
-        "item": item,
-        "reference": reference,
-        "output": output       
-    }
-    
-    process_log.append(entry)
-
 def save_readme():
     content = "# API TOKEN USAGE LOG\n\n"
 
@@ -60,18 +49,6 @@ def save_readme():
     with open(f"{output_path_base}/README.md", "w") as f:
         f.write(content)
 
-
-def save_process_log():
-    content = "# PROCESSES\n\n"
-    
-    for entry in process_log:
-        content += f"## PROCESS No. {entry['process_count']}\n"
-        content += f"**Building the {entry["item"]} section**\n\n\n"
-        content += f"Used this reference:\n ````html\n{entry['reference']}\n````\n"
-        content += f"Generated this output:\n ````html\n{entry['output']}\n````\n"
-    
-    with open(f"{output_path_base}/PROCESSES.md", "w", encoding="utf-8") as f:
-        f.write(content)
 
 # -----------------------------
 # HELPERS
@@ -259,9 +236,7 @@ Return HTML only.
         temperature=0
     )
 
-    html_output = res.choices[0].message.content.strip()
     log_tokens("edit_chunk", res)
-    log_process(layout_item, chunk_html, html_output)
 
     return res.choices[0].message.content.strip()
 
@@ -332,8 +307,6 @@ def run_pipeline(reference_path, design_path):
     save_file(f"{output_path_base}/output.html", final_html)
 
     save_readme()
-    
-    save_process_log()
 
     print("\n✅ DONE")
 
