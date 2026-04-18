@@ -1,0 +1,53 @@
+```json
+[
+  {
+    "type": "header",
+    "columns": 1,
+    "has_image": true,
+    "has_button": false,
+    "text_density": "low"
+  },
+  {
+    "type": "introduction",
+    "columns": 1,
+    "has_image": false,
+    "has_button": false,
+    "text_density": "medium"
+  },
+  {
+    "type": "recipe",
+    "columns": 1,
+    "has_image": true,
+    "has_button": true,
+    "text_density": "high"
+  },
+  {
+    "type": "product_grid",
+    "columns": 2,
+    "has_image": true,
+    "has_button": false,
+    "text_density": "low"
+  },
+  {
+    "type": "button",
+    "columns": 1,
+    "has_image": false,
+    "has_button": true,
+    "text_density": "low"
+  },
+  {
+    "type": "category_grid",
+    "columns": 2,
+    "has_image": true,
+    "has_button": false,
+    "text_density": "low"
+  },
+  {
+    "type": "footer",
+    "columns": 1,
+    "has_image": true,
+    "has_button": false,
+    "text_density": "medium"
+  }
+]
+```
