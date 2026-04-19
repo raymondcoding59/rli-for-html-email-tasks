@@ -1,0 +1,56 @@
+[
+  {
+    "type": "hero",
+    "layout": "single",
+    "elements": ["image", "heading", "body"],
+    "image_position": "top",
+    "text_alignment": "center",
+    "has_list": false,
+    "columns": 1
+  },
+  {
+    "type": "text",
+    "layout": "single",
+    "elements": ["heading", "body", "button"],
+    "image_position": "none",
+    "text_alignment": "left",
+    "has_list": false,
+    "columns": 1
+  },
+  {
+    "type": "text",
+    "layout": "single",
+    "elements": ["heading", "body", "list", "image", "button"],
+    "image_position": "left",
+    "text_alignment": "left",
+    "has_list": true,
+    "columns": 1
+  },
+  {
+    "type": "grid",
+    "layout": "grid",
+    "elements": ["image", "heading", "body", "button"],
+    "image_position": "top",
+    "text_alignment": "center",
+    "has_list": false,
+    "columns": 2
+  },
+  {
+    "type": "grid",
+    "layout": "grid",
+    "elements": ["image", "heading"],
+    "image_position": "background",
+    "text_alignment": "center",
+    "has_list": false,
+    "columns": 2
+  },
+  {
+    "type": "footer",
+    "layout": "single",
+    "elements": ["image", "body", "list"],
+    "image_position": "top",
+    "text_alignment": "center",
+    "has_list": true,
+    "columns": 1
+  }
+]

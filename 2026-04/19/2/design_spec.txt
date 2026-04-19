@@ -1,0 +1,146 @@
+{
+  "sections": [
+    {
+      "type": "header",
+      "layout": "single column",
+      "elements": ["image"],
+      "image_position": "top",
+      "text_alignment": "center",
+      "columns": 1,
+      "content": {
+        "heading": "",
+        "body": "",
+        "button": "",
+        "list_items": [],
+        "labels": [],
+        "image_descriptions": ["Hands whisking matcha in a bowl with a white geometric logo overlay"]
+      }
+    },
+    {
+      "type": "intro",
+      "layout": "single column",
+      "elements": ["heading", "body"],
+      "image_position": "none",
+      "text_alignment": "left",
+      "columns": 1,
+      "content": {
+        "heading": "How to Make a Matcha Latte at Home",
+        "body": "Matcha is more than just a trend. It’s a centuries-old practice rooted in mindfulness, flavor, and focus. Made from finely ground green tea leaves, our matcha offers calm, sustained energy and a clean, vegetal sweetness that’s deeply satisfying.\n\nWe’ll walk you through what makes matcha special and how to make a dreamy, vibrant matcha latte at home. No café needed—just a whisk, warm water, and a few quiet minutes.",
+        "button": "",
+        "list_items": [],
+        "labels": ["WHAT IS MATCHA?"],
+        "image_descriptions": []
+      }
+    },
+    {
+      "type": "recipe",
+      "layout": "single column",
+      "elements": ["heading", "body", "list", "image", "button"],
+      "image_position": "left",
+      "text_alignment": "left",
+      "columns": 1,
+      "content": {
+        "heading": "A Matcha Recipe You’ll Keep Coming Back To",
+        "body": "Balanced, smooth, and deeply calming!",
+        "button": "DIY A MATCHA LATTE",
+        "list_items": [
+          "1 teaspoon (2 g) Matcha - Organic & Ceremonial-Grade",
+          "2 ounces hot water (175°F / 80°C recommended)",
+          "6-8 ounces milk of your choice, hot or iced (oat, almond, soy, or dairy all work well)"
+        ],
+        "labels": [],
+        "image_descriptions": ["Glass of iced matcha latte on a table"]
+      }
+    },
+    {
+      "type": "product highlight",
+      "layout": "single column",
+      "elements": ["heading", "body", "button", "image"],
+      "image_position": "left",
+      "text_alignment": "left",
+      "columns": 1,
+      "content": {
+        "heading": "ORGANIC & CEREMONIAL-GRADE Matcha",
+        "body": "Masterfully crafted to produce a vibrant green color and a smooth, creamy texture.",
+        "button": "GRAB YOURS",
+        "list_items": [],
+        "labels": [],
+        "image_descriptions": ["Glass of iced matcha latte on a table"]
+      }
+    },
+    {
+      "type": "alternative teas",
+      "layout": "2x2 grid",
+      "elements": ["heading", "image", "labels", "button"],
+      "image_position": "top",
+      "text_alignment": "center",
+      "columns": 2,
+      "content": {
+        "heading": "Not Your Cup of Tea?",
+        "body": "Sip on one of our best-selling pure teas!",
+        "button": "SHOP ALL TEAS",
+        "list_items": [],
+        "labels": [
+          "Cascara, Helsar de Zercaro",
+          "Breakfast Tea",
+          "Organic Peppermint",
+          "Milk Oolong"
+        ],
+        "image_descriptions": [
+          "Bowl of dried cascara berries",
+          "Spoon with loose leaf black tea",
+          "Bowl of dried peppermint leaves",
+          "Spoon with loose leaf oolong tea"
+        ]
+      }
+    },
+    {
+      "type": "categories",
+      "layout": "2x2 grid",
+      "elements": ["heading", "image", "labels"],
+      "image_position": "top",
+      "text_alignment": "center",
+      "columns": 2,
+      "content": {
+        "heading": "Shop By Category",
+        "body": "",
+        "button": "",
+        "list_items": [],
+        "labels": [
+          "Coffee",
+          "The Goods",
+          "Tea",
+          "Subscriptions"
+        ],
+        "image_descriptions": [
+          "Coffee beans being scooped",
+          "Hand holding a canister labeled 'The Goods'",
+          "Cup of tea on a saucer",
+          "Coffee mug and a subscription box on a blanket"
+        ]
+      }
+    },
+    {
+      "type": "footer",
+      "layout": "single column",
+      "elements": ["image", "body", "labels"],
+      "image_position": "top",
+      "text_alignment": "center",
+      "columns": 1,
+      "content": {
+        "heading": "",
+        "body": "From all of us at Methodical, thank you for your support.\n\nAs a locally owned business, our community means everything to us, especially now. The holidays remind us how lucky we are to be part of your traditions, your tables, and your everyday lives.",
+        "button": "",
+        "list_items": [],
+        "labels": [
+          "Unsubscribe",
+          "Manage Preferences",
+          "View in Your Browser",
+          "© 2024 Methodical Coffee",
+          "999 Great Highway Suite 200 | Travelers Rest, SC 29690"
+        ],
+        "image_descriptions": ["White geometric logo on a dark background"]
+      }
+    }
+  ]
+}
