@@ -1,0 +1,259 @@
+{
+  "global_blueprint": {
+    "email_goal": "Educate about matcha, share a recipe, promote tea products and categories.",
+    "preheader_text": "How to Make a Matcha Latte at Home",
+    "section_order": [
+      "hero_image",
+      "intro_text",
+      "recipe_section",
+      "product_cards",
+      "category_grid",
+      "footer"
+    ],
+    "expected_section_count": 6,
+    "wrapper_strategy": "centered, max-width single column with full-width bands",
+    "spacing_rhythm": "ample vertical spacing between sections, consistent padding",
+    "alignment_pattern": "centered headings, left-aligned body text, grid for cards",
+    "background_story": "Neutral, calming tones with tan and dark blue backgrounds for contrast",
+    "repeatable_patterns": [
+      "image + text band",
+      "product card grid",
+      "category grid"
+    ],
+    "button_style": "solid tan or outlined, all-caps, centered, rectangular with slight rounding",
+    "image_strategy": "hero image, inline recipe image, product and category thumbnails",
+    "style_rules": [
+      "serif headings, sans-serif body",
+      "soft neutral backgrounds",
+      "consistent card and button styling",
+      "ample whitespace",
+      "subtle drop shadows on cards"
+    ]
+  },
+  "sections": [
+    {
+      "type": "hero_image",
+      "layout": "single",
+      "elements": [
+        "image",
+        "logo"
+      ],
+      "image_position": "top",
+      "text_alignment": "center",
+      "columns": 1,
+      "background_color": "#f5f2ee",
+      "is_image_only_band": false,
+      "repeat_count": 1,
+      "card_style": "none",
+      "content": {
+        "heading": "",
+        "body": "",
+        "button": "",
+        "list_items": [],
+        "labels": [],
+        "card_titles": [],
+        "card_buttons": [],
+        "footer_links": [],
+        "legal_lines": [],
+        "image_descriptions": [
+          "Hands whisking matcha in a bowl with Methodical Coffee logo overlay"
+        ],
+        "preheader": ""
+      },
+      "section_index": 0
+    },
+    {
+      "type": "intro_text",
+      "layout": "single",
+      "elements": [
+        "heading",
+        "body"
+      ],
+      "image_position": "none",
+      "text_alignment": "center",
+      "columns": 1,
+      "background_color": "#e7dbc9",
+      "is_image_only_band": false,
+      "repeat_count": 1,
+      "card_style": "none",
+      "content": {
+        "heading": "How to Make a Matcha Latte at Home",
+        "body": "Matcha is more than just a trend. It’s a centuries-old practice rooted in mindfulness, flavor, and focus. Made from finely ground green tea leaves, our matcha offers calm, sustained energy and a clean, vegetal sweetness that’s deeply satisfying.\n\nWe’ll walk you through what makes matcha special and how to make a dreamy, vibrant matcha latte at home. No café needed—just a whisk, warm water, and a few quiet minutes.",
+        "button": "",
+        "list_items": [],
+        "labels": [
+          "WHAT IS MATCHA?"
+        ],
+        "card_titles": [],
+        "card_buttons": [],
+        "footer_links": [],
+        "legal_lines": [],
+        "image_descriptions": [],
+        "preheader": ""
+      },
+      "section_index": 1
+    },
+    {
+      "type": "recipe_section",
+      "layout": "single",
+      "elements": [
+        "heading",
+        "body",
+        "list",
+        "image",
+        "button"
+      ],
+      "image_position": "left",
+      "text_alignment": "left",
+      "columns": 1,
+      "background_color": "#f5f2ee",
+      "is_image_only_band": false,
+      "repeat_count": 1,
+      "card_style": "none",
+      "content": {
+        "heading": "A Matcha Recipe You’ll Keep Coming Back To",
+        "body": "Balanced, smooth, and deeply calming!\n\nSift 1 tsp of matcha into a bowl and whisk with 2 oz hot water until smooth and frothy. Heat and froth your milk. Pour the matcha into a mug, add milk, and top with foam if you’d like.",
+        "button": "DIY A MATCHA LATTE",
+        "list_items": [
+          "1 teaspoon (2 g) Matcha - Organic & Ceremonial-Grade",
+          "2 ounces hot water (175°F / 80°C recommended)",
+          "6-8 ounces milk of your choice; hot or iced (oat, almond, soy, or dairy all work well)"
+        ],
+        "labels": [],
+        "card_titles": [
+          "ORGANIC & CEREMONIAL-GRADE Matcha"
+        ],
+        "card_buttons": [
+          "GRAB YOURS"
+        ],
+        "footer_links": [],
+        "legal_lines": [],
+        "image_descriptions": [
+          "Glass of matcha latte on a table"
+        ],
+        "preheader": ""
+      },
+      "section_index": 2
+    },
+    {
+      "type": "product_cards",
+      "layout": "grid",
+      "elements": [
+        "image",
+        "heading",
+        "button"
+      ],
+      "image_position": "top",
+      "text_alignment": "center",
+      "columns": 2,
+      "background_color": "#f5f2ee",
+      "is_image_only_band": false,
+      "repeat_count": 4,
+      "card_style": "image card with product name and link",
+      "content": {
+        "heading": "Not Your Cup of Tea?",
+        "body": "Sip on one of our best-selling pure teas!",
+        "button": "SHOP ALL TEAS",
+        "list_items": [],
+        "labels": [],
+        "card_titles": [
+          "Cascara, Helsar de Zercaro",
+          "Breakfast Tea",
+          "Organic Peppermint",
+          "Milk Oolong"
+        ],
+        "card_buttons": [],
+        "footer_links": [],
+        "legal_lines": [],
+        "image_descriptions": [
+          "Loose leaf cascara in a bowl",
+          "Loose leaf breakfast tea in a bowl",
+          "Loose leaf peppermint in a bowl",
+          "Loose leaf milk oolong in a bowl"
+        ],
+        "preheader": ""
+      },
+      "section_index": 3
+    },
+    {
+      "type": "category_grid",
+      "layout": "grid",
+      "elements": [
+        "image",
+        "heading"
+      ],
+      "image_position": "top",
+      "text_alignment": "center",
+      "columns": 2,
+      "background_color": "#e7dbc9",
+      "is_image_only_band": false,
+      "repeat_count": 4,
+      "card_style": "category card with overlay text",
+      "content": {
+        "heading": "Shop By Category",
+        "body": "",
+        "button": "",
+        "list_items": [],
+        "labels": [],
+        "card_titles": [
+          "Coffee",
+          "The Goods",
+          "Tea",
+          "Subscriptions"
+        ],
+        "card_buttons": [],
+        "footer_links": [],
+        "legal_lines": [],
+        "image_descriptions": [
+          "Coffee beans in a portafilter",
+          "Bag labeled The Goods $4.5",
+          "Cup of tea",
+          "Mug and blanket for subscriptions"
+        ],
+        "preheader": ""
+      },
+      "section_index": 4
+    },
+    {
+      "type": "footer",
+      "layout": "single",
+      "elements": [
+        "logo",
+        "body",
+        "footer_links",
+        "legal_lines"
+      ],
+      "image_position": "none",
+      "text_alignment": "center",
+      "columns": 1,
+      "background_color": "#373c47",
+      "is_image_only_band": false,
+      "repeat_count": 1,
+      "card_style": "none",
+      "content": {
+        "heading": "",
+        "body": "From all of us at Methodical, thank you for your support.\n\nAs a locally owned business, our community means everything to us, especially now. The holidays remind us how lucky we are to be part of your traditions, your tables, and your everyday lives.",
+        "button": "",
+        "list_items": [],
+        "labels": [],
+        "card_titles": [],
+        "card_buttons": [],
+        "footer_links": [
+          "Unsubscribe",
+          "Manage Preferences",
+          "View in Your Browser"
+        ],
+        "legal_lines": [
+          "© 2024 Methodical Coffee",
+          "999 Great Highway Suite 200 | Travelers Rest, SC 29690"
+        ],
+        "image_descriptions": [
+          "Methodical Coffee logo",
+          "Social icons: Facebook, YouTube, Instagram"
+        ],
+        "preheader": ""
+      },
+      "section_index": 5
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "index": 0,
+    "action": "kept",
+    "before_type": "hero_image",
+    "after_type": "hero_image",
+    "before_layout": "single",
+    "after_layout": "single",
+    "before_button": "",
+    "after_button": ""
+  },
+  {
+    "index": 1,
+    "action": "kept",
+    "before_type": "intro_text",
+    "after_type": "intro_text",
+    "before_layout": "single",
+    "after_layout": "single",
+    "before_button": "DIY A MATCHA LATTE",
+    "after_button": ""
+  },
+  {
+    "index": 2,
+    "action": "kept",
+    "before_type": "recipe_section",
+    "after_type": "recipe_section",
+    "before_layout": "single",
+    "after_layout": "single",
+    "before_button": "DIY A MATCHA LATTE",
+    "after_button": "DIY A MATCHA LATTE"
+  },
+  {
+    "index": 3,
+    "action": "kept",
+    "before_type": "product_cards",
+    "after_type": "product_cards",
+    "before_layout": "grid",
+    "after_layout": "grid",
+    "before_button": "SHOP ALL TEAS",
+    "after_button": "SHOP ALL TEAS"
+  },
+  {
+    "index": 4,
+    "action": "kept",
+    "before_type": "category_grid",
+    "after_type": "category_grid",
+    "before_layout": "grid",
+    "after_layout": "grid",
+    "before_button": "",
+    "after_button": ""
+  },
+  {
+    "index": 5,
+    "action": "kept",
+    "before_type": "footer",
+    "after_type": "footer",
+    "before_layout": "single",
+    "after_layout": "single",
+    "before_button": "",
+    "after_button": ""
+  }
+]
