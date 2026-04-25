@@ -1,0 +1,20 @@
+{
+  "sections": [
+    {
+      "type": "hero",
+      "layout": "single column",
+      "elements": ["image", "heading", "body", "button"],
+      "image_position": "top",
+      "text_alignment": "center",
+      "columns": 1,
+      "content": {
+        "heading": "How to Make a Matcha Latte at Home",
+        "body": "Matcha is more than just a trend. It’s a centuries-old practice rooted in mindfulness, flavor, and focus. Made from finely ground green tea leaves, our matcha offers calm, sustained energy and a clean, vegetal sweetness that’s deeply satisfying.\n\nWe’ll walk you through what makes matcha special and how to make a creamy, vibrant matcha latte at home. No café needed, just a whisk, warm water, and a few quiet minutes.",
+        "button": "HAVE YOUR MATCHA MOMENT",
+        "list_items": [],
+        "labels": ["WHAT IS MATCHA?"],
+        "image_descriptions": ["Hands whisking green matcha in a rustic bowl on a wooden table, with a geometric white logo overlay."]
+      }
+    }
+  ]
+}
