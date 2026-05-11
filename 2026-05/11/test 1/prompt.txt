@@ -1,0 +1,114 @@
+
+You are an expert HTML email developer.
+
+Goal:
+Build exactly one email section that follows the reference coding conventions and matches the provided design content.
+
+Hard rules:
+- Reuse reference wrapper patterns, spacing strategy, and coding style
+- Do not invent a new section family if the references already show a matching pattern
+- Keep the output as one complete section block
+- Do not include the outer email shell, preheader, tracking marker, or root-container wrapper
+- Use exact provided text where available
+- Preserve email-safe table structure
+- Match the likely section order and visual rhythm from the global blueprint
+- Keep consistency with the rolling context from already generated sections
+- Keep consistency with adjacent section hints without merging separate top-level sections
+- Respect repeated-item density from the target section spec
+- If a section is image-only, return only that image band section
+- If footer links or legal lines are provided, include them explicitly instead of collapsing them into body copy
+
+Section-family instructions:
+["Preserve the exact wrapper family and table idiom from the references.", "Do not add commentary, markdown, or code fences.", "Use the compact sale/banner strip pattern from the reference.", "Keep it text-only unless the reference banner pattern contains imagery."]
+
+Global blueprint:
+{"email_goal": "Promote the Outdoor Sale and highlight the Softlands Collection by Gabriel Tan.", "preheader_text": "THE OUTDOOR SALE \u2013 SAVE UP TO 25%*", "section_order": ["utility_banner", "brand_header", "image_band", "copy_block", "image_band", "two_column_image_grid", "copy_block", "collection_intro", "collection_feature_image", "image_band", "copy_block", "designer_credit", "secondary_promo", "footer", "footer"], "expected_section_count": 15, "wrapper_strategy": "centered, single-column, full-width bands", "spacing_rhythm": "generous vertical spacing between sections, consistent padding", "alignment_pattern": "center-aligned text, left-aligned body in some sections, images centered", "background_story": "Alternating light gray, off-white, and dark backgrounds to separate content blocks and highlight product imagery.", "repeatable_patterns": ["image + caption", "headline + body + button", "product card grid", "footer links"], "button_style": "rounded, outlined, center-aligned, minimal", "image_strategy": "full-width hero, two-column gallery, product cutouts, lifestyle imagery", "style_rules": ["Sans-serif font", "Bold section headings", "Minimalist, neutral color palette", "Consistent button style", "Ample whitespace"]}
+
+Rolling context:
+{"previous_sections": [], "expected_order": ["utility_banner", "brand_header", "image_band", "copy_block", "image_band", "two_column_image_grid", "copy_block", "collection_intro", "collection_feature_image", "image_band", "copy_block", "designer_credit", "secondary_promo", "footer", "footer"], "expected_section_count": 15}
+
+Adjacent sections:
+{"previous_section": null, "next_section": {"type": "brand_header", "layout": "single", "heading": "", "body": "", "button": "", "repeat_count": 1}, "coordination_rules": ["Stay visually coherent with neighboring sections.", "Do not merge into the previous or next section unless explicitly instructed.", "Preserve this section as its own band while keeping spacing and style rhythm aligned."]}
+
+Target section:
+{"type": "utility_banner", "layout": "single", "elements": ["body"], "image_position": "none", "text_alignment": "center", "columns": 1, "background_color": "#231f20", "is_image_only_band": false, "repeat_count": 1, "card_style": "none", "section_index": 0}
+
+Section content:
+{"heading": "", "body": "THE OUTDOOR SALE \u2013 SAVE UP TO 25%*", "button": "", "list_items": [], "labels": [], "card_titles": [], "card_buttons": [], "footer_links": [], "legal_lines": [], "image_descriptions": [], "preheader": "THE OUTDOOR SALE \u2013 SAVE UP TO 25%*"}
+
+Reference fingerprints:
+[{"index": 0, "tag": "table", "classes": ["dwr_full_wrap", "dwr_main_table", "dwr_pad_2", "dwr_ligh"], "inferred_type": "utility_banner", "text_len": 57, "headings": 0, "images": 0, "buttons": 0, "lists": 0, "columns": 1, "social_links": 0, "full_width_images": 0, "outline_buttons": 0, "background_colors": [], "preview_text": "THE YEAR-END SALE \u2013 20% OFF MARKDOWNS* WITH CODE: EXTRA20", "section_type": "utility_banner"}, {"index": 5, "tag": "table", "classes": ["dwr_full_wrap", "dwr_main_table", "dwr_pad_24", "dwr_font_d3", "dwr_font_b2", "dwr_outline_button"], "inferred_type": "utility_banner", "text_len": 284, "headings": 1, "images": 0, "buttons": 1, "lists": 0, "columns": 1, "social_links": 0, "full_width_images": 0, "outline_buttons": 1, "background_colors": [], "preview_text": "The language of light Since its founding in 1962, Flos has collaborated with renowned designers such as Achille and Pier Giacomo Castiglioni, Philippe Starck, and Piero Lissoni \u2013 revolutionizing the industry with innovat", "section_type": "utility_banner"}]
+
+Reference HTML:
+<table aria-hidden="true" bgcolor="#f8f8f8" border="0" cellpadding="0" cellspacing="0" class="dwr_full_wrap" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;" width="100%">
+<tr>
+<td align="center" style="border-collapse: collapse; mso-line-height-rule: exactly;" valign="top">
+<table align="center" aria-hidden="true" bgcolor="#242222" border="0" cellpadding="0" cellspacing="0" class="dwr_main_table" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px; table-layout: fixed; width: 600px;" width="600">
+<tr>
+<td align="center" class="dwr_pad_2" style="border-collapse: collapse; mso-line-height-rule: exactly; padding: 10px;" valign="top">
+<p class="dwr_ligh" style="color: #fff; font-family: 'News Gothic Std', 'news-gothic-std', Helvetica, Tahoma, Arial, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: .07em !important; line-height: 11px; margin: 0px; mso-line-height-rule: exactly; padding: 0px;"><a data-location="t1" data-reportingname="THE YEAR-END SALE – 20% OFF MARKDOWNS* WITH CODE: EXTRA20" data-reportingtags="Tippy - Sale" href="https://e.n.dwr.com/click?EbWhlbGJpZzA4QGdtYWlsLmNvbQ/CeyJtaWQiOiIxNzY2NDE1ODA5NTE3MzlhZTU4NDZmNGNkIiwiY3QiOiJkd3ItbmEtMzc1MDMzN2QwNTA4NTdiNzUwYTEzMzUxODU1MDgyZWQtMSIsInJkIjoiZ21haWwuY29tIn0/VaHR0cHM6Ly93d3cuZHdyLmNvbS9zYWxlLWdyZWF0LWRlYWxz/SWkhfbWlsbGVybmR3cl9ETlRBTjEyMjIyMDI1YzE5MTc2MDRiMQ/LZHcy/qP2xhbmc9ZW5fVVMmZWRfcmlkPWY1NGMwN2Q5Zjk2ZDVmZDNlZjUzMTEwYTVkODM5Yjk4ODBhNDYxMWNkNWI2NmE1NGYyYzY4ZjBiMGJiZDRhNjYmdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPXpldGFfbWFya2V0aW5nJnV0bV9jYW1wYWlnbj1kd3JfZmxvc18yMjEyMjAyNSZidF9lZT1vVlQ1QkpEciUyRmxDTGE5TW5od2VyQlBrQ3FKaWhLUWo1c0ExSGVwSHdaWUpUblZCOWNHdzdNeVolMkJkMUI5U2Q0MSZidF90cz0xNzY2NDE1ODA5NTE5/gaUleZA/JMTIyMjIwMjVDMTkxNzYwNEIx/s8g940edb88" style="border-collapse: collapse; color: #ffffff; mso-line-height-rule: exactly; text-decoration: none;" target="_blank">THE YEAR-END SALE – 20% OFF MARKDOWNS* WITH CODE: EXTRA20</a> </p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table aria-hidden="true" bgcolor="#F8F8F8" border="0" cellpadding="0" cellspacing="0" class="dwr_full_wrap" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;" width="100%">
+<tr>
+<td align="center" style="border-collapse: collapse; mso-line-height-rule: exactly;" valign="top">
+<table align="center" aria-hidden="true" border="0" cellpadding="0" cellspacing="0" class="dwr_main_table" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px; table-layout: fixed; width: 600px;" width="600">
+<tr>
+<td bgcolor="#D1CCBD" class="dwr_pad_24" style="border-collapse: collapse; mso-line-height-rule: exactly; padding: 48px 24px;" valign="top">
+<table aria-hidden="true" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;" width="100%">
+<tr>
+<td style="border-collapse: collapse; mso-line-height-rule: exactly;" valign="top">
+<table aria-hidden="true" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;" width="100%">
+<tr>
+<td align="center" style="border-collapse: collapse; mso-line-height-rule: exactly;" valign="top">
+<table style="border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+<tr>
+<td align="center" style="border-collapse: collapse; mso-line-height-rule: exactly; padding-bottom: 16px;" valign="top">
+<h3 class="dwr_font_d3" style="color: #242222; font-family: 'News Gothic Std', 'news-gothic-std', Helvetica, Tahoma, Arial, sans-serif; font-size: 33px; font-weight: 400; letter-spacing: .012em; line-height: 41px; margin: 0; mso-line-height-rule: exactly;">The language of light</h3>
+</td>
+</tr>
+<tr>
+<td align="center" style="border-collapse: collapse; mso-line-height-rule: exactly; padding-bottom: 16px;" valign="top" width="480">
+<p class="dwr_font_b2" style="color: #242222; font-family: 'News Gothic Std', 'news-gothic-std', Helvetica, Tahoma, Arial, sans-serif; font-size: 16px; font-weight: 400; letter-spacing: .018em; line-height: 24px; margin: 0px; mso-line-height-rule: exactly; padding: 0px;">Since its founding in 1962, Flos has collaborated with renowned designers such as Achille and Pier Giacomo Castiglioni, Philippe Starck, and Piero Lissoni – revolutionizing the industry with innovative designs that create new expressions in light.</p>
+</td>
+</tr>
+<tr>
+<td align="center" style="border-collapse: collapse; mso-line-height-rule: exactly;">
+<!--[if !mso]>
+
+<!-->
+<table align="center" aria-hidden="true" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+<tr>
+<td align="center" style="border-collapse: collapse; border-radius: 22px; mso-line-height-rule: exactly;">
+<a class="dwr_outline_button" data-location="t9" data-reportingname="More from Flos" data-reportingtags="Module 3" href="https://e.n.dwr.com/click?EbWhlbGJpZzA4QGdtYWlsLmNvbQ/CeyJtaWQiOiIxNzY2NDE1ODA5NTE3MzlhZTU4NDZmNGNkIiwiY3QiOiJkd3ItbmEtMzc1MDMzN2QwNTA4NTdiNzUwYTEzMzUxODU1MDgyZWQtMSIsInJkIjoiZ21ha..." style="border: 1.4px solid #464646; border-collapse: collapse; border-radius: 22px; color: #242222; display: inline-block; font-family: 'News Gothic Std', 'news-gothic-std', Helvetica, Tahoma, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 20px; mso-line-height-rule: exactly; padding: 12px 20px 11px; text-decoration: none;" target="_blank">More from Flos</a>
+</td>
+</tr>
+</table>
+<!--<![endif]-->
+<!-- Center Aligned CTA Outline -->
+<!--[if gte mso 9]>  
+<table role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; ">
+<tr>
+<td align="center" style="line-height:18px;padding:10px 20px 10px 0px;">
+<div style="text-align:center; font-family: 'News Gothic Std', 'news-gothic-std', Helvetica, Tahoma, Arial, sans-serif; ">
+<a href="https://e.n.dwr.com/click?EbWhlbGJpZzA4QGdtYWlsLmNvbQ/CeyJtaWQiOiIxNzY2NDE1ODA5NTE3MzlhZTU4NDZmNGNkIiwiY3QiOiJkd3ItbmEtMzc1MDMzN2QwNTA4NTdiNzUwYTEzMzUxODU1MDgyZWQtMSIsInJkIjoiZ21haWwuY29tIn0/VaHR0cHM6Ly93d3cuZHdyLmNvbS9icmFuZHMtZmxvcw/SWkhfbWlsbGVybmR3cl9ETlRBTjEyMjIyMDI1YzE5MTc2MDRiMQ/LZHcy/qP2xhbmc9ZW5fVVMmZWRfcmlkPWY1NGMwN2Q5Zjk2ZDVmZDNlZjUzMTEwYTVkODM5Yjk4ODBhNDYxMWNkNWI2NmE1NGYyYzY4ZjBiMGJiZDRhNjYmdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPXpldGFfbWFya2V0aW5nJnV0bV9jYW1wYWlnbj1kd3JfZmxvc18yMjEyMjAyNSZidF9lZT1vVlQ1QkpEciUyRmxDTGE5TW5od2VyQlBrQ3FKaWhLUWo1c0ExSGVwSHdaWUpUblZCOWNHdzdNeVolMkJkMUI5U2Q0MSZidF90cz0xNzY2NDE1ODA5NTE5JmVkX3JpZD1mNTRjMDdkOWY5NmQ1ZmQzZWY1MzExMGE1ZDgzOWI5ODgwYTQ2MTFjZDViNjZhNTRmMmM2OGYwYjBiYmQ0YTY2JnV0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT16ZXRhX21hcmtldGluZyZ1dG1fY2FtcGFpZ249ZHdyX2Zsb3NfMjIxMjIwMjUmYnRfZWU9b1ZUNUJKRHIlMkZsQ0xhOU1uaHdlckJQa0NxSmloS1FqNXNBMUhlcEh3WllKVG5WQjljR3c3TXlaJTJCZDFCOVNkNDEmYnRfdHM9MTc2NjQxNTgwOTUxOSZlZF9yaWQ9ZjU0YzA3ZDlmOTZkNWZkM2VmNTMxMTBhNWQ4MzliOTg4MGE0NjExY2Q1YjY2YTU0ZjJjNjhmMGIwYmJkNGE2NiZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9emV0YV9tYXJrZXRpbmcmdXRtX2NhbXBhaWduPWR3cl9mbG9zXzIyMTIyMDI1JmJ0X2VlPW9WVDVCSkRyJTJGbENMYTlNbmh3ZXJCUGtDcUppaEtRajVzQTFIZXBId1pZSlRuVkI5Y0d3N015WiUyQmQxQjlTZDQxJmJ0X3RzPTE3NjY0MTU4MDk1MTk/gaUleZA/JMTIyMjIwMjVDMTkxNzYwNEIx/s3mf7861ee6" target="_blank" title="More from Flos" style="text-decoration: none;" class="dwr_outline_button">
+<table role="presentation" cellSpacing="0" cellPadding="0" style="display: inline-table;font-size: 14px; border: 0px;border-spacing: 0px;border-collapse: separate;vertical-align: top;margin: 0px auto; width: initial; table-layout: fixed;"><tbody>
+<tr style="vertical-align: top;">
+<td style="font-family: 'News Gothic Std', 'news-gothic-std', Helvetica, Tahoma, Arial, sans-serif; vertical-align: middle; word-wrap: break-word; overflow-wrap: break-word; text-align: center;">
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://e.n.dwr.com/click?EbWhlbGJpZzA4QGdtYWlsLmNvbQ/CeyJtaWQiOiIxNzY2NDE1ODA5NTE3MzlhZTU4NDZmNGNkIiwiY3QiOiJkd3ItbmEtMzc1MDMzN2QwNTA4NTdiNzUwYTEzMzUxODU1MDgyZWQtMSIsInJkIjoiZ21haWwuY29tIn0/VaHR0cHM6Ly93d3cuZHdyLmNvbS9icmFuZHMtZmxvcw/SWkhfbWlsbGVybmR3cl9ETlRBTjEyMjIyMDI1YzE5MTc2MDRiMQ/LZHcy/qP2xhbmc9ZW5fVVM/gaUleZA/JMTIyMjIwMjVDMTkxNzYwNEIx/s7v87134261" style="height:44px; width:200px; v-text-anchor:middle;" arcsize="187.5%" stroke="true" fillcolor="none" strokecolor="#464646" >
+<w:anchorl
+
+Reusable images:
+[{"src": "https://images.n.dwr.com/images/cf6b6501c97f5888284fcd9fa1c86b06/37257d2b0ca84cab977e2251d997dab5.png", "alt": "DESIGN WITHIN REACH", "width": "70", "title": ""}, {"src": "https://images.n.dwr.com/images/cf6b6501c97f5888284fcd9fa1c86b06/aa9a2b28a03f00ebf22f8c1c3b8e74bb.jpg", "alt": "All Aglow", "width": "600", "title": ""}, {"src": "https://images.n.dwr.com/images/cf6b6501c97f5888284fcd9fa1c86b06/545021a8e604efeb136aaa34739b5679.jpg", "alt": "Discover Bright Ideas", "width": "320", "title": ""}, {"src": "https://images.n.dwr.com/images/cf6b6501c97f5888284fcd9fa1c86b06/28c3cc6c72511362b69372915169a4f1.jpg", "alt": "Make the Switch", "width": "320", "title": ""}, {"src": "https://images.n.dwr.com/images/cf6b6501c97f5888284fcd9fa1c86b06/logo-icon/icon-DWR-instagram.png", "alt": "instagram", "width": "24", "title": ""}, {"src": "https://images.n.dwr.com/images/cf6b6501c97f5888284fcd9fa1c86b06/logo-icon/icon-DWR-pinterest.png", "alt": "pinterest", "width": "24", "title": ""}, {"src": "https://images.n.dwr.com/images/cf6b6501c97f5888284fcd9fa1c86b06/logo-icon/icon-DWR-linkedin.png", "alt": "LinkedIn", "width": "24", "title": ""}, {"src": "https://images.n.dwr.com/images/cf6b6501c97f5888284fcd9fa1c86b06/logo-icon/icon-DWR-facebook.png", "alt": "facebook", "width": "24", "title": ""}, {"src": "https://images.n.dwr.com/images/cf6b6501c97f5888284fcd9fa1c86b06/logo-icon/icon-DWR-youtube.png", "alt": "youtube", "width": "24", "title": ""}, {"src": "https://images.n.dwr.com/images/cf6b6501c97f5888284fcd9fa1c86b06/logo-icon/icon-DWR-twitter.png", "alt": "twitter", "width": "24", "title": ""}]
+
+Implementation targets:
+- Maximize fidelity to interactive density found in the references for this section family.
+- If the reference pattern links images and titles separately, preserve that behavior.
+- Favor reference-native URLs or safe placeholder hrefs over leaving repeated cards unlinked.
+
+Return only HTML for this section.
