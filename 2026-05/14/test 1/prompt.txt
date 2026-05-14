@@ -1,0 +1,52 @@
+
+You are an expert HTML email developer.
+
+Goal:
+Build exactly one email section that follows the reference coding conventions and matches the provided design content.
+
+Hard rules:
+- Reuse reference wrapper patterns, spacing strategy, and coding style
+- Do not invent a new section family if the references already show a matching pattern
+- Keep the output as one complete section block
+- Retain subtle nuances in coding preferences such as the choice of single or double quotes and the use of closing semicolons in style attributes
+- Do not include the outer email shell, preheader, tracking marker, or root-container wrapper
+- Use exact provided text where available
+- Preserve email-safe table structure
+- Match the likely section order and visual rhythm from the global blueprint
+- Keep consistency with the rolling context from already generated sections
+- Keep consistency with adjacent section hints without merging separate top-level sections
+- Respect repeated-item density from the target section spec
+- If a section is image-only, return only that image band section
+- If footer links or legal lines are provided, include them explicitly instead of collapsing them into body copy
+
+Section-family instructions:
+["Preserve the exact wrapper family and table idiom from the references.", "Do not add commentary, markdown, or code fences.", "Use the compact sale/banner strip pattern from the reference.", "Keep it text-only unless the reference banner pattern contains imagery."]
+
+Section content:
+{"heading": "", "body": "THE OUTDOOR SALE \u2013 SAVE UP TO 25%*", "button": "", "list_items": [], "labels": [], "card_titles": [], "card_buttons": [], "footer_links": [], "legal_lines": [], "image_descriptions": [], "preheader": "THE OUTDOOR SALE \u2013 SAVE UP TO 25%*"}
+
+Reference fingerprints:
+[{"index": 0, "tag": "table", "classes": ["dwr_full_wrap", "dwr_main_table", "dwr_pad_2", "dwr_ligh"], "inferred_type": "utility_banner", "text_len": 57, "headings": 0, "images": 0, "buttons": 0, "lists": 0, "columns": 1, "social_links": 0, "full_width_images": 0, "outline_buttons": 0, "background_colors": [], "preview_text": "THE YEAR-END SALE \u2013 20% OFF MARKDOWNS* WITH CODE: EXTRA20", "section_type": "utility_banner"}, {"index": 5, "tag": "table", "classes": ["dwr_full_wrap", "dwr_main_table", "dwr_pad_24", "dwr_font_d3", "dwr_font_b2", "dwr_outline_button"], "inferred_type": "utility_banner", "text_len": 284, "headings": 1, "images": 0, "buttons": 1, "lists": 0, "columns": 1, "social_links": 0, "full_width_images": 0, "outline_buttons": 1, "background_colors": [], "preview_text": "The language of light Since its founding in 1962, Flos has collaborated with renowned designers such as Achille and Pier Giacomo Castiglioni, Philippe Starck, and Piero Lissoni \u2013 revolutionizing the industry with innovat", "section_type": "utility_banner"}]
+
+Reference HTML:
+    <table role="presentation" aria-hidden="true" width="100%" border="0" cellspacing="0" cellpadding="0" class="dwr_full_wrap" bgcolor="#f8f8f8" style="border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+      <tr>
+        <td align="center" valign="top" style="border-collapse: collapse; mso-line-height-rule: exactly;">
+          <table role="presentation" aria-hidden="true" align="center" width="600" border="0" cellspacing="0" cellpadding="0" class="dwr_main_table" style="border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px; table-layout: fixed; width: 600px;" bgcolor="#242222">
+            <tr>
+              <td valign="top" align="center" class="dwr_pad_2" style="border-collapse: collapse; mso-line-height-rule: exactly; padding: 10px;">
+                <p class="dwr_ligh" style="color: #fff; font-family: 'News Gothic Std', 'news-gothic-std', Helvetica, Tahoma, Arial, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: .07em !important; line-height: 11px; margin: 0px; mso-line-height-rule: exactly; padding: 0px;"><a href="#" target="_blank" style="border-collapse: collapse; color: #ffffff; mso-line-height-rule: exactly; text-decoration: none;" data-reportingname="THE YEAR-END SALE – 20% OFF MARKDOWNS* WITH CODE: EXTRA20" data-reportingtags="Tippy - Sale" data-location="t1">THE YEAR-END SALE – 20% OFF MARKDOWNS* WITH CODE: EXTRA20</a> </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+
+Implementation targets:
+- Maximize fidelity to interactive density found in the references for this section family.
+- If the reference pattern links images and titles separately, preserve that behavior.
+- Favor reference-native URLs or safe placeholder hrefs over leaving repeated cards unlinked.
+
+Return only HTML for this section.
