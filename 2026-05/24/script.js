@@ -16,11 +16,17 @@ for section, index in enumerate(sections):
         rolling_context
         global_blueprint
         section
+        adjcency_
+        best_chunks
         ...
         )
 
     ...soemthing...
 
-    rolling_context.append(...)
+    rolling_context["previous_sections"].append(
+        {
+                ...
+            }
+        )
 
-rolling_context = rolling_context[-2:]
+    rolling_context["previous_sections"] = rolling_context["previous_sections"][-2:]
