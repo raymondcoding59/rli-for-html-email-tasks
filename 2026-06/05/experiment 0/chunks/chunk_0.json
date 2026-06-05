@@ -1,0 +1,30 @@
+{
+  "index": 0,
+  "tag": "table",
+  "classes": [
+    "mj-column-per-100",
+    "mj-outlook-group-fix",
+    "component-wrapper",
+    "kl-image",
+    "kl-img-link",
+    "kl-section",
+    "content-padding",
+    "first"
+  ],
+  "inferred_type": "two_column_image_grid",
+  "text_len": 404,
+  "headings": 0,
+  "images": 6,
+  "buttons": 5,
+  "lists": 0,
+  "columns": 8,
+  "social_links": 0,
+  "full_width_images": 5,
+  "outline_buttons": 0,
+  "background_colors": [
+    "#FFEFDA",
+    "#E43138"
+  ],
+  "preview_text": "Valentine\u2019s Day is this Saturday. Your person, your best friend, your brunch crew, or just you on the couch with a fork \u2014 everyone wants cake. Specifically, Red Velvet Cheesecake Cake: deep red layers of double-chocolate",
+  "section_type": "two_column_image_grid"
+}

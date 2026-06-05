@@ -1,0 +1,129 @@
+{
+  "global_blueprint": {
+    "email_goal": "Announce and promote the new Cookies & Cream product available at Milk Bar bakeries.",
+    "preheader_text": "",
+    "section_order": ["logo_header", "announcement_text", "product_image", "footer"],
+    "expected_section_count": 4,
+    "wrapper_strategy": "centered single-column with full-width bands",
+    "spacing_rhythm": "generous vertical spacing between sections, tight within sections",
+    "alignment_pattern": "center-aligned throughout",
+    "background_story": "Alternating soft pastel and black backgrounds to highlight content and product imagery.",
+    "repeatable_patterns": ["centered heading and body with CTA", "image band", "footer with links"],
+    "button_style": "rounded, bold, pink background with white uppercase text",
+    "image_strategy": "hero product image on black background, logo as standalone image, no decorative images",
+    "style_rules": [
+      "bold, large headings",
+      "all-caps for key announcements",
+      "contrasting backgrounds for emphasis",
+      "consistent use of pink for branding and CTAs",
+      "monospaced font for subheadings"
+    ]
+  },
+  "sections": [
+    {
+      "type": "logo_header",
+      "layout": "single",
+      "elements": ["image"],
+      "image_position": "top",
+      "text_alignment": "center",
+      "columns": 1,
+      "background_color": "#FFF1E0",
+      "is_image_only_band": true,
+      "repeat_count": 1,
+      "card_style": "",
+      "content": {
+        "heading": "",
+        "body": "",
+        "button": "",
+        "list_items": [],
+        "labels": [],
+        "card_titles": [],
+        "card_buttons": [],
+        "footer_links": [],
+        "legal_lines": [],
+        "image_descriptions": ["Pink 'milk' logo on cream background"],
+        "preheader": ""
+      }
+    },
+    {
+      "type": "announcement_text",
+      "layout": "single",
+      "elements": ["heading", "body", "button"],
+      "image_position": "none",
+      "text_alignment": "center",
+      "columns": 1,
+      "background_color": "#000000",
+      "is_image_only_band": false,
+      "repeat_count": 1,
+      "card_style": "",
+      "content": {
+        "heading": "NOW AVAILABLE AT OUR BAKERIES:\nCOOKIES & CREAM",
+        "body": "Everyone knows the best part of a black-and-white sandwich cookie is the middle — the twist, the scrape, the part you eat first.\n\nThat same nostalgic goodness is now at our bakeries as dreamy vanilla creme soft serve, finished with chocolate cookie crumbs. Get it piled high as a sundae, or blended into a milkshake or milkquake, for a limited time.",
+        "button": "FIND A BAKERY",
+        "list_items": [],
+        "labels": [],
+        "card_titles": [],
+        "card_buttons": [],
+        "footer_links": [],
+        "legal_lines": [],
+        "image_descriptions": [],
+        "preheader": ""
+      }
+    },
+    {
+      "type": "product_image",
+      "layout": "single",
+      "elements": ["image"],
+      "image_position": "top",
+      "text_alignment": "center",
+      "columns": 1,
+      "background_color": "#000000",
+      "is_image_only_band": true,
+      "repeat_count": 1,
+      "card_style": "",
+      "content": {
+        "heading": "",
+        "body": "",
+        "button": "",
+        "list_items": [],
+        "labels": [],
+        "card_titles": [],
+        "card_buttons": [],
+        "footer_links": [],
+        "legal_lines": [],
+        "image_descriptions": ["Cup of vanilla creme soft serve with chocolate cookie crumbs, surrounded by sandwich cookies, 'milk' logo on cup"],
+        "preheader": ""
+      }
+    },
+    {
+      "type": "footer",
+      "layout": "single",
+      "elements": ["heading", "list", "body"],
+      "image_position": "none",
+      "text_alignment": "center",
+      "columns": 1,
+      "background_color": "#000000",
+      "is_image_only_band": false,
+      "repeat_count": 1,
+      "card_style": "",
+      "content": {
+        "heading": "MILK BAR",
+        "body": "",
+        "button": "",
+        "list_items": ["SHOP ONLINE", "FAQ", "LOCATIONS"],
+        "labels": [],
+        "card_titles": [],
+        "card_buttons": [],
+        "footer_links": ["Instagram", "TikTok", "Facebook"],
+        "legal_lines": [
+          "©2026 Milk Bar, All Rights Reserved.",
+          "30 West 26th Street",
+          "New York, NY 10010",
+          "No longer want to receive these emails? Unsubscribe"
+        ],
+        "image_descriptions": [],
+        "preheader": ""
+      }
+    }
+  ]
+}

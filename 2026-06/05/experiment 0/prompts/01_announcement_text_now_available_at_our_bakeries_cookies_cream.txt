@@ -1,0 +1,108 @@
+
+You are an expert HTML email developer.
+
+Goal:
+Build exactly one email section that follows the reference coding conventions and matches the provided design content.
+
+Hard rules:
+- Reuse reference wrapper patterns, spacing strategy, and coding style
+- Do not invent a new section family if the references already show a matching pattern
+- Keep the output as one complete section block
+- Do not include the outer email shell, preheader, tracking marker, or root-container wrapper
+- Use exact provided text where available
+- Preserve email-safe table structure
+- Match the likely section order and visual rhythm from the global blueprint
+- Keep consistency with the rolling context from already generated sections
+- Keep consistency with adjacent section hints without merging separate top-level sections
+- Respect repeated-item density from the target section spec
+- If a section is image-only, return only that image band section
+- If footer links or legal lines are provided, include them explicitly instead of collapsing them into body copy
+
+Section-family instructions:
+["Preserve the exact wrapper family and table idiom from the references.", "Do not add commentary, markdown, or code fences.", "Keep heading, body, and CTA roles separated when they are provided."]
+
+Global blueprint:
+{"email_goal": "Announce and promote the new Cookies & Cream product available at Milk Bar bakeries.", "preheader_text": "", "section_order": ["logo_header", "announcement_text", "product_image", "footer", "footer"], "expected_section_count": 5, "wrapper_strategy": "centered single-column with full-width bands", "spacing_rhythm": "generous vertical spacing between sections, tight within sections", "alignment_pattern": "center-aligned throughout", "background_story": "Alternating soft pastel and black backgrounds to highlight content and product imagery.", "repeatable_patterns": ["centered heading and body with CTA", "image band", "footer with links"], "button_style": "rounded, bold, pink background with white uppercase text", "image_strategy": "hero product image on black background, logo as standalone image, no decorative images", "style_rules": ["bold, large headings", "all-caps for key announcements", "contrasting backgrounds for emphasis", "consistent use of pink for branding and CTAs", "monospaced font for subheadings"]}
+
+Rolling context:
+{"previous_sections": [{"type": "logo_header", "summary": {"preview_text": "", "background_colors": ["#FFF1E0"], "images": 1, "buttons": 1, "columns": 2}}], "expected_order": ["logo_header", "announcement_text", "product_image", "footer", "footer"], "expected_section_count": 5}
+
+Adjacent sections:
+{"previous_section": {"type": "logo_header", "layout": "single", "heading": "", "body": "", "button": "", "repeat_count": 1}, "next_section": {"type": "product_image", "layout": "single", "heading": "", "body": "", "button": "", "repeat_count": 1}, "coordination_rules": ["Stay visually coherent with neighboring sections.", "Do not merge into the previous or next section unless explicitly instructed.", "Preserve this section as its own band while keeping spacing and style rhythm aligned."]}
+
+Target section:
+{"type": "announcement_text", "layout": "single", "elements": ["heading", "body", "button"], "image_position": "none", "text_alignment": "center", "columns": 1, "background_color": "#000000", "is_image_only_band": false, "repeat_count": 1, "card_style": "", "section_index": 1}
+
+Section content:
+{"heading": "NOW AVAILABLE AT OUR BAKERIES:\nCOOKIES & CREAM", "body": "Everyone knows the best part of a black-and-white sandwich cookie is the middle \u2014 the twist, the scrape, the part you eat first.\n\nThat same nostalgic goodness is now at our bakeries as dreamy vanilla creme soft serve, finished with chocolate cookie crumbs. Get it piled high as a sundae, or blended into a milkshake or milkquake, for a limited time.", "button": "FIND A BAKERY", "list_items": [], "labels": [], "card_titles": [], "card_buttons": [], "footer_links": [], "legal_lines": [], "image_descriptions": [], "preheader": ""}
+
+Reference fingerprints:
+[{"index": 1, "tag": "table", "classes": ["mj-column-per-100", "mj-outlook-group-fix", "component-wrapper", "kl-text", "kl-section", "content-padding", "last", "kl-row"], "inferred_type": "two_column_image_grid", "text_len": 276, "headings": 0, "images": 4, "buttons": 1, "lists": 2, "columns": 5, "social_links": 0, "full_width_images": 1, "outline_buttons": 0, "background_colors": ["#FFEFDA", "#000000"], "preview_text": "SHOP ONLINE \u2022 FAQ \u2022 LOCATIONS \u00a92026 Milk Bar, All Rights Reserved. 30 West 26th Street New York, NY 10010 No longer want to receive these emails? Unsubscribe Offer valid for a limited time for online orders only at milkb", "section_type": "two_column_image_grid"}]
+
+Reference HTML:
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td>
+<!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section-outlook" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#FFEFDA" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="background:#FFEFDA;background-color:#FFEFDA;margin:0px auto;border-radius:0px 0px 0px 0px;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFEFDA;background-color:#FFEFDA;width:100%;border-radius:0px 0px 0px 0px;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><![endif]-->
+<div class="content-padding last">
+<!--[if true]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;direction:ltr"><tr><![endif]-->
+<div class="kl-row colstack" style="display:table;table-layout:fixed;width:100%;">
+<!--[if true]><td style="vertical-align:top;width:600px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:top;width:100%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="background-color:#000000;vertical-align:top;padding-top:20px;padding-right:0px;padding-bottom:10px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="center" class="kl-image" style="font-size:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td class="" style="border:0;padding:0px 0px 0px 0px;width:600px;" valign="top">
+<a class="kl-img-link" href="https://trk.milkbarstore.com/l/01KGYVKDXS00N2T63B4VMXRK39_6" style="color:#E83A87; text-decoration:underline; display:block">
+<img alt="Milk Bar" src="https://d3k81ch9hvuctc.cloudfront.net/company/Taza39/images/043dd750-f7da-4be9-a917-8e03dc87251d.png" style="display:block;outline:none;text-decoration:none;height:auto;font-size:13px;width:100%;" title="Milk Bar" width="600"/>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="background-color:#000000;ver
+
+Reusable images:
+[{"src": "https://d3k81ch9hvuctc.cloudfront.net/company/Taza39/images/71e244f7-e1ed-4877-97ea-a9b350213690.png", "alt": "Milk Bar Logo", "width": "100", "title": ""}, {"src": "https://d3k81ch9hvuctc.cloudfront.net/company/Taza39/images/825c80ae-ec53-4816-a0d7-bb94a2082e36.png", "alt": "FREE DELIVERY ON ORDERS $100+ \u2022 ARRIVES BY 2/13", "width": "600", "title": "FREE DELIVERY ON ORDERS $100+ \u2022 ARRIVES BY 2/13"}, {"src": "https://d3k81ch9hvuctc.cloudfront.net/company/Taza39/images/2a1ee12e-6b3b-476f-905a-357d6187d7c2.png", "alt": "PSST, THEY WANT CAKE", "width": "600", "title": "PSST, THEY WANT CAKE"}, {"src": "https://d3k81ch9hvuctc.cloudfront.net/company/Taza39/images/44c70287-c18e-45bd-b4fc-0a145012a621.png", "alt": "SHOP RED VELVET", "width": "600", "title": "SHOP RED VELVET"}, {"src": "https://d3k81ch9hvuctc.cloudfront.net/company/Taza39/images/0eb90ff6-4e63-4ff7-9cd2-cab769e96ad1.png", "alt": "A tall slice of Red Velvet Cheesecake Cake with alternating layers of red velvet cake, cheesecake filling, and frosting sits on a white plate stacked on several plates, against a red background.", "width": "600", "title": "A tall slice of Red Velvet Cheesecake Cake with alternating layers of red velvet cake, cheesecake filling, and frosting sits on a white plate stacked on several plates, against a red background."}, {"src": "https://d3k81ch9hvuctc.cloudfront.net/company/Taza39/images/b22d6ca5-4e3c-453b-8ba6-fce9f3f742f8.gif", "alt": "ORDER BY 2/10 WITH STANDARD DELIVERY | ORDER BY 2/11 WITH EXPRESS DELIVERY", "width": "600", "title": "ORDER BY 2/10 WITH STANDARD DELIVERY | ORDER BY 2/11 WITH EXPRESS DELIVERY"}, {"src": "https://d3k81ch9hvuctc.cloudfront.net/company/Taza39/images/043dd750-f7da-4be9-a917-8e03dc87251d.png", "alt": "Milk Bar", "width": "600", "title": "Milk Bar"}, {"src": "https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/instagram_96.png", "alt": "instagram", "width": "32", "title": ""}, {"src": "https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/tiktok_96.png", "alt": "tiktok", "width": "32", "title": ""}, {"src": "https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/facebook_96.png", "alt": "facebook", "width": "32", "title": ""}]
+
+Implementation targets:
+- Maximize fidelity to interactive density found in the references for this section family.
+- If the reference pattern links images and titles separately, preserve that behavior.
+- Favor reference-native URLs or safe placeholder hrefs over leaving repeated cards unlinked.
+
+Return only HTML for this section.

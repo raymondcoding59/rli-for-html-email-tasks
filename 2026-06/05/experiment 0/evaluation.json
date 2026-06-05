@@ -1,0 +1,39 @@
+{
+  "structural_similarity": 18.6,
+  "content_accuracy": 23.61,
+  "component_fidelity": 15.0,
+  "style_fidelity": 19.62,
+  "reuse_of_learned_assets": 4.38,
+  "similarity_score": 81.21,
+  "output_metrics": {
+    "text_len": 1365,
+    "table_count": 30,
+    "button_count": 9,
+    "image_count": 5,
+    "heading_count": 0,
+    "section_count": 5,
+    "section_types": [
+      "utility_banner",
+      "content",
+      "image_band",
+      "list",
+      "image_grid"
+    ],
+    "class_count": 35,
+    "style_count": 132
+  },
+  "target_metrics": {
+    "text_len": 1289,
+    "table_count": 30,
+    "button_count": 12,
+    "image_count": 8,
+    "heading_count": 0,
+    "section_count": 2,
+    "section_types": [
+      "two_column_image_grid",
+      "two_column_image_grid"
+    ],
+    "class_count": 35,
+    "style_count": 127
+  }
+}
