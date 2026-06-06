@@ -1482,24 +1482,24 @@ def run_pipeline():
 
     chunk_records = split_html_into_chunks(reference_html)
     save_chunks(chunk_records)
-    embeddings = embed_chunks(chunk_records)
-    image_memory = build_image_memory(reference_html)
+    # embeddings = embed_chunks(chunk_records)
+    # image_memory = build_image_memory(reference_html)
 
-    image_base64 = encode_image(DESIGN_PATH)
-    design_spec = extract_design_spec(image_base64)
+    # image_base64 = encode_image(DESIGN_PATH)
+    # design_spec = extract_design_spec(image_base64)
 
-    final_html = build_email(reference_html, design_spec, embeddings, image_memory)
-    save_file(OUTPUT_PATH, final_html)
+    # final_html = build_email(reference_html, design_spec, embeddings, image_memory)
+    # save_file(OUTPUT_PATH, final_html)
 
-    evaluation = evaluate_against_target(final_html, target_html)
-    save_file(
-        os.path.join(EXPERIMENT_DIR, "evaluation.json"),
-        json.dumps(evaluation, indent=2),
-    )
+    # evaluation = evaluate_against_target(final_html, target_html)
+    # save_file(
+    #     os.path.join(EXPERIMENT_DIR, "evaluation.json"),
+    #     json.dumps(evaluation, indent=2),
+    # )
 
-    save_readme()
-    save_process_log()
-    write_report(evaluation)
+    # save_readme()
+    # save_process_log()
+    # write_report(evaluation)
     print("[DONE] Experiment 2 complete")
 
 
