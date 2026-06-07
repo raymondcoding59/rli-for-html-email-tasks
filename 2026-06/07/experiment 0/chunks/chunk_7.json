@@ -1,0 +1,26 @@
+{
+  "index": 7,
+  "tag": "div",
+  "classes": [
+    "mj-column-per-100",
+    "mj-outlook-group-fix",
+    "component-wrapper",
+    "kl-image",
+    "kl-img-link"
+  ],
+  "inferred_type": "content",
+  "text_len": 0,
+  "headings": 0,
+  "images": 1,
+  "buttons": 1,
+  "lists": 0,
+  "columns": 1,
+  "social_links": 0,
+  "full_width_images": 1,
+  "outline_buttons": 0,
+  "background_colors": [
+    "#000000"
+  ],
+  "preview_text": "",
+  "section_type": "content"
+}
