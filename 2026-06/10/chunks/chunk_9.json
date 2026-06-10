@@ -1,19 +1,15 @@
 {
-  "index": 0,
+  "index": 9,
   "tag": "div",
   "classes": [
     "mj-column-per-100",
     "mj-outlook-group-fix",
-    "component-wrapper",
-    "hlb-wrapper",
-    "hlb-block-settings-content",
-    "kl-header-link-bar",
-    "hlb-logo"
+    "component-wrapper"
   ],
-  "inferred_type": "brand_header",
+  "inferred_type": "footer",
   "text_len": 0,
   "headings": 0,
-  "images": 1,
+  "images": 3,
   "buttons": 0,
   "lists": 0,
   "columns": 1,
@@ -21,8 +17,8 @@
   "full_width_images": 0,
   "outline_buttons": 0,
   "background_colors": [
-    "#FFEFDA"
+    "#000000"
   ],
   "preview_text": "",
-  "section_type": "brand_header"
+  "section_type": "footer"
 }

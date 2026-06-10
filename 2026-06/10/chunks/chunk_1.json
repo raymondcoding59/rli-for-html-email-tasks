@@ -1,30 +1,24 @@
 {
   "index": 1,
-  "tag": "table",
+  "tag": "div",
   "classes": [
     "mj-column-per-100",
     "mj-outlook-group-fix",
     "component-wrapper",
-    "kl-text",
-    "kl-section",
-    "content-padding",
-    "last",
-    "kl-row"
+    "kl-image",
+    "kl-img-link"
   ],
-  "inferred_type": "two_column_image_grid",
-  "text_len": 276,
+  "inferred_type": "hero",
+  "text_len": 0,
   "headings": 0,
-  "images": 4,
+  "images": 1,
   "buttons": 1,
-  "lists": 2,
-  "columns": 5,
+  "lists": 0,
+  "columns": 1,
   "social_links": 0,
   "full_width_images": 1,
   "outline_buttons": 0,
-  "background_colors": [
-    "#FFEFDA",
-    "#000000"
-  ],
-  "preview_text": "SHOP ONLINE \u2022 FAQ \u2022 LOCATIONS \u00a92026 Milk Bar, All Rights Reserved. 30 West 26th Street New York, NY 10010 No longer want to receive these emails? Unsubscribe Offer valid for a limited time for online orders only at milkb",
-  "section_type": "two_column_image_grid"
+  "background_colors": [],
+  "preview_text": "",
+  "section_type": "hero"
 }

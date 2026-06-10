@@ -146,71 +146,114 @@ def has_class_token(node, token):
     return token in class_tokens(node)
 
 
-def discover_top_level_section_tables(soup):
-    """Find repeated top-level email bands by learning the dominant wrapper."""
-    body = soup.body or soup
-    direct_tables = [child for child in body.find_all("table", recursive=False)]
-    if direct_tables:
-        class_counts = Counter()
-        for table in direct_tables:
-            class_counts.update(class_tokens(table))
-        dominant_classes = [
-            class_name
-            for class_name, count in class_counts.most_common()
-            if count >= max(2, len(direct_tables) // 3)
-        ]
-        if dominant_classes:
-            selected = [
-                table
-                for table in direct_tables
-                if any(has_class_token(table, class_name) for class_name in dominant_classes)
-            ]
-            if selected:
-                return selected
-        return direct_tables
 
-    return [table for table in soup.find_all("table") if table.find_parent("table") is None]
+def infer_section_type_from_node_ai(node, index):
+    """
+    Use GPT to classify an email section into a reusable section family.
+    Falls back to deterministic defaults if classification fails.
+    """
 
-
-def infer_section_type_from_node(node, index):
-    """Infer a reusable section family from comments, structure, and content."""
-    label = ""
-    next_node = node.next_sibling
-    while next_node is not None:
-        if isinstance(next_node, str) and next_node.strip():
-            label = next_node.strip().lower()
-            break
-        next_node = next_node.next_sibling
-
-    text = normalize_text(" ".join(node.stripped_strings)).lower()
-    image_count = len(node.find_all("img"))
-    link_count = len(node.find_all("a"))
-    wrapper_count = len(
-        node.find_all(
-            attrs={
-                "class": lambda value: value
-                and "wrapper" in " ".join(value if isinstance(value, list) else [value]).lower()
-            }
+    try:
+        fingerprint = build_chunk_fingerprint(
+            str(node),
+            index,
+            ""
         )
-    )
 
-    if "footer" in label or node.get("id") == "footer":
-        return "footer"
-    if "banner" in label or (index == 0 and link_count and len(text) < 140):
-        return "utility_banner"
-    if "logo" in label:
-        return "brand_header"
-    if "2 up" in label or "two" in label or wrapper_count >= 2:
-        return "two_column_image_grid"
-    if "image" in label or (image_count and len(text) < 90):
-        return "image_band"
-    if "copy" in label or node.find(["h1", "h2", "h3", "h4", "h5", "h6"]):
-        return "copy_block"
-    if image_count >= 2:
-        return "image_grid"
-    return ""
+        prompt = f"""
+Classify this email section.
+
+Return ONLY valid JSON:
+
+{{
+  "section_type": "..."
+}}
+
+Allowed values:
+- footer
+- utility_banner
+- brand_header
+- copy_block
+- image_band
+- image_grid
+- two_column_image_grid
+- hero
+- content
+
+Section fingerprint:
+
+{json.dumps(fingerprint, indent=2)}
+"""
+
+        response = with_retries(
+            lambda: client.chat.completions.create(
+                model="gpt-4.1-mini",
+                messages=[
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0,
+                response_format={"type": "json_object"},
+            )
+        )
 
 
+        raw = response.choices[0].message.content.strip()
+
+        try:
+            result = json.loads(raw)
+        except Exception:
+            print(
+                f"[CLASSIFY WARNING] "
+                f"Chunk {index}: invalid JSON response"
+            )
+            return "content"
+
+        section_type = (
+            result.get("section_type", "")
+            .strip()
+            .lower()
+        )
+
+        allowed_types = {
+            "footer",
+            "utility_banner",
+            "brand_header",
+            "copy_block",
+            "image_band",
+            "image_grid",
+            "two_column_image_grid",
+            "hero",
+            "content",
+        }
+
+        if section_type not in allowed_types:
+            print(
+                f"[CLASSIFY WARNING] "
+                f"Chunk {index}: unknown type '{section_type}'"
+            )
+            return "content"
+
+        print(
+            f"[CLASSIFY] "
+            f"Chunk {index} -> {section_type}"
+        )
+
+        return section_type
+
+    except RateLimitError:
+        print(
+            f"[CLASSIFY ERROR] "
+            f"Chunk {index}: rate limit exceeded"
+        )
+        return "content"
+
+    except Exception as error:
+        print(
+            f"[CLASSIFY ERROR] "
+            f"Chunk {index}: {error}"
+        )
+        return "content"
+    
 def normalize_text(value):
     """Collapse whitespace for stable comparisons and prompts."""
     if not value:
@@ -325,9 +368,6 @@ def build_chunk_fingerprint(chunk_html, index, inferred_type=""):
     return fingerprint
 
 
-
-
-
 def merge_content_dicts(base_content, extra_content):
     """Merge extracted content dictionaries without losing distinct text."""
     merged = dict(base_content)
@@ -348,23 +388,14 @@ def merge_content_dicts(base_content, extra_content):
 
 def split_html_into_chunks(html):
     """Break the reference email into reusable top-level component chunks."""
-    print("[STEP 1] Section-aware chunking...")
+    print("Splitting reference HTML into chunks...")
     soup = BeautifulSoup(html, "html.parser")
 
     sections = []
-    for node in soup.select("table.kl-section"):
+    for node in soup.select("div.component-wrapper"):
         chunk_html = str(node)
         if len(chunk_html) >= 400:
-            sections.append((chunk_html, infer_section_type_from_node(node, len(sections))))
-
-    if not sections:
-        for node in discover_top_level_section_tables(soup):
-            chunk_html = str(node)
-            if len(chunk_html) >= 240:
-                sections.append((chunk_html, infer_section_type_from_node(node, len(sections))))
-
-    if not sections:
-        sections = [(html, "full_email")]
+            sections.append((chunk_html, infer_section_type_from_node_ai(node, len(sections))))
 
     chunk_records = []
     for index, (chunk_html, inferred_type) in enumerate(sections):
@@ -380,7 +411,7 @@ def split_html_into_chunks(html):
 
 def save_chunks(chunk_records):
     """Write every reference chunk and its fingerprint for auditability."""
-    print("[STEP 2] Saving chunks...")
+    print("Saving chunks...")
     for existing in os.listdir(CHUNKS_DIR):
         existing_path = os.path.join(CHUNKS_DIR, existing)
         if os.path.isfile(existing_path):
@@ -402,14 +433,11 @@ def save_chunks(chunk_records):
 
 def run_pipeline():
     """Run the full experimental pipeline and persist every required artifact."""
-    print("[RUN] Experiment 2 pipeline")
+    print("[START]")
     reference_html = load_file(REFERENCE_PATH)
-    target_html = load_file(TARGET_PATH)
-
     chunk_records = split_html_into_chunks(reference_html)
     save_chunks(chunk_records)
-
-    print("[DONE] Experiment 2 complete")
+    print("[DONE]")
 
 
 if __name__ == "__main__":
