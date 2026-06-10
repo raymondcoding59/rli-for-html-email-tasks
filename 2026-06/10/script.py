@@ -35,33 +35,12 @@ client = OpenAI(api_key=API_KEY)
 
 os.makedirs(EXPERIMENT_DIR, exist_ok=True)
 os.makedirs(CHUNKS_DIR, exist_ok=True)
-os.makedirs(PROMPTS_DIR, exist_ok=True)
-
-# Token accounting is kept in process memory and flushed to README.md at the
-# end of the run so every OpenAI call is auditable after each experiment.
-token_log = []
-total_input_tokens = 0
-total_output_tokens = 0
-total_tokens = 0
-process_log = []
-
-
-
-
-
-def safe_filename(value):
-    """Convert arbitrary text into a filesystem-safe filename."""
-    value = normalize_text(value).lower()
-    value = re.sub(r"[^a-z0-9]+", "_", value)
-    value = value.strip("_")
-    return value or "section"
 
 
 def save_file(path, content):
     """Write UTF-8 text artifacts into the experiment folder."""
     with open(path, "w", encoding="utf-8") as file:
         file.write(content)
-
 
 def load_file(path):
     """Read UTF-8 text inputs or artifacts."""
@@ -88,33 +67,6 @@ def with_retries(api_call, max_retries=6):
             time.sleep(wait_time)
 
 
-def encode_image(image_path):
-    """Convert the design image into a data payload for vision extraction."""
-    with open(image_path, "rb") as img:
-        return base64.b64encode(img.read()).decode("utf-8")
-
-
-def safe_json_loads(text):
-    """Parse model JSON robustly, including common fenced-response variants."""
-    try:
-        return json.loads(text)
-    except Exception:
-        pass
-
-    match = re.search(r"\{.*\}|\[.*\]", text, re.DOTALL)
-    if match:
-        try:
-            return json.loads(match.group(0))
-        except Exception:
-            pass
-
-    cleaned = text.replace("```json", "").replace("```", "").strip()
-    try:
-        return json.loads(cleaned)
-    except Exception:
-        return {}
-
-
 def extract_text_preview(node, limit=220):
     """Build a compact visible-text preview for retrieval fingerprints."""
     text = " ".join(node.stripped_strings)
@@ -126,25 +78,6 @@ def detect_background_colors(html):
     """Find explicit hex background colors used by an HTML fragment."""
     colors = re.findall(r"background(?:-color)?:\s*(#[0-9A-Fa-f]{3,8})", html)
     return list(dict.fromkeys(color.upper() for color in colors[:6]))
-
-
-def extract_inner_html(node):
-    """Return a BeautifulSoup node's child HTML without the outer wrapper."""
-    return "".join(str(child) for child in node.contents)
-
-
-def class_tokens(node):
-    """Return normalized class tokens for a parsed HTML node."""
-    classes = node.get("class", []) if getattr(node, "get", None) else []
-    if isinstance(classes, str):
-        return classes.split()
-    return list(classes)
-
-
-def has_class_token(node, token):
-    """Check class membership without assuming class attribute shape."""
-    return token in class_tokens(node)
-
 
 
 def infer_section_type_from_node_ai(node, index):
@@ -253,57 +186,7 @@ Section fingerprint:
             f"Chunk {index}: {error}"
         )
         return "content"
-    
-def normalize_text(value):
-    """Collapse whitespace for stable comparisons and prompts."""
-    if not value:
-        return ""
-    return re.sub(r"\s+", " ", str(value)).strip()
-
-
-def repair_mojibake_text(value):
-    """Repair common UTF-8/Latin-1 mojibake seen in model-extracted copy."""
-    if not isinstance(value, str):
-        return value
-    suspicious_tokens = ["â€™", "â€œ", "â€", "Â", "cafÃ©", "Ã", "â€“"]
-    if not any(token in value for token in suspicious_tokens):
-        return value
-    try:
-        repaired = value.encode("latin-1").decode("utf-8")
-        return repaired
-    except Exception:
-        return value
-
-
-def repair_mojibake_data(data):
-    """Recursively repair mojibake in extracted JSON-like design data."""
-    if isinstance(data, dict):
-        return {key: repair_mojibake_data(value) for key, value in data.items()}
-    if isinstance(data, list):
-        return [repair_mojibake_data(item) for item in data]
-    if isinstance(data, str):
-        return repair_mojibake_text(data)
-    return data
-
-
-def classify_section(fingerprint):
-    """Assign a broad section family from a structural fingerprint."""
-    if fingerprint.get("inferred_type"):
-        return fingerprint["inferred_type"]
-    if fingerprint["images"] and fingerprint["headings"] and fingerprint["buttons"]:
-        return "hero"
-    if fingerprint["columns"] >= 2 and fingerprint["images"]:
-        return "split"
-    if fingerprint["columns"] >= 3:
-        return "grid"
-    if fingerprint["buttons"]:
-        return "cta"
-    if fingerprint["lists"]:
-        return "list"
-    if fingerprint["social_links"] or fingerprint["text_len"] < 120:
-        return "footer"
-    return "content"
-
+ 
 
 def build_chunk_fingerprint(chunk_html, index, inferred_type=""):
     """Summarize an HTML chunk for embedding, retrieval, and evaluation."""
@@ -364,26 +247,7 @@ def build_chunk_fingerprint(chunk_html, index, inferred_type=""):
         "background_colors": detect_background_colors(chunk_html),
         "preview_text": extract_text_preview(soup),
     }
-    fingerprint["section_type"] = classify_section(fingerprint)
     return fingerprint
-
-
-def merge_content_dicts(base_content, extra_content):
-    """Merge extracted content dictionaries without losing distinct text."""
-    merged = dict(base_content)
-    for key, value in extra_content.items():
-        if isinstance(value, list):
-            existing = merged.get(key, [])
-            merged[key] = existing + [item for item in value if item not in existing]
-        elif isinstance(value, str):
-            if not normalize_text(merged.get(key)) and normalize_text(value):
-                merged[key] = value
-            elif normalize_text(merged.get(key)) and normalize_text(value) and normalize_text(merged.get(key)) != normalize_text(value):
-                merged[key] = merged.get(key) + "\n\n" + value
-        else:
-            merged[key] = value
-    return merged
-
 
 
 def split_html_into_chunks(html):
@@ -417,18 +281,12 @@ def save_chunks(chunk_records):
         if os.path.isfile(existing_path):
             os.remove(existing_path)
         
-    for existing in os.listdir(PROMPTS_DIR):
-        existing_path = os.path.join(PROMPTS_DIR, existing)
-        if os.path.isfile(existing_path):
-            os.remove(existing_path)
 
     for record in chunk_records:
         html_path = os.path.join(CHUNKS_DIR, f"chunk_{record['index']}.html")
         meta_path = os.path.join(CHUNKS_DIR, f"chunk_{record['index']}.json")
         save_file(html_path, record["html"])
         save_file(meta_path, json.dumps(record["fingerprint"], indent=2))
-
-
 
 
 def run_pipeline():

@@ -8,7 +8,7 @@
     "kl-image",
     "kl-img-link"
   ],
-  "inferred_type": "content",
+  "inferred_type": "hero",
   "text_len": 0,
   "headings": 0,
   "images": 1,
@@ -19,6 +19,5 @@
   "full_width_images": 1,
   "outline_buttons": 0,
   "background_colors": [],
-  "preview_text": "",
-  "section_type": "content"
+  "preview_text": ""
 }
