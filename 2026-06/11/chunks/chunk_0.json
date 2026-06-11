@@ -1,0 +1,27 @@
+{
+  "index": 0,
+  "tag": "div",
+  "classes": [
+    "mj-column-per-100",
+    "mj-outlook-group-fix",
+    "component-wrapper",
+    "hlb-wrapper",
+    "hlb-block-settings-content",
+    "kl-header-link-bar",
+    "hlb-logo"
+  ],
+  "inferred_type": "brand_header",
+  "text_len": 0,
+  "headings": 0,
+  "images": 1,
+  "buttons": 0,
+  "lists": 0,
+  "columns": 1,
+  "social_links": 0,
+  "full_width_images": 0,
+  "outline_buttons": 0,
+  "background_colors": [
+    "#FFEFDA"
+  ],
+  "preview_text": ""
+}

@@ -1,0 +1,23 @@
+{
+  "index": 9,
+  "tag": "div",
+  "classes": [
+    "mj-column-per-100",
+    "mj-outlook-group-fix",
+    "component-wrapper"
+  ],
+  "inferred_type": "image_grid",
+  "text_len": 0,
+  "headings": 0,
+  "images": 3,
+  "buttons": 0,
+  "lists": 0,
+  "columns": 1,
+  "social_links": 0,
+  "full_width_images": 0,
+  "outline_buttons": 0,
+  "background_colors": [
+    "#000000"
+  ],
+  "preview_text": ""
+}
