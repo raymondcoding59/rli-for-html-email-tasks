@@ -80,110 +80,6 @@ def detect_background_colors(html):
     return list(dict.fromkeys(color.upper() for color in colors[:6]))
 
 
-def infer_section_type_from_node_ai(node, index):
-
-    try:
-        fingerprint = build_chunk_fingerprint(
-            str(node),
-            index,
-            ""
-        )
-
-        prompt = f"""
-            Classify this email section.
-
-            Return ONLY valid JSON:
-
-            {{
-            "section_type": "..."
-            }}
-
-            Allowed values:
-            - footer
-            - utility_banner
-            - brand_header
-            - copy_block
-            - image_band
-            - image_grid
-            - two_column_image_grid
-            - hero
-            - content
-
-            Section fingerprint:
-
-            {json.dumps(fingerprint, indent=2)}
-            """
-
-        response = with_retries(
-            lambda: client.chat.completions.create(
-                model="gpt-4.1-mini",
-                messages=[
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0,
-                response_format={"type": "json_object"},
-            )
-        )
-
-        raw = response.choices[0].message.content.strip()
-
-        try:
-            result = json.loads(raw)
-            
-        except Exception:
-            print(
-                f"[CLASSIFY WARNING] "
-                f"Chunk {index}: invalid JSON response"
-            )
-            return "content"
-
-        section_type = (
-            result.get("section_type", "")
-            .strip()
-            .lower()
-        )
-
-        allowed_types = {
-            "footer",
-            "utility_banner",
-            "brand_header",
-            "copy_block",
-            "image_band",
-            "image_grid",
-            "two_column_image_grid",
-            "hero",
-            "content",
-        }
-
-        if section_type not in allowed_types:
-            print(
-                f"[CLASSIFY WARNING] "
-                f"Chunk {index}: unknown type '{section_type}'"
-            )
-            return "content"
-
-        print(
-            f"[CLASSIFY] "
-            f"Chunk {index} -> {section_type}"
-        )
-
-        return section_type
-
-    except RateLimitError:
-        print(
-            f"[CLASSIFY ERROR] "
-            f"Chunk {index}: rate limit exceeded"
-        )
-        return "content"
-
-    except Exception as error:
-        print(
-            f"[CLASSIFY ERROR] "
-            f"Chunk {index}: {error}"
-        )
-        return "content"
- 
- 
 
 def build_chunk_fingerprint(chunk_html, index, inferred_type=""):
     
@@ -255,15 +151,15 @@ def split_html_into_chunks(html):
     sections = []
     for node in soup.select("div.component-wrapper"):
         chunk_html = str(node)
-        sections.append((chunk_html, infer_section_type_from_node_ai(node, len(sections))))
+        sections.append(chunk_html)
 
     chunk_records = []
-    for index, (chunk_html, inferred_type) in enumerate(sections):
+    for index, chunk_html in enumerate(sections):
         chunk_records.append(
             {
                 "index": index,
                 "html": chunk_html,
-                "fingerprint": build_chunk_fingerprint(chunk_html, index, inferred_type),
+                "fingerprint": build_chunk_fingerprint(chunk_html, index, inferred_type=""),
             }
         )
     return chunk_records
