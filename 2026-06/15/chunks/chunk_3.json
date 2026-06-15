@@ -1,0 +1,17 @@
+{
+  "component_type": "content section",
+  "visual_description": "A full-width red section with centered light-colored text highlighting a Valentine's Day promotion for Red Velvet Cheesecake Cake. The paragraph uses friendly conversational copy to describe the cake, its appeal, and an order deadline. The background is a solid red, and the text is visually separated from headline and CTA elements.",
+  "purpose": "To provide enticing promotional copy for a special Valentine's product, building urgency around the holiday and motivating readers to order by the deadline.",
+  "keywords": [
+    "Valentine's Day",
+    "Red Velvet Cheesecake Cake",
+    "promotion",
+    "copy block",
+    "order deadline",
+    "holiday treat",
+    "emotional appeal",
+    "cake description"
+  ],
+  "fingerprint": "valentines-day-promo-red-velvet-cake-content-section-urgency-copy",
+  "rag_text": "Valentine\u2019s Day is this Saturday. Your person, your best friend, your brunch crew, or just you on the couch with a fork \u2014 everyone wants cake. Specifically, Red Velvet Cheesecake Cake: deep red layers of double-chocolate cake, tangy cheesecake filling, and cream cheese frosting. Rich, red, romantic \u2014 it\u2019s everything a Valentine\u2019s treat should be. Order by February 10th to lock in delivery by the 14th."
+}

@@ -1,0 +1,19 @@
+{
+  "component_type": "hero",
+  "visual_description": "A prominent, centered product image featuring a tall slice of Red Velvet Cheesecake Cake with layers of red velvet cake and cheesecake filling, placed on a stack of white plates against a solid red background. The image is large and immediately follows the header call-out, dominating the visual hierarchy.",
+  "purpose": "To visually showcase the featured product (Red Velvet Cheesecake Cake), enticing the audience and setting the tone for the email's main offer or campaign. Designed to grab attention and drive interest in the cake promotion.",
+  "keywords": [
+    "hero image",
+    "red velvet cake",
+    "cake promotion",
+    "food photography",
+    "email hero",
+    "featured product",
+    "dessert",
+    "cheesecake",
+    "visual focus",
+    "Milk Bar"
+  ],
+  "fingerprint": "hero|cake-slice|red-velvet|main-image|centered|enticing|product-showcase|solid-background|food-brand",
+  "rag_text": "This snippet is the hero section of the email, featuring a high-impact product photo of a tall slice of Red Velvet Cheesecake Cake on stacked plates against a red background. Its purpose is to highlight the main offer and engage the reader visually."
+}

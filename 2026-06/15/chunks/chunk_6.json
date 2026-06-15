@@ -1,0 +1,18 @@
+{
+  "component_type": "content section",
+  "visual_description": "A full-width, horizontally-oriented image banner with a pink background, cream-colored typewriter font, and heart icons. The text reads 'ORDER BY 2/10 WITH STANDARD DELIVERY' and 'ORDER BY 2/11 WITH EXPRESS DELIVERY', separated by hand-drawn hearts. The image stretches across the email, clearly dividing headline content from the product/hero section.",
+  "purpose": "To convey important shipping deadlines with visual emphasis, help create urgency, and act as a visual divider between core sections of the email. The clickable image also provides a quick-link to the store.",
+  "keywords": [
+    "shipping deadline",
+    "valentine's day",
+    "banner",
+    "order by",
+    "delivery",
+    "pink",
+    "urgency",
+    "divider",
+    "announcement"
+  ],
+  "fingerprint": "banner-pink-hearts-shipping-deadline-wide-image-content-section-delivery-cta-divider",
+  "rag_text": "Order by 2/10 with standard delivery. Order by 2/11 with express delivery. Pink banner with heart icons, used to announce important order deadlines and create urgency before Valentine's Day, visually dividing the email content."
+}

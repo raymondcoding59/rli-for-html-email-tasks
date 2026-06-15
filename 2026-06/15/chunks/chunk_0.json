@@ -1,0 +1,16 @@
+{
+  "component_type": "logo",
+  "visual_description": "A centered logo in the header section, featuring the pink 'milk' script logo against a cream-colored background. The logo is clickable, linking to the brand's main website. The component occupies the full width of the email and has padding to separate it visually from the rest of the content.",
+  "purpose": "Brand identification and reinforcement at the very top of the email. Serves as a visual anchor, immediately informing recipients of the brand identity and providing an easy navigation link to the main store website.",
+  "keywords": [
+    "logo",
+    "email header",
+    "brand identity",
+    "milk bar",
+    "pink script logo",
+    "header link",
+    "visual anchor"
+  ],
+  "fingerprint": "logo-header-pink-script-milk-bar-email-brand-identity-cream-background-width-100-centered-padding-link",
+  "rag_text": "This component is the logo section in the header of the email, prominently positioned at the top with a pink 'milk' script on a cream background. It is clickable and links to the main website, serving brand identification and top-level navigation."
+}

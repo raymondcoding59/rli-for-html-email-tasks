@@ -1,0 +1,17 @@
+{
+  "component_type": "hero",
+  "visual_description": "A bold, attention-grabbing banner featuring the headline 'PSST, THEY WANT CAKE' in large, cream-colored, uppercase block font on a bright red background. The headline sits prominently at the top center of the email, designed to hook recipients immediately. The image is a PNG with no photographic elements, only impactful typography.",
+  "purpose": "To serve as the primary hook or attention grabber of the email, introducing the main message and theme\u2014desiring cake for Valentine's Day. Sets the tone and urgency for the email's call to action, enticing users to continue reading and engage.",
+  "keywords": [
+    "hero",
+    "headline",
+    "attention-grabber",
+    "email banner",
+    "bold text",
+    "red background",
+    "cake promotion",
+    "Valentine's Day"
+  ],
+  "fingerprint": "hero-bold-cream-uppercase-text-red-bg-psst-they-want-cake-email-header",
+  "rag_text": "Hero section with a large bold message 'PSST, THEY WANT CAKE' in cream text on a red background, serving as the main hook of the email, introducing a cake promotion for Valentine's Day."
+}

@@ -1,0 +1,19 @@
+{
+  "component_type": "navigation",
+  "visual_description": "A horizontal bar with bold, centered links reading 'SHOP ONLINE', 'FAQ', and 'LOCATIONS', separated by dots (\u2022) on a black background. The links have a bold font and a light cream color, standing out against the dark background. The section is padded and sits at the top part of the email beneath the logo and preheader.",
+  "purpose": "Primary navigation menu providing quick access to important website destinations (shop, FAQ, store locations). Helps guide users efficiently to key sections from the email.",
+  "keywords": [
+    "navigation",
+    "menu bar",
+    "shop online",
+    "FAQ",
+    "locations",
+    "top links",
+    "primary links",
+    "black background",
+    "email nav",
+    "header navigation"
+  ],
+  "fingerprint": "milk bar email primary navigation black bar with SHOP ONLINE, FAQ, LOCATIONS links bold cream text horizontal separator",
+  "rag_text": "This section is the main navigation menu of the Milk Bar email, featuring prominent links for SHOP ONLINE, FAQ, and LOCATIONS. The links are bold, cream-colored, and separated by dots, presented against a black background for strong visual contrast."
+}

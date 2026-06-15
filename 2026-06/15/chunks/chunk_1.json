@@ -1,0 +1,19 @@
+{
+  "component_type": "preheader",
+  "visual_description": "A prominent black horizontal banner with bold, all-caps cream text that reads 'FREE DELIVERY ON ORDERS $100+ \u2022 ARRIVES BY 2/13'. The text is centered and stands out against the black background, spanning the full width of the email. The image is positioned directly beneath the logo/header section at the top of the email.",
+  "purpose": "To communicate an urgent promotional offer (free delivery on qualifying orders) and a key shipping cutoff/date to drive immediate action. Serves as a high-visibility, above-the-fold incentive to boost conversions.",
+  "keywords": [
+    "preheader",
+    "announcement bar",
+    "promo bar",
+    "free delivery",
+    "shipping offer",
+    "urgent",
+    "top section",
+    "above the fold",
+    "limited time",
+    "deadline"
+  ],
+  "fingerprint": "preheader-announcement-bar-free-delivery-on-orders-100-arrives-by-2-13-black-background-bold-text-top-of-email",
+  "rag_text": "Top preheader section features a full-width black bar with bold, cream all-caps text announcing 'FREE DELIVERY ON ORDERS $100+ \u2022 ARRIVES BY 2/13', immediately under the logo. The function is to highlight a shipping incentive and drive urgency before the main content."
+}

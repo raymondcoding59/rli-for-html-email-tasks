@@ -1,0 +1,19 @@
+{
+  "component_type": "hero CTA",
+  "visual_description": "A large, centrally-aligned, clickable image button with the text 'SHOP RED VELVET' in bold, pale font on a black rounded rectangle background, placed against a bright red background. It is directly above a product photo and after a promotional message, intended to draw attention and encourage clicks.",
+  "purpose": "Primary call-to-action inviting recipients to shop for the featured Red Velvet product, directing traffic to the product-specific landing page.",
+  "keywords": [
+    "CTA",
+    "button",
+    "shop red velvet",
+    "hero section",
+    "call to action",
+    "clickable",
+    "prominent",
+    "primary action",
+    "red velvet",
+    "ecommerce email"
+  ],
+  "fingerprint": "hero-cta_shop-red-velvet_large-button_red-background_black-rounded-rectangle_email",
+  "rag_text": "This snippet features the primary CTA for the email's hero section: a prominent, black button with 'SHOP RED VELVET' in bold, pale letters. It's visually designed to attract immediate interaction, leading users directly to the advertised product page."
+}

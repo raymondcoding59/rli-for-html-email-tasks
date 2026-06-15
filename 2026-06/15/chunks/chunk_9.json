@@ -1,0 +1,16 @@
+{
+  "component_type": "social section",
+  "visual_description": "A horizontal row of three social media icons (Instagram, TikTok, Facebook) in white, each inside a small dark circular background, spaced evenly and centered on a black background with padding. Each icon is a clickable link to the respective brand's social media profile.",
+  "purpose": "Provides quick links to the brand's social media accounts, encouraging recipients to engage with and follow the brand on external platforms. Enhances connectivity and brand presence beyond the email.",
+  "keywords": [
+    "social section",
+    "social media icons",
+    "instagram",
+    "tiktok",
+    "facebook",
+    "footer links",
+    "brand engagement"
+  ],
+  "fingerprint": "social-section-footer-milkbar-instagram-tiktok-facebook-icons-horizontal-black-background",
+  "rag_text": "The HTML snippet is a social section component found at the email footer, displaying Instagram, TikTok, and Facebook icons as inline links. The section uses a black background with centered alignment and padding, encouraging engagement with the brand's social profiles."
+}

@@ -68,81 +68,203 @@ def with_retries(api_call, max_retries=6):
 
             time.sleep(wait_time)
 
+def image_url_to_data_url(url):
+    """
+    Download an image and convert it to a data URL
+    suitable for OpenAI vision input.
+    """
+    response = requests.get(url, timeout=30)
+    response.raise_for_status()
 
-def extract_text_preview(node, limit=220):
-    """Build a compact visible-text preview for retrieval fingerprints."""
-    text = " ".join(node.stripped_strings)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text[:limit]
+    content_type = response.headers.get(
+        "content-type",
+        "image/jpeg"
+    )
+
+    encoded = base64.b64encode(
+        response.content
+    ).decode("utf-8")
+
+    return f"data:{content_type};base64,{encoded}"
 
 
-def detect_background_colors(html):
-    """Find explicit hex background colors used by an HTML fragment."""
-    colors = re.findall(r"background(?:-color)?:\s*(#[0-9A-Fa-f]{3,8})", html)
-    return list(dict.fromkeys(color.upper() for color in colors[:6]))
-
-
-
-def build_chunk_fingerprint(chunk_html, index, inferred_type=""):
-    
+def extract_image_urls(chunk_html):
+    """
+    Extract image URLs from HTML.
+    """
     soup = BeautifulSoup(chunk_html, "html.parser")
-    text = " ".join(soup.stripped_strings)
-    classes = []
-    for tag in soup.find_all(True):
-        tag_classes = tag.get("class", [])
-        classes.extend(tag_classes)
 
-    class_counts = Counter(classes)
-    headings = len(soup.find_all(["h1", "h2", "h3", "h4"]))
-    images = len(soup.find_all("img"))
-    buttons = len(
-        [
-            a
-            for a in soup.find_all("a")
-            if "button" in " ".join(a.get("class", [])).lower()
-            or "display:block" in (a.get("style", "").replace(" ", "").lower())
-        ]
+    urls = []
+
+    for img in soup.find_all("img"):
+        src = img.get("src")
+
+        if src:
+            urls.append(src)
+
+    return urls
+
+
+
+def build_chunk_fingerprint(chunk_html, index, design_image_path):
+
+    # Load design image
+    with open(design_image_path, "rb") as f:
+        design_b64 = base64.b64encode(
+            f.read()
+        ).decode("utf-8")
+
+    design_data_url = (
+        f"data:image/png;base64,{design_b64}"
     )
-    lists = len(soup.find_all(["ul", "ol"])) + text.count("•")
-    columns = max(
-        len(soup.select(".kl-column")),
-        len(soup.select("[class*='column']")),
-        len(soup.select("[class*='wrapper']")),
-        len(soup.select("[class*='mj-column-per-']")),
-    )
-    social_terms = ["instagram", "facebook", "x.com", "twitter", "pinterest", "linkedin", "youtube"]
-    fingerprint = {
-        "index": index,
-        "tag": soup.find(True).name if soup.find(True) else "unknown",
-        "classes": [name for name, _ in class_counts.most_common(8)],
-        "inferred_type": inferred_type,
-        "text_len": len(text),
-        "headings": headings,
-        "images": images,
-        "buttons": buttons,
-        "lists": lists,
-        "columns": columns if columns else 1,
-        "social_links": sum(
-            1
-            for a in soup.find_all("a")
-            if any(
-                token in ((a.get("href") or "") + " " + (a.get("data-reportingname") or "") + " " + a.get_text(" ")).lower()
-                for token in social_terms
+
+    image_urls = extract_image_urls(chunk_html)
+
+    prompt = f"""
+You are an expert email-design analyst.
+
+You will receive:
+
+1. A full email design screenshot.
+2. An HTML snippet extracted from that email.
+3. Any images referenced by the snippet.
+
+Your job is to determine:
+
+A. What part of the email the snippet belongs to:
+   - logo
+   - preheader
+   - navigation
+   - hero
+   - hero CTA
+   - product card
+   - product grid
+   - photogrid
+   - article block
+   - content section
+   - divider
+   - footer
+   - social section
+   - legal section
+   - etc.
+
+
+B. What visual role it plays.
+
+C. Generate a semantic fingerprint optimized for future vector search / RAG retrieval.
+
+D. Generate retrieval keywords.
+
+Return ONLY valid JSON.
+
+HTML SNIPPET:
+
+{chunk_html}
+"""
+
+    # Responses API content blocks
+    content = [
+        {
+            "type": "input_text",
+            "text": prompt
+        },
+        {
+            "type": "input_image",
+            "image_url": design_data_url
+        }
+    ]
+
+    # Add snippet images
+    for url in image_urls:
+        try:
+            print(f"Loading image: {url}")
+
+            content.append(
+                {
+                    "type": "input_image",
+                    "image_url": image_url_to_data_url(url)
+                }
             )
-        ),
-        "full_width_images": len(
-            [
-                img
-                for img in soup.find_all("img")
-                if str(img.get("width", "")) in {"600", "640"}
-                or "full" in " ".join(img.get("class", [])).lower()
-            ]
-        ),
-        "outline_buttons": len(soup.select("a[class*='button']")),
-        "background_colors": detect_background_colors(chunk_html),
-        "preview_text": extract_text_preview(soup),
-    }
-    return fingerprint
+
+        except Exception as e:
+            print(
+                f"Could not load image {url}: {e}"
+            )
+
+    response = client.responses.create(
+        model="gpt-4.1",
+        input=[
+            {
+                "role": "user",
+                "content": content
+            }
+        ],
+        text={
+            "format": {
+                "type": "json_schema",
+                "name": "email_component_analysis",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "component_type": {
+                            "type": "string"
+                        },
+                        "visual_description": {
+                            "type": "string"
+                        },
+                        "purpose": {
+                            "type": "string"
+                        },
+                        "keywords": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "fingerprint": {
+                            "type": "string"
+                        },
+                        "rag_text": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "component_type",
+                        "visual_description",
+                        "purpose",
+                        "keywords",
+                        "fingerprint",
+                        "rag_text"
+                    ],
+                    "additionalProperties": False
+                }
+            }
+        }
+    )
+
+    # Parse JSON result
+    try:
+        return json.loads(
+            response.output_text
+        )
+    except Exception:
+        # Fallback parser for SDK differences
+        try:
+            result_text = (
+                response.output[0]
+                .content[0]
+                .text
+            )
+
+            return json.loads(result_text)
+
+        except Exception:
+            print(response)
+            raise
+
+    
+
+
 
 
 def split_html_into_chunks(html):
@@ -161,12 +283,11 @@ def split_html_into_chunks(html):
             {
                 "index": index,
                 "html": chunk_html,
-                "fingerprint": build_chunk_fingerprint(chunk_html, index, inferred_type=""),
+                "fingerprint": build_chunk_fingerprint(chunk_html, index, design_image_path=REFERENCE_DESIGN_PATH),
             }
         )
         
         
-    print(chunk_records[0])
     return chunk_records
 
 

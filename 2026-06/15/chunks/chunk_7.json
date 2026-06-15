@@ -1,0 +1,17 @@
+{
+  "component_type": "logo",
+  "visual_description": "A horizontally centered, clickable image with the Milk Bar logo on a black background, spanning the full width of the email. The logo image has the brand's signature wordmark in pink and white, and clicking it leads users to the main website.",
+  "purpose": "Branding and immediate brand recognition at the top of the email. The logo acts as a familiar introduction to reinforce trust and serves as a clickable link to the storefront or homepage.",
+  "keywords": [
+    "logo",
+    "brand",
+    "milk bar",
+    "header",
+    "branding",
+    "centered image",
+    "navigation link",
+    "top of email"
+  ],
+  "fingerprint": "email-header-logo-branded-image-milk-bar-branding-centered-link-top",
+  "rag_text": "This snippet is the logo section of an email, featuring a centered, clickable Milk Bar logo displayed at the top for branding and navigation to the main website."
+}

@@ -1,0 +1,19 @@
+{
+  "component_type": "legal section",
+  "visual_description": "A horizontal block at the bottom of the email with a solid black background, lightly padded on all sides, containing small, light cream (#ffefda) text. The block includes copyright information, business address, an unsubscribe link, and terms and conditions for offers. All text is centered and readable, utilizing a simple sans-serif font.",
+  "purpose": "To provide mandatory legal disclosures, company information, unsubscribe options, and details regarding the terms of any promotional offers.",
+  "keywords": [
+    "legal",
+    "footer",
+    "unsubscribe",
+    "terms and conditions",
+    "copyright",
+    "address",
+    "compliance",
+    "Milk Bar",
+    "company info",
+    "offer details"
+  ],
+  "fingerprint": "legal section, black background, small centered cream text, copyright, address, unsubscribe, terms, Milk Bar, bottom of email",
+  "rag_text": "\u00a92026 Milk Bar, All Rights Reserved. 30 West 26th Street, New York, NY 10010. No longer want to receive these emails? Unsubscribe. Offer valid for a limited time for online orders only at milkbarstore.com. Additional terms and conditions may apply."
+}
