@@ -1,0 +1,13 @@
+{
+  "component_type": "logo",
+  "visual_description": "An email header containing a logo with the text 'PSST, THEY WANT CAKE' on a white background.",
+  "purpose": "Branding and identifying the email source.",
+  "keywords": [
+    "logo",
+    "branding",
+    "company name",
+    "header"
+  ],
+  "fingerprint": "logo, branding, header, 'PSST, THEY WANT CAKE'",
+  "rag_text": "Logo with the text 'PSST, THEY WANT CAKE' for brand recognition."
+}

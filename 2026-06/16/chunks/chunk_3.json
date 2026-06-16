@@ -1,0 +1,14 @@
+{
+  "component_type": "content section",
+  "visual_description": "A text block with a vibrant red background, containing a promotional message about Valentine's Day and a description of a red velvet cheesecake cake, along with a call-to-action button.",
+  "purpose": "To inform and promote a special Valentine's Day offer, creating engagement through appealing messaging and a clear call-to-action.",
+  "keywords": [
+    "Valentine's Day",
+    "promotion",
+    "red velvet cake",
+    "special offer",
+    "call to action"
+  ],
+  "fingerprint": "promotional message, Valentine's Day, dessert description, call-to-action button, compelling visual appeal, holiday marketing",
+  "rag_text": "A promotional content section emphasizing Valentine's Day celebration with a focus on dessert, featuring a call-to-action button for orders."
+}

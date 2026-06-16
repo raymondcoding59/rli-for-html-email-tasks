@@ -1,0 +1,12 @@
+{
+  "component_type": "logo",
+  "visual_description": "An image of a logo featuring the word 'milk' in pink script on a white background.",
+  "purpose": "Brand identification and logo display at the top of the email.",
+  "keywords": [
+    "milk",
+    "logo",
+    "brand"
+  ],
+  "fingerprint": "brand logo, milk, pink script, upper section",
+  "rag_text": "Logo of Milk Bar at the top of the email for brand recognition."
+}

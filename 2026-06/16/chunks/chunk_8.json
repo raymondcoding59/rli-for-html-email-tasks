@@ -1,0 +1,14 @@
+{
+  "component_type": "preheader",
+  "visual_description": "Text element containing links for 'SHOP ONLINE', 'FAQ', and 'LOCATIONS' with style and formatting, placed at the top of the email.",
+  "purpose": "Provides quick access links for users to navigate to key sections/activities before viewing the main content.",
+  "keywords": [
+    "preheader",
+    "links",
+    "navigation",
+    "top section",
+    "email header"
+  ],
+  "fingerprint": "preheader-links-nav-section-vertical-top",
+  "rag_text": "Preheader with navigation links for online shop, FAQ, and store locations."
+}

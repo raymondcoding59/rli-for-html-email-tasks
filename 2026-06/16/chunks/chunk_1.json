@@ -1,0 +1,13 @@
+{
+  "component_type": "preheader",
+  "visual_description": "A top banner with a logo and a black background text strip indicating free delivery on orders over $100, arriving by 2/13.",
+  "purpose": "To provide a concise summary or highlight of the email's main offer and delivery date, visible in the inbox preview.",
+  "keywords": [
+    "preheader",
+    "free delivery",
+    "offer notification",
+    "delivery deadline"
+  ],
+  "fingerprint": "high-contrast text banner with a logo emphasizing promotional message and delivery date",
+  "rag_text": "A preheader section highlighting free delivery offer and arrival date."
+}
