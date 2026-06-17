@@ -1,0 +1,14 @@
+{
+  "component_type": "logo",
+  "visual_description": "A logo image with the text 'SHOP RED VELVET' in white on a black rounded rectangle button.",
+  "purpose": "Branding and primary call to action for shopping red velvet products.",
+  "keywords": [
+    "logo",
+    "branding",
+    "call to action",
+    "red velvet",
+    "black button"
+  ],
+  "fingerprint": "Logo section with a call-to-action button for shopping red velvet.",
+  "rag_text": "An image of a black rounded rectangle button with white text 'SHOP RED VELVET' designed to prompt users to make a purchase."
+}

@@ -1,0 +1,13 @@
+{
+  "component_type": "hero",
+  "visual_description": "A prominent announcement banner with delivery information in bold text, styled to grab attention, including a promotional offer for delivery by specific dates.",
+  "purpose": "To communicate urgent delivery deadlines and promotional details to encourage immediate action.",
+  "keywords": [
+    "delivery deadline",
+    "promotion",
+    "attention-grabbing banner",
+    "email hero section"
+  ],
+  "fingerprint": "attention, urgency, delivery offer, promotional banner, bold text, call-to-action",
+  "rag_text": "Order by specific dates for delivery, promotional message for urgent action."
+}

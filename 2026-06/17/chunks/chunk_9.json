@@ -1,0 +1,17 @@
+{
+  "component_type": "social section",
+  "visual_description": "Row of social media icons (Instagram, TikTok, Facebook) with links, displayed in a horizontal line on a colored background.",
+  "purpose": "Provides links to social media platforms for social engagement and brand connection.",
+  "keywords": [
+    "social media",
+    "icons",
+    "Instagram",
+    "TikTok",
+    "Facebook",
+    "links",
+    "horizontal layout",
+    "branding"
+  ],
+  "fingerprint": "social-icons-horizontal-engagement-branded",
+  "rag_text": "Row of social media icons with embedded links for social connection."
+}

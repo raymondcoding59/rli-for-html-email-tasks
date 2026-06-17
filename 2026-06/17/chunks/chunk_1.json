@@ -1,0 +1,15 @@
+{
+  "component_type": "preheader",
+  "visual_description": "A narrow strip with a black background containing white bold text that reads 'FREE DELIVERY ON ORDERS $100+ \u2022 ARRIVES BY 2/13'.",
+  "purpose": "To provide a brief, attention-grabbing summary or offer preview that encourages the recipient to open the email.",
+  "keywords": [
+    "preheader",
+    "delivery offer",
+    "discount",
+    "offer",
+    "order deadline",
+    "valentine's day"
+  ],
+  "fingerprint": "large bold text, black background, white text, short informative message",
+  "rag_text": "Promotional offer for free delivery on orders over $100 with a deadline, designed to entice recipients to read more within the email."
+}

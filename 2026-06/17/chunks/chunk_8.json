@@ -1,0 +1,14 @@
+{
+  "component_type": "navigation",
+  "visual_description": "Horizontal navigation links with text 'SHOP ONLINE', 'FAQ', and 'LOCATIONS' in a centered paragraph, styled with a pinkish underline and bold font on a black header background.",
+  "purpose": "Provides links to key website sections and functions as the email's navigation menu.",
+  "keywords": [
+    "navigation",
+    "menu",
+    "links",
+    "website sections",
+    "call-to-action"
+  ],
+  "fingerprint": "navigation, menu, links, website, sections, email",
+  "rag_text": "Navigation links for shopping, FAQ, and locations in an email"
+}

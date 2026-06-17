@@ -1,0 +1,15 @@
+{
+  "component_type": "legal section",
+  "visual_description": "A section with small text on a light background containing copyright info, address, unsubscribe links, and offer details.",
+  "purpose": "Provides legal and promotional information, including unsubscribe and terms.",
+  "keywords": [
+    "unsubscribe",
+    "privacy",
+    "terms",
+    "copyright",
+    "offer terms",
+    "address"
+  ],
+  "fingerprint": "legal, copyright, unsubscribe, terms, address, privacy",
+  "rag_text": "\u00a92026 Milk Bar, All Rights Reserved. 30 West 26th Street, New York, NY 10010. Unsubscribe link. Offer details and conditions."
+}
