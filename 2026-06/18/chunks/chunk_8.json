@@ -1,0 +1,12 @@
+{
+  "component_type": "preheader",
+  "visual_description": "A dark rectangular section with bold white text announcing free delivery on orders over $100 and the expected arrival date.",
+  "purpose": "To provide a quick summary or incentive message before the main content of the email.",
+  "keywords": [
+    "free delivery",
+    "order over $100",
+    "arrival date"
+  ],
+  "fingerprint": "dark rectangle with white bold text about free delivery and delivery date",
+  "rag_text": "Free delivery offer for orders over $100 with expected delivery by 2/13."
+}

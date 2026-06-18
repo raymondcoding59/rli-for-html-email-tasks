@@ -1,0 +1,13 @@
+{
+  "component_type": "preheader",
+  "visual_description": "A pink banner with white text containing delivery information and order deadlines.",
+  "purpose": "To provide a quick preview of the main message and urgent ordering details.",
+  "keywords": [
+    "delivery",
+    "order deadline",
+    "promotional banner",
+    "preheader"
+  ],
+  "fingerprint": "pink banner with white delivery info and order deadlines",
+  "rag_text": "Order by 2/10 with standard delivery, order by 2/11 with express delivery"
+}

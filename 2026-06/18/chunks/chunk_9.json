@@ -1,0 +1,14 @@
+{
+  "component_type": "social section",
+  "visual_description": "A row of social media icons (Instagram, TikTok, Facebook) presented as clickable links, centered with padding.",
+  "purpose": "Provides links to social media profiles to encourage engagement.",
+  "keywords": [
+    "social media icons",
+    "Instagram",
+    "TikTok",
+    "Facebook",
+    "links"
+  ],
+  "fingerprint": "social icons, social media links, engagement, footer",
+  "rag_text": "Social media links for engagement in email footer."
+}

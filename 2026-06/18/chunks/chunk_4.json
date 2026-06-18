@@ -1,0 +1,15 @@
+{
+  "component_type": "logo",
+  "visual_description": "An image of a logo with the text 'SHOP RED VELVET' in bold white letters inside a black rounded rectangle button. The logo is linked to a URL.",
+  "purpose": "Brand identification and navigation to product collection.",
+  "keywords": [
+    "logo",
+    "brand",
+    "red velvet",
+    "shop",
+    "button",
+    "branding"
+  ],
+  "fingerprint": "logo-shop-red-velvet-black",
+  "rag_text": "This component functions as a brand logo and a call-to-action button linking to shop section."
+}

@@ -1,0 +1,16 @@
+{
+  "component_type": "legal section",
+  "visual_description": "A black footer section containing copyright, address, unsubscribe link, social media icons, and legal disclaimers.",
+  "purpose": "Provides legal information, unsubscription, and contact details to the recipient.",
+  "keywords": [
+    "legal",
+    "footer",
+    "unsubscribe",
+    "privacy",
+    "disclaimer",
+    "email footer",
+    "contact info"
+  ],
+  "fingerprint": "footer legal disclaimer copyright address unsubscribing social media",
+  "rag_text": "Legal and contact information, unsubscribe link, privacy policy, company address, social media icons, copyright notice."
+}

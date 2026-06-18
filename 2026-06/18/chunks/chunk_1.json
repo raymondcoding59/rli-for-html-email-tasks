@@ -1,0 +1,14 @@
+{
+  "component_type": "preheader",
+  "visual_description": "A banner with the text 'FREE DELIVERY ON ORDERS $100+ \u2022 ARRIVES BY 2/13' in uppercase on a black background.",
+  "purpose": "To provide a concise summary or highlight of the email's offer or main message to encourage opening and reading.",
+  "keywords": [
+    "free delivery",
+    "orders over $100",
+    "delivery date",
+    "promotion",
+    "offer"
+  ],
+  "fingerprint": "banner, headline, offer, promotion, delivery, dates",
+  "rag_text": "FREE DELIVERY ON ORDERS $100+ \u2022 ARRIVES BY 2/13"
+}
