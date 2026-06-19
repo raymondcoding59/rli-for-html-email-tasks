@@ -1,0 +1,17 @@
+{
+  "component_type": "social section",
+  "visual_description": "A footer section with social media icons linking to Instagram, TikTok, and Facebook, styled as inline blocks within a black background with white and black text.",
+  "purpose": "To provide social media links and contact information at the bottom of the email for social engagement and brand connectivity.",
+  "keywords": [
+    "social media",
+    "social icons",
+    "footer",
+    "Instagram",
+    "TikTok",
+    "Facebook",
+    "my link",
+    "contact info"
+  ],
+  "fingerprint": "footer, social icons, social media links, brand footer, contact info, engagement",
+  "rag_text": "Footer section with social media icons linking to Instagram, TikTok, and Facebook, styled as inline blocks within a black background with white and black text."
+}

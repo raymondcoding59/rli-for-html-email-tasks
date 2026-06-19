@@ -1,0 +1,17 @@
+{
+  "component_type": "preheader",
+  "visual_description": "A narrow strip at the top with links: 'SHOP ONLINE', 'FAQ', and 'LOCATIONS', styled with a black text on a light background.",
+  "purpose": "Provides quick navigation links and preview text for the email, often seen as a preheader or top bar.",
+  "keywords": [
+    "preheader",
+    "top navigation",
+    "quick links",
+    "email header",
+    "links",
+    "shop",
+    "FAQ",
+    "locations"
+  ],
+  "fingerprint": "top-links-preheader-navigation",
+  "rag_text": "A top bar with links to shop, FAQ, and locations, serving as a preheader or header navigation."
+}

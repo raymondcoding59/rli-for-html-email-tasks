@@ -1,0 +1,14 @@
+{
+  "component_type": "logo",
+  "visual_description": "The logo component features an image of the Milk Bar logo, which is a pink stylized word 'milk' in script font. It appears at the top of the email, serving as the brand identity element, placed within a black banner with white text.",
+  "purpose": "To establish brand identity and recognition at the top of the email.",
+  "keywords": [
+    "Milk Bar",
+    "logo",
+    "brand",
+    "brand identity",
+    "top of email"
+  ],
+  "fingerprint": "brand logo, Milk Bar, pink script, header, graphic, brand identity, top placement",
+  "rag_text": "The removable logo at the top of the email signifies the brand 'Milk Bar', serving as the visual anchor and brand recognition element."
+}

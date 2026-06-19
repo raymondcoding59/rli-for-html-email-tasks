@@ -32,6 +32,7 @@ if not API_KEY:
     raise RuntimeError("Set OPENAI_API_KEY before running this script.")
 
 client = OpenAI(api_key=API_KEY)
+model = "gpt-4.1-nano"
 
 os.makedirs(EXPERIMENT_DIR, exist_ok=True)
 os.makedirs(CHUNKS_DIR, exist_ok=True)
@@ -105,11 +106,9 @@ def extract_image_urls(chunk_html):
     return urls
 
 
-
-def build_chunk_fingerprint(chunk_html, index, design_image_path):
-
+def convert_ref_design_to_base64():
     # Load design image
-    with open(design_image_path, "rb") as f:
+    with open(REFERENCE_DESIGN_PATH, "rb") as f:
         design_b64 = base64.b64encode(
             f.read()
         ).decode("utf-8")
@@ -117,6 +116,13 @@ def build_chunk_fingerprint(chunk_html, index, design_image_path):
     design_data_url = (
         f"data:image/png;base64,{design_b64}"
     )
+    return design_data_url
+ 
+ref_design_base64 = convert_ref_design_to_base64()
+
+def build_chunk_fingerprint(chunk_html):
+
+
 
     image_urls = extract_image_urls(chunk_html)
 
@@ -170,7 +176,7 @@ HTML SNIPPET:
         },
         {
             "type": "input_image",
-            "image_url": design_data_url
+            "image_url": ref_design_base64
         }
     ]
 
@@ -283,7 +289,7 @@ def split_html_into_chunks(html):
             {
                 "index": index,
                 "html": chunk_html,
-                "fingerprint": build_chunk_fingerprint(chunk_html, index, design_image_path=REFERENCE_DESIGN_PATH),
+                "fingerprint": build_chunk_fingerprint(chunk_html),
             }
         )
         
@@ -305,6 +311,106 @@ def save_chunks(chunk_records):
         meta_path = os.path.join(CHUNKS_DIR, f"chunk_{record['index']}.json")
         save_file(html_path, record["html"])
         save_file(meta_path, json.dumps(record["fingerprint"], indent=2))
+
+
+def verify_and_correct_fingerprints( fingerprints ):
+
+    review_payload = []
+
+    total = len(fingerprints)
+
+    for idx, fingerprint in enumerate(fingerprints):
+        review_payload.append(
+            {
+                "chunk_index": idx,
+                "position": f"{idx + 1}/{total}",
+                "fingerprint": fingerprint
+            }
+        )
+
+    prompt = f"""
+            You are reviewing fingerprints generated from chunks of an HTML email.
+
+            IMPORTANT:
+
+            - The fingerprints were generated independently and may contain mistakes.
+            - The chunks appear in TOP-TO-BOTTOM order in the email.
+            - Use the full design image and the sequence of fingerprints to infer
+            the true structure of the email.
+            - Correct fingerprints that appear inaccurate.
+            - Preserve fingerprints that are already correct.
+            - Preserve the existing fingerprint schema and field names.
+            - Do not invent new schema fields.
+            - Return ALL fingerprints, including unchanged ones.
+
+            Return ONLY valid JSON.
+
+            Expected format:
+
+            [
+            {{
+                "chunk_index": 0,
+                "fingerprint": {{
+                ...
+                }}
+            }}
+            ]
+
+            Fingerprints:
+
+            {json.dumps(review_payload, indent=2)}
+            """
+
+    response = client.responses.create(
+        model=model,
+        input=[
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "input_text",
+                        "text": prompt
+                    },
+                    {
+                        "type": "input_image",
+                        "image_url": f"data:image/png;base64,{design_image_base64}"
+                    }
+                ]
+            }
+        ]
+    )
+
+    raw_output = response.output_text.strip()
+
+    try:
+        corrected = json.loads(raw_output)
+    except Exception:
+        print("\n===== GPT RESPONSE =====")
+        print(raw_output)
+        print("========================\n")
+        raise ValueError(
+            "Fingerprint verification returned invalid JSON."
+        )
+
+    corrected_map = {}
+
+    for item in corrected:
+        if (
+            isinstance(item, dict)
+            and "chunk_index" in item
+            and "fingerprint" in item
+        ):
+            corrected_map[item["chunk_index"]] = item["fingerprint"]
+
+    final_fingerprints = []
+
+    for idx, original_fp in enumerate(fingerprints):
+        final_fingerprints.append(
+            corrected_map.get(idx, original_fp)
+        )
+
+    return final_fingerprints
+
 
 
 def run_pipeline():

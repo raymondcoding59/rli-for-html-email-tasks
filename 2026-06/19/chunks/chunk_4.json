@@ -1,0 +1,14 @@
+{
+  "component_type": "logo",
+  "visual_description": "A rectangular logo image with the text 'SHOP RED VELVET' on a black background, featuring bold white letters and a slightly rounded font.",
+  "purpose": "Brand identification and navigation emphasis at the top of the email.",
+  "keywords": [
+    "logo",
+    "brand",
+    "header",
+    "branding",
+    "shop red velvet"
+  ],
+  "fingerprint": "brand, logo, shop, red velvet, header, prominent",
+  "rag_text": "Logo image displaying 'SHOP RED VELVET' at the top of the email, serving as the brand presence."
+}

@@ -4,11 +4,7 @@ import json
 client = OpenAI()
 
 
-def verify_and_correct_fingerprints(
-    fingerprints,
-    design_image_base64,
-    model="gpt-4.1"
-):
+def verify_and_correct_fingerprints( fingerprints ):
 
     review_payload = []
 
@@ -110,8 +106,7 @@ Fingerprints:
 def update_saved_fingerprints(
     fingerprints,
     design_image_base64,
-    save_callback,
-    model="gpt-4.1"
+    save_callback
 ):
     """
     Verifies fingerprints and immediately persists corrections.

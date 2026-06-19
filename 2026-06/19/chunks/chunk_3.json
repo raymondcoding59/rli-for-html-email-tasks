@@ -1,0 +1,16 @@
+{
+  "component_type": "content section",
+  "visual_description": "A highlighted promotional message box with a red background, bold headline text 'PSSST, THEY WANT CAKE', followed by descriptive text about Valentine's Day and a call-to-action button 'SHOP RED VELVET' below an image of a cake.",
+  "purpose": "To promote Valentine\u2019s Day cake order with a special offer and call to action.",
+  "keywords": [
+    "Valentine's Day",
+    "promotion",
+    "cake",
+    "red velvet",
+    "special offer",
+    "call to action",
+    "sale"
+  ],
+  "fingerprint": "promo, offer, celebration, cake, Valentine's Day, red color, bold headlines, call-to-action button, image of cake, marketing",
+  "rag_text": "Valentine\u2019s Day promotion for red velvet cake with special ordering deadline and a prominent 'SHOP RED VELVET' button."
+}

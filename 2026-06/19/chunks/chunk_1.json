@@ -1,0 +1,15 @@
+{
+  "component_type": "preheader",
+  "visual_description": "A banner with text 'FREE DELIVERY ON ORDERS $100+ \u2022 ARRIVES BY 2/13' in bold, white font on a black background, located just below the 'milk' logo.",
+  "purpose": "To quickly convey a promotional message and important deadline information to encourage opening and engagement with the email.",
+  "keywords": [
+    "free delivery",
+    "promotion",
+    "deadline",
+    "banner",
+    "black background",
+    "bold text"
+  ],
+  "fingerprint": "promo banner, delivery offer, deadline, black background, promotional message, email preheader",
+  "rag_text": "FREE DELIVERY ON ORDERS $100+ \u2022 ARRIVES BY 2/13"
+}
