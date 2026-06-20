@@ -1,0 +1,15 @@
+{
+  "component_type": "content section",
+  "visual_description": "A promotional content block with a Valentine's Day message, detailed description of a red velvet cheesecake cake, and a call-to-action button for ordering.",
+  "purpose": "Engages the reader with a seasonal promotion and encourages order placement.",
+  "keywords": [
+    "Valentine's Day",
+    "promo",
+    "cake description",
+    "order deadline",
+    "call to action",
+    "special offer"
+  ],
+  "fingerprint": "Valentine's Day promotion content cake order deadline call-to-action",
+  "rag_text": "Valentine\u2019s Day is this Saturday. Your person, your best friend, your brunch crew, or just you on the couch with a fork \u2014 everyone wants cake. Specifically, Red Velvet Cheesecake Cake: deep red layers of double-chocolate cake, tangy cheesecake filling, and cream cheese frosting. Rich, red, romantic \u2014 it\u2019s everything a Valentine\u2019s treat should be. Order by February 10th to lock in delivery by the 14th."
+}

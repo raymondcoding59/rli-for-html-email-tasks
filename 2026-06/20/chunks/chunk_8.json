@@ -1,0 +1,14 @@
+{
+  "component_type": "preheader",
+  "visual_description": "A black strip with white bold text indicating free delivery, new arrival date, and a headline in large white letters stating 'PSSST, THEY WANT CAKE'.",
+  "purpose": "To deliver a brief, engaging summary or call-to-action at the top of the email before the main content.",
+  "keywords": [
+    "preheader",
+    "free delivery",
+    "cake promotion",
+    "headline",
+    "call to action"
+  ],
+  "fingerprint": "black strip, white bold text, promotion, headline, engaging",
+  "rag_text": "Free delivery on orders $100+ - PSSST, THEY WANT CAKE"
+}

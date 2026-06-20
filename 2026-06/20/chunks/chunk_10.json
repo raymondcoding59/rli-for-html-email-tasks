@@ -1,0 +1,15 @@
+{
+  "component_type": "legal section",
+  "visual_description": "A footer with legal information, unsubscribe link, address, and social media icons.",
+  "purpose": "To provide legal and contact information, and opt-out options for recipients.",
+  "keywords": [
+    "legal",
+    "footer",
+    "unsubscribe",
+    "address",
+    "social media",
+    "privacy"
+  ],
+  "fingerprint": "footer, legal notice, unsubscribe link, address block, social media icons, email footer, compliance info",
+  "rag_text": "Copyright and legal disclaimer footer with unsubscribe link and company address."
+}

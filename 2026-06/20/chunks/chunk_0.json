@@ -1,0 +1,15 @@
+{
+  "component_type": "logo",
+  "visual_description": "An image of the Milk Bar logo as a pink, cursive text on a transparent background.",
+  "purpose": "Brand identification and logo placement in the email header.",
+  "keywords": [
+    "Milk Bar",
+    "logo",
+    "brand",
+    "header",
+    "cursive",
+    "pink"
+  ],
+  "fingerprint": "milk_bar_logo_1234567890",
+  "rag_text": "This snippet contains the Milk Bar logo, used for brand recognition at the top of the email."
+}

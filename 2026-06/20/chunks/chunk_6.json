@@ -1,0 +1,16 @@
+{
+  "component_type": "hero",
+  "visual_description": "A vibrant promotional email with a bright pink and red theme promoting Valentine's Day themed cake, including an image of a layered chocolate cake and a clearly styled call-to-action button to shop for the cake.",
+  "purpose": "To promote a special Valentine's Day cake and encourage customers to place an order before a deadline.",
+  "keywords": [
+    "Valentine's Day",
+    "cake promotion",
+    "special offer",
+    "baking",
+    "chocolate cake",
+    "call-to-action",
+    "shopping"
+  ],
+  "fingerprint": "Valentine's Day, cake promotion, promotional email, chocolate cake, call-to-action, bakery",
+  "rag_text": "A promotional email hero section featuring a Valentine\u2019s themed cake with a bold offer to order by a specific date, designed to entice recipients to shop for the holiday."
+}

@@ -1,0 +1,14 @@
+{
+  "component_type": "logo",
+  "visual_description": "A digital graphic of a logo section featuring the word 'milk' in pink cursive font, followed by a bold, rounded black button with white text 'SHOP RED VELVET'. The logo is at the top, centered, with a background of vibrant red, pink, and black colors.",
+  "purpose": "Serves as the primary branding element and immediate call-to-action button for the email, redirecting to the product collection.",
+  "keywords": [
+    "logo",
+    "brand",
+    "call-to-action",
+    "red velvet",
+    "milk"
+  ],
+  "fingerprint": "brand-logo-red-velvet-shop-cta",
+  "rag_text": "Brand logo with a 'shop' button for red velvet product collection."
+}

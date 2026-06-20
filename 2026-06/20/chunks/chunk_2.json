@@ -1,0 +1,14 @@
+{
+  "component_type": "logo",
+  "visual_description": "A rectangular logo with the text 'PSST, THEY WANT CAKE' on a white background, with a link and an accompanying image use.",
+  "purpose": "Brand logo and header identification",
+  "keywords": [
+    "logo",
+    "brand",
+    "header",
+    "cake",
+    "promotional"
+  ],
+  "fingerprint": "logo-PSSTheyWantCake-Header",
+  "rag_text": "Brand logo for Milk Bar with slogan 'PSST, THEY WANT CAKE'."
+}
