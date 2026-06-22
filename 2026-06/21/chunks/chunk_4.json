@@ -1,0 +1,13 @@
+{
+  "component_type": "logo",
+  "visual_description": "An image of a logo with the text 'SHOP RED VELVET' on a clickable link.",
+  "purpose": "Serves as the brand or product logo, typically at the top of the email for branding and recognition.",
+  "keywords": [
+    "logo",
+    "branding",
+    "shop red velvet",
+    "header"
+  ],
+  "fingerprint": "logo, shop red velvet, branding, header, top of email, clickable",
+  "rag_text": "Email header logo for shop red velvet"
+}

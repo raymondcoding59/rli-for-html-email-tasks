@@ -1,0 +1,15 @@
+{
+  "component_type": "hero",
+  "visual_description": "A large promotional banner with a red background featuring bold white text that emphasizes the Valentine's Day theme and product promotion, including a call-to-action button.",
+  "purpose": "To grab attention and promote a specific product (cake) with an offer and encourage the reader to click through.",
+  "keywords": [
+    "Valentine's Day",
+    "product promotion",
+    "cake",
+    "call to action",
+    "red background",
+    "banner"
+  ],
+  "fingerprint": "banner-promotion-red-valentine-cake",
+  "rag_text": "PSSST, THEY WANT CAKE"
+}

@@ -1,0 +1,14 @@
+{
+  "component_type": "preheader",
+  "visual_description": "A small banner at the top with a message about free delivery on orders over $100, arriving by 2/13, displayed as an image link.",
+  "purpose": "To provide a brief, important offer message that encourages opening the email and highlights a promotion.",
+  "keywords": [
+    "preheader",
+    "free delivery",
+    "promotion",
+    "order",
+    "date"
+  ],
+  "fingerprint": "promo, offer, free delivery, order, date",
+  "rag_text": "Promotional message about free delivery on orders over $100 arriving by 2/13"
+}

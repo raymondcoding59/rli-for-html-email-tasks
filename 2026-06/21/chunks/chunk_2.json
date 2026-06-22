@@ -1,0 +1,14 @@
+{
+  "component_type": "logo",
+  "visual_description": "An image with a pink handwritten style text 'milk' at the top and a bold red background with white text 'PSST, THEY WANT CAKE' in large font.",
+  "purpose": "Branding and header identification.",
+  "keywords": [
+    "milk",
+    "logo",
+    "branding",
+    "header",
+    "cake promotion"
+  ],
+  "fingerprint": "logo, brand, header, promotional, milk, cake",
+  "rag_text": "Email header with brand logo and promotional message for milk brand's cake promotion."
+}

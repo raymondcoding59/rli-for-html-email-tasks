@@ -1,0 +1,16 @@
+{
+  "component_type": "social section",
+  "visual_description": "This section contains icons for Instagram, TikTok, Facebook, arranged horizontally, each linking to corresponding social media pages within a styled table.",
+  "purpose": "Provide social media links and promote engagement across platforms.",
+  "keywords": [
+    "social media",
+    "icons",
+    "links",
+    "facebook",
+    "instagram",
+    "tiktok",
+    "engagement"
+  ],
+  "fingerprint": "social-icons-horz-engagement-platforms",
+  "rag_text": "social media icons with links to Instagram, TikTok, Facebook for engagement"
+}

@@ -1,0 +1,15 @@
+{
+  "component_type": "legal section",
+  "visual_description": "This segment contains the company's address, copyright notice, unsubscribe link, and disclaimer about the offer validity.",
+  "purpose": "Provides legal and contact information, allows recipients to unsubscribe and understand terms.",
+  "keywords": [
+    "legal",
+    "unsubscribe",
+    "contact",
+    "copyright",
+    "disclaimer",
+    "company address"
+  ],
+  "fingerprint": "legal, copyright, contact, unsubscribe, terms, address, disclaimer",
+  "rag_text": "\u00a92026 Milk Bar, All Rights Reserved. 30 West 26th Street New York, NY 10010 No longer want to receive these emails? Unsubscribe Offer valid for a limited time for online orders only at milkbarstore.com."
+}

@@ -1,0 +1,14 @@
+{
+  "component_type": "navigation",
+  "visual_description": "A horizontal black bar with white uppercase text and a call-to-action button for shopping, FAQ, and locations.",
+  "purpose": "Navigation menu for quick access to key website sections.",
+  "keywords": [
+    "navigation",
+    "menu",
+    "links",
+    "buttons",
+    "website navigation"
+  ],
+  "fingerprint": "navigation-menu-black-background-white-text",
+  "rag_text": "Navigation menu with links to Shop, FAQ, and Locations"
+}
